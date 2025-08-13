@@ -1,0 +1,11 @@
+---
+title: "Basic Statistics and Probability"
+search: true
+listing: 
+  contents: "../posts/"
+  sort-ui: true
+  sort: "date"
+  filter-ui: true
+  categories: unnumbered
+---
+
