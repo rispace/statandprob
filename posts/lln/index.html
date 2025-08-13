@@ -181,13 +181,13 @@ window.Quarto = {
 <link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="Understanding Law of Large Numbers and Central Limit Theorem – Mohammad Rafiqul Islam">
 <meta property="og:description" content="">
-<meta property="og:image" content="https://mrislambd.github.io/posts/lln/lln.png">
+<meta property="og:image" content="https://rispace.github.io/posts/lln/lln.png">
 <meta property="og:site_name" content="Mohammad Rafiqul Islam">
 <meta property="og:image:height" content="1650">
 <meta property="og:image:width" content="2490">
 <meta name="twitter:title" content="Understanding Law of Large Numbers and Central Limit Theorem – Mohammad Rafiqul Islam">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://mrislambd.github.io/posts/lln/lln.png">
+<meta name="twitter:image" content="https://rispace.github.io/posts/lln/lln.png">
 <meta name="twitter:image-height" content="1650">
 <meta name="twitter:image-width" content="2490">
 <meta name="twitter:card" content="summary_large_image">
@@ -376,19 +376,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://mrislambd.github.io"> 
+    <a class="nav-link" href="https://rispace.github.io"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://mrislambd.github.io/research.html"> 
+    <a class="nav-link" href="https://rispace.github.io/research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://mrislambd.github.io/portfolio.html"> 
+    <a class="nav-link" href="https://rispace.github.io/portfolio.html"> 
 <span class="menu-text">Portfolio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://mrislambd.github.io/cv.html"> 
+    <a class="nav-link" href="https://rispace.github.io/cv.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -397,19 +397,19 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-blog">    
         <li>
-    <a class="dropdown-item" href="https://mrislambd.github.io/dsandml/">
+    <a class="dropdown-item" href="https://rispace.github.io/dsandml/">
  <span class="dropdown-text">Data Science and Machine Learning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://mrislambd.github.io/letscode/">
+    <a class="dropdown-item" href="https://rispace.github.io/letscode/">
  <span class="dropdown-text">Data Structure and Algorithm</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://mrislambd.github.io/statandprob/">
+    <a class="dropdown-item" href="https://rispace.github.io/statandprob/">
  <span class="dropdown-text">Statistics and Probability</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://mrislambd.github.io/blog.html">
+    <a class="dropdown-item" href="https://rispace.github.io/blog.html">
  <span class="dropdown-text">Other Blogs</span></a>
   </li>  
     </ul>
@@ -420,7 +420,7 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/mrislambd" target="_blank"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/rispace" target="_blank"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -534,7 +534,7 @@ The Law of Large Numbers states that as the sample size increases, the sample me
 <section id="visualization" class="level3">
 <h3 class="anchored" data-anchor-id="visualization">Visualization</h3>
 <p>Say, we have a population of 150,000 male in a country called VSA (a hypothetical country)</p>
-<div id="7d3d583a" class="cell" data-execution_count="1">
+<div id="e10b6908" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -543,8 +543,8 @@ The Law of Large Numbers states that as the sample size increases, the sample me
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>mean_height <span class="op">=</span> np.mean(heights)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<p>and the true mean/average height of men is np.float64(139.57). We want to see how varying the sample size affect the sample mean and variances.</p>
-<div id="608c6db8" class="cell" data-execution_count="2">
+<p>and the true mean/average height of men is np.float64(139.48). We want to see how varying the sample size affect the sample mean and variances.</p>
+<div id="f079a898" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -585,7 +585,7 @@ The Law of Large Numbers states that as the sample size increases, the sample me
 </div>
 </div>
 <p style="text-align:justify">
-From the top-left figure, when the sample size is 50, the sample mean varies from 130 to 150 where the true population mean is np.float64(139.57), similarly in the 4th figure (bottom-left), when the sample size is 5000, the mean varies from 138 to 141. Thus, if we increase the sample size, sufficiently large, then the sample mean is approximately equal to the population mean. This is what LLN is!
+From the top-left figure, when the sample size is 50, the sample mean varies from 130 to 150 where the true population mean is np.float64(139.48), similarly in the 4th figure (bottom-left), when the sample size is 5000, the mean varies from 138 to 141. Thus, if we increase the sample size, sufficiently large, then the sample mean is approximately equal to the population mean. This is what LLN is!
 </p>
 </section>
 <section id="types-of-lln" class="level3">
@@ -622,7 +622,7 @@ While the Law of Large Numbers tells us that sample means converge to the popula
 </section>
 <section id="visualization-1" class="level3">
 <h3 class="anchored" data-anchor-id="visualization-1">Visualization</h3>
-<div id="be654ac3" class="cell" data-execution_count="3">
+<div id="b91a1cb5" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -761,7 +761,7 @@ The <strong>Law of Large Numbers</strong> and the <strong>Central Limit Theorem<
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="TWFjaGluZSUyMExlYXJuaW5nJTJDRGF0YSUyMFNjaWVuY2UlMkNCYXllc2lhbiUyMEluZmVyZW5jZSUyQ0JheWVzaWFuJTIwU3RhdGlzdGljcyUyQ1N0YXRpc3RpY3M=" data-listing-date-sort="1722124800000" data-listing-file-modified-sort="1755107423266" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1336">
+<div class="g-col-1" data-index="0" data-categories="TWFjaGluZSUyMExlYXJuaW5nJTJDRGF0YSUyMFNjaWVuY2UlMkNCYXllc2lhbiUyMEluZmVyZW5jZSUyQ0JheWVzaWFuJTIwU3RhdGlzdGljcyUyQ1N0YXRpc3RpY3M=" data-listing-date-sort="1722124800000" data-listing-file-modified-sort="1755107842168" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1336">
 <a href="../../posts/bayesianinference/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -783,7 +783,7 @@ Sunday, July 28, 2024
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="RGF0YSUyMFNjaWVuY2UlMkNNYWNoaW5lJTIwTGVhcm5pbmclMkNBcnRpZmljaWFsJTIwSW50ZWxsaWdlbmNlJTJDU3RhdGlzdGljcw==" data-listing-date-sort="1734480000000" data-listing-file-modified-sort="1755107423268" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3623">
+<div class="g-col-1" data-index="1" data-categories="RGF0YSUyMFNjaWVuY2UlMkNNYWNoaW5lJTIwTGVhcm5pbmclMkNBcnRpZmljaWFsJTIwSW50ZWxsaWdlbmNlJTJDU3RhdGlzdGljcw==" data-listing-date-sort="1734480000000" data-listing-file-modified-sort="1755107842170" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3623">
 <a href="../../posts/corrandreg/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -805,7 +805,7 @@ Wednesday, December 18, 2024
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="RGF0YSUyMFNjaWVuY2UlMkNDb21wdXRhdGlvbmFsJTIwTWF0aGVtYXRpY3MlMkNOdW1iZXIlMjBUaGVvcnk=" data-listing-date-sort="1723334400000" data-listing-file-modified-sort="1755107423269" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2304">
+<div class="g-col-1" data-index="2" data-categories="RGF0YSUyMFNjaWVuY2UlMkNDb21wdXRhdGlvbmFsJTIwTWF0aGVtYXRpY3MlMkNOdW1iZXIlMjBUaGVvcnk=" data-listing-date-sort="1723334400000" data-listing-file-modified-sort="1755107842171" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2304">
 <a href="../../posts/montecarlo1/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -834,12 +834,12 @@ Sunday, August 11, 2024
   title = {Understanding {Law} of {Large} {Numbers} and {Central}
     {Limit} {Theorem}},
   date = {2025-03-15},
-  url = {https://mrislambd.github.io/posts/lln/},
+  url = {https://rispace.github.io/posts/lln/},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-islam2025" class="csl-entry quarto-appendix-citeas" role="listitem">
 Islam, Rafiq. 2025. <span>“Understanding Law of Large Numbers and
-Central Limit Theorem.”</span> March 15, 2025. <a href="https://mrislambd.github.io/posts/lln/">https://mrislambd.github.io/posts/lln/</a>.
+Central Limit Theorem.”</span> March 15, 2025. <a href="https://rispace.github.io/posts/lln/">https://rispace.github.io/posts/lln/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -977,7 +977,7 @@ Central Limit Theorem.”</span> March 15, 2025. <a href="https://mrislambd.gith
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/mrislambd\.github\.io");
+        var filterRegex = new RegExp("https:\/\/rispace\.github\.io");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

@@ -184,13 +184,13 @@ window.Quarto = {
 <link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="Correlation, Bivariate, and Regression Analysis – Mohammad Rafiqul Islam">
 <meta property="og:description" content="">
-<meta property="og:image" content="https://mrislambd.github.io/posts/corrandreg/corr.png">
+<meta property="og:image" content="https://rispace.github.io/posts/corrandreg/corr.png">
 <meta property="og:site_name" content="Mohammad Rafiqul Islam">
 <meta property="og:image:height" content="480">
 <meta property="og:image:width" content="672">
 <meta name="twitter:title" content="Correlation, Bivariate, and Regression Analysis – Mohammad Rafiqul Islam">
 <meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://mrislambd.github.io/posts/corrandreg/corr.png">
+<meta name="twitter:image" content="https://rispace.github.io/posts/corrandreg/corr.png">
 <meta name="twitter:image-height" content="480">
 <meta name="twitter:image-width" content="672">
 <meta name="twitter:card" content="summary_large_image">
@@ -379,19 +379,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://mrislambd.github.io"> 
+    <a class="nav-link" href="https://rispace.github.io"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://mrislambd.github.io/research.html"> 
+    <a class="nav-link" href="https://rispace.github.io/research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://mrislambd.github.io/portfolio.html"> 
+    <a class="nav-link" href="https://rispace.github.io/portfolio.html"> 
 <span class="menu-text">Portfolio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://mrislambd.github.io/cv.html"> 
+    <a class="nav-link" href="https://rispace.github.io/cv.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -400,19 +400,19 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-blog">    
         <li>
-    <a class="dropdown-item" href="https://mrislambd.github.io/dsandml/">
+    <a class="dropdown-item" href="https://rispace.github.io/dsandml/">
  <span class="dropdown-text">Data Science and Machine Learning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://mrislambd.github.io/letscode/">
+    <a class="dropdown-item" href="https://rispace.github.io/letscode/">
  <span class="dropdown-text">Data Structure and Algorithm</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://mrislambd.github.io/statandprob/">
+    <a class="dropdown-item" href="https://rispace.github.io/statandprob/">
  <span class="dropdown-text">Statistics and Probability</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://mrislambd.github.io/blog.html">
+    <a class="dropdown-item" href="https://rispace.github.io/blog.html">
  <span class="dropdown-text">Other Blogs</span></a>
   </li>  
     </ul>
@@ -423,7 +423,7 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/mrislambd" target="_blank"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/rispace" target="_blank"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -520,7 +520,7 @@ Correlation and regression are two fundamental concepts in statistics, often use
 <section id="correlation-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="correlation-analysis">Correlation Analysis</h2>
 <p>To better explain, we will use the following hypothetical stock data of 10 companies with stock price and their corresponding proportion in the portfolio.</p>
-<div id="a6e63b57" class="cell" data-execution_count="1">
+<div id="ab222889" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -589,7 +589,7 @@ Correlation and regression are two fundamental concepts in statistics, often use
 </div>
 </div>
 <p>The scatterplot of the data looks like this</p>
-<div id="a7371eb2" class="cell" data-execution_count="2">
+<div id="6c7129e7" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> mywebstyle <span class="im">import</span> plot_style</span>
@@ -661,7 +661,7 @@ The sample correlation coefficient, <span class="math inline">\(r\)</span>, is a
 </tbody>
 </table>
 <p>Let’s calculate the correlation of our stock data.</p>
-<div id="8f23a596" class="cell" data-execution_count="3">
+<div id="9a60c49f" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
@@ -741,7 +741,7 @@ y - \mu_Y = \rho \frac{\sigma_Y}{\sigma_X} (x - \mu_X)
 &amp; = \mu_Y + \rho \frac{\sigma_Y}{\sigma_X} (x - \mu_X)
 \end{align*}\]</span></p>
 <p>This is the equation of a straight line in the <span class="math inline">\((X, Y)\)</span>-plane. The slope of the line is <span class="math inline">\(\rho \frac{\sigma_Y}{\sigma_X}\)</span>, and the line passes through the point <span class="math inline">\((\mu_X, \mu_Y)\)</span>. When <span class="math inline">\(|\rho| = 1\)</span>, all the joint probability mass collapses onto this line, meaning <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are perfectly linearly dependent.</p>
-<div id="a2e54df8" class="cell" data-execution_count="4">
+<div id="194bf25c" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -902,7 +902,7 @@ SS_{RES} &amp; = 6.97 - 5.695 = 1.275 \\
 \implies \hat{\sigma}^2 &amp; = \frac{1.275}{8}=0.1594\\
 R^2 &amp; = \frac{5.695}{6.97}=0.817
 \end{align*}\]</span></p>
-<div id="64f98b9b" class="cell" data-execution_count="5">
+<div id="c3ecb817" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Parameters for the line</span></span>
@@ -984,7 +984,7 @@ vs<br>
 \frac{0.836-0}{\sqrt{0.1594/8.53}}=6.1156
 \]</span></p>
 <p>which is way higher than the critical value at <span class="math inline">\(5\%\)</span> significance level.</p>
-<div id="d067e5bb" class="cell" data-execution_count="6">
+<div id="46b7a5af" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> t</span>
@@ -1109,7 +1109,7 @@ Let’s put this two idea through our example. If we want to find a <span class=
 <p style="text-align: justify">
 Scatter plots of residuals versus the explanatory variable (or the fitted response values) are particularly insightful. A lack of random scatter in the residuals, such as the presence of a discernible pattern, indicates potential shortcomings in the model.
 </p>
-<div id="480e2d53" class="cell" data-execution_count="7">
+<div id="de4c92fb" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({</span>
@@ -1143,7 +1143,7 @@ In this plot, we can see that the residuals tend to increase as <span class="mat
 \mathbb{E}[Y_i|X=x_i] &amp;= \alpha e^{\beta x_i}\\
 \implies z_i = \log y_i &amp; = \eta + \beta x_i + \epsilon_i; \hspace{4mm}\text{where }\eta=\log \alpha
 \end{align*}\]</span></p>
-<div id="8212e4c5" class="cell" data-execution_count="8">
+<div id="05f6edaf" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> df.StockPrice.values</span>
@@ -1193,7 +1193,7 @@ S_{xx} &amp;= 8.53 \hspace{4mm} S_{yy}=0.70, \hspace{4mm} S_{xy}=2.29\\
 \hat{\alpha} &amp;= \frac{\sum y}{n} - \hat{\beta} \frac{\sum x}{n} = \bar{y}-\hat{\beta}\bar{x}\\
 &amp; = 1.143 - 0.268 \times 3.566 = 0.1873
 \end{align*}\]</span></p>
-<div id="f4265058" class="cell" data-execution_count="9">
+<div id="2397f8d1" class="cell" data-execution_count="9">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -1279,7 +1279,7 @@ S_{xx} &amp;= 8.53 \hspace{4mm} S_{yy}=0.70, \hspace{4mm} S_{xy}=2.29\\
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="TWFjaGluZSUyMExlYXJuaW5nJTJDRGF0YSUyMFNjaWVuY2UlMkNCYXllc2lhbiUyMEluZmVyZW5jZSUyQ0JheWVzaWFuJTIwU3RhdGlzdGljcyUyQ1N0YXRpc3RpY3M=" data-listing-date-sort="1722124800000" data-listing-file-modified-sort="1755107423266" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1336">
+<div class="g-col-1" data-index="0" data-categories="TWFjaGluZSUyMExlYXJuaW5nJTJDRGF0YSUyMFNjaWVuY2UlMkNCYXllc2lhbiUyMEluZmVyZW5jZSUyQ0JheWVzaWFuJTIwU3RhdGlzdGljcyUyQ1N0YXRpc3RpY3M=" data-listing-date-sort="1722124800000" data-listing-file-modified-sort="1755107842168" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1336">
 <a href="../../posts/bayesianinference/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1301,7 +1301,7 @@ Sunday, July 28, 2024
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="RGF0YSUyMFNjaWVuY2UlMkNDb21wdXRhdGlvbmFsJTIwTWF0aGVtYXRpY3MlMkNOdW1iZXIlMjBUaGVvcnk=" data-listing-date-sort="1723334400000" data-listing-file-modified-sort="1755107423269" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2304">
+<div class="g-col-1" data-index="1" data-categories="RGF0YSUyMFNjaWVuY2UlMkNDb21wdXRhdGlvbmFsJTIwTWF0aGVtYXRpY3MlMkNOdW1iZXIlMjBUaGVvcnk=" data-listing-date-sort="1723334400000" data-listing-file-modified-sort="1755107842171" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2304">
 <a href="../../posts/montecarlo1/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1323,7 +1323,7 @@ Sunday, August 11, 2024
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="UHJvZ3JhbW1pbmclMkNGaW5hbmNlJTJDRmluYW5jaWFsJTIwTWF0aGVtYXRpY3MlMkNQcmljaW5nJTJDSGVkZ2luZw==" data-listing-date-sort="1699747200000" data-listing-file-modified-sort="1755107423273" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16" data-listing-word-count-sort="3012">
+<div class="g-col-1" data-index="2" data-categories="UHJvZ3JhbW1pbmclMkNGaW5hbmNlJTJDRmluYW5jaWFsJTIwTWF0aGVtYXRpY3MlMkNQcmljaW5nJTJDSGVkZ2luZw==" data-listing-date-sort="1699747200000" data-listing-file-modified-sort="1755107842175" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16" data-listing-word-count-sort="3012">
 <a href="../../posts/optionprice/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1351,12 +1351,12 @@ Sunday, November 12, 2023
   author = {Islam, Rafiq},
   title = {Correlation, {Bivariate,} and {Regression} {Analysis}},
   date = {2024-12-18},
-  url = {https://mrislambd.github.io/posts/corrandreg/},
+  url = {https://rispace.github.io/posts/corrandreg/},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-islam2024" class="csl-entry quarto-appendix-citeas" role="listitem">
 Islam, Rafiq. 2024. <span>“Correlation, Bivariate, and Regression
-Analysis.”</span> December 18, 2024. <a href="https://mrislambd.github.io/posts/corrandreg/">https://mrislambd.github.io/posts/corrandreg/</a>.
+Analysis.”</span> December 18, 2024. <a href="https://rispace.github.io/posts/corrandreg/">https://rispace.github.io/posts/corrandreg/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -1494,7 +1494,7 @@ Analysis.”</span> December 18, 2024. <a href="https://mrislambd.github.io/post
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/mrislambd\.github\.io");
+        var filterRegex = new RegExp("https:\/\/rispace\.github\.io");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
