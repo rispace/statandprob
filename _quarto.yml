@@ -10,7 +10,7 @@ website:
   favicon: "/_assets/images/favicon.ico"
   open-graph: true
   back-to-top-navigation: true
-  site-url: "https://mrislambd.github.io"
+  site-url: "https://rispace.github.io"
   twitter-card: true
   navbar:
     tools-collapse: true
@@ -19,29 +19,29 @@ website:
     logo-alt: "Florida State University"
     logo-href: index.qmd
     right:
-      - href: https://mrislambd.github.io
+      - href: https://rispace.github.io
         text: Home
-      - href: https://mrislambd.github.io/research.html
+      - href: https://rispace.github.io/research.html
         text: Research
-      - href: https://mrislambd.github.io/portfolio.html
+      - href: https://rispace.github.io/portfolio.html
         text: Portfolio
-      - href: https://mrislambd.github.io/cv.html
+      - href: https://rispace.github.io/cv.html
         text: CV
       - text: Blog
         menu: 
           - text: "Data Science and Machine Learning"
-            href: https://mrislambd.github.io/dsandml/
+            href: https://rispace.github.io/dsandml/
           - text: "Data Structure and Algorithm"
-            href: https://mrislambd.github.io/letscode/
+            href: https://rispace.github.io/letscode/
           - text: "Statistics and Probability"
-            href: https://mrislambd.github.io/statandprob/
+            href: https://rispace.github.io/statandprob/
           - text: "Other Blogs"
-            href: https://mrislambd.github.io/blog.html
+            href: https://rispace.github.io/blog.html
       - icon: linkedin
         href: https://www.linkedin.com/in/mohammad-rafiqul-islam/
         target: _blank
       - icon: github
-        href: "https://github.com/mrislambd"
+        href: "https://github.com/rispace"
         target: _blank
 
   page-footer: 
