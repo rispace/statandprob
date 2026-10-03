@@ -541,7 +541,7 @@ The Law of Large Numbers states that as the sample size increases, the sample me
 <section id="visualization" class="level3">
 <h3 class="anchored" data-anchor-id="visualization">Visualization</h3>
 <p>Say, we have a population of 150,000 male in a country called VSA (a hypothetical country)</p>
-<div id="81ef2b1d" class="cell" data-execution_count="1">
+<div id="25ea9db5" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -550,8 +550,8 @@ The Law of Large Numbers states that as the sample size increases, the sample me
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>mean_height <span class="op">=</span> np.mean(heights)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<p>and the true mean/average height of men is np.float64(139.47). We want to see how varying the sample size affect the sample mean and variances.</p>
-<div id="5a47d34e" class="cell" data-execution_count="2">
+<p>and the true mean/average height of men is np.float64(139.55). We want to see how varying the sample size affect the sample mean and variances.</p>
+<div id="db555058" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -586,13 +586,13 @@ The Law of Large Numbers states that as the sample size increases, the sample me
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><a href="index_files/figure-html/cell-3-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="index_files/figure-html/cell-3-output-1.png" width="790" height="512" class="figure-img"></a></p>
+<p><a href="index_files/figure-html/cell-3-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="index_files/figure-html/cell-3-output-1.png" width="791" height="512" class="figure-img"></a></p>
 </figure>
 </div>
 </div>
 </div>
 <p style="text-align:justify">
-From the top-left figure, when the sample size is 50, the sample mean varies from 130 to 150 where the true population mean is np.float64(139.47), similarly in the 4th figure (bottom-left), when the sample size is 5000, the mean varies from 138 to 141. Thus, if we increase the sample size, sufficiently large, then the sample mean is approximately equal to the population mean. This is what LLN is!
+From the top-left figure, when the sample size is 50, the sample mean varies from 130 to 150 where the true population mean is np.float64(139.55), similarly in the 4th figure (bottom-left), when the sample size is 5000, the mean varies from 138 to 141. Thus, if we increase the sample size, sufficiently large, then the sample mean is approximately equal to the population mean. This is what LLN is!
 </p>
 </section>
 <section id="types-of-lln" class="level3">
@@ -629,7 +629,7 @@ While the Law of Large Numbers tells us that sample means converge to the popula
 </section>
 <section id="visualization-1" class="level3">
 <h3 class="anchored" data-anchor-id="visualization-1">Visualization</h3>
-<div id="2f147de7" class="cell" data-execution_count="3">
+<div id="c796ec25" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -768,7 +768,7 @@ The <strong>Law of Large Numbers</strong> and the <strong>Central Limit Theorem<
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="TWFjaGluZSUyMExlYXJuaW5nJTJDRGF0YSUyMFNjaWVuY2UlMkNCYXllc2lhbiUyMEluZmVyZW5jZSUyQ0JheWVzaWFuJTIwU3RhdGlzdGljcyUyQ1N0YXRpc3RpY3M=" data-listing-date-sort="1722124800000" data-listing-file-modified-sort="1791006487411" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1336">
+<div class="g-col-1" data-index="0" data-categories="TWFjaGluZSUyMExlYXJuaW5nJTJDRGF0YSUyMFNjaWVuY2UlMkNCYXllc2lhbiUyMEluZmVyZW5jZSUyQ0JheWVzaWFuJTIwU3RhdGlzdGljcyUyQ1N0YXRpc3RpY3M=" data-listing-date-sort="1722124800000" data-listing-file-modified-sort="1791007399780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1336">
 <a href="../../posts/bayesianinference/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -790,7 +790,7 @@ Sunday, July 28, 2024
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="RGF0YSUyMFNjaWVuY2UlMkNNYWNoaW5lJTIwTGVhcm5pbmclMkNBcnRpZmljaWFsJTIwSW50ZWxsaWdlbmNlJTJDU3RhdGlzdGljcw==" data-listing-date-sort="1734480000000" data-listing-file-modified-sort="1791006487413" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3623">
+<div class="g-col-1" data-index="1" data-categories="RGF0YSUyMFNjaWVuY2UlMkNNYWNoaW5lJTIwTGVhcm5pbmclMkNBcnRpZmljaWFsJTIwSW50ZWxsaWdlbmNlJTJDU3RhdGlzdGljcw==" data-listing-date-sort="1734480000000" data-listing-file-modified-sort="1791007399781" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3623">
 <a href="../../posts/corrandreg/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -812,7 +812,7 @@ Wednesday, December 18, 2024
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="RGF0YSUyMFNjaWVuY2UlMkNDb21wdXRhdGlvbmFsJTIwTWF0aGVtYXRpY3MlMkNOdW1iZXIlMjBUaGVvcnk=" data-listing-date-sort="1723334400000" data-listing-file-modified-sort="1791006487413" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2304">
+<div class="g-col-1" data-index="2" data-categories="RGF0YSUyMFNjaWVuY2UlMkNDb21wdXRhdGlvbmFsJTIwTWF0aGVtYXRpY3MlMkNOdW1iZXIlMjBUaGVvcnk=" data-listing-date-sort="1723334400000" data-listing-file-modified-sort="1791007399782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2304">
 <a href="../../posts/montecarlo1/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1676,11 +1676,26 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
- Copyright 2025 @ Rafiq Islam
+ Copyright 2026 @ Rafiq Islam
   </li>  
     <li class="nav-item">
     <a class="nav-link" href="../../license.txt">
 <p>License</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../../research.qmd">
+<p>Research</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../../teaching.qmd">
+<p>Teaching</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../../cv.qmd">
+<p>CV</p>
 </a>
   </li>  
 </ul>
@@ -1702,6 +1717,18 @@ document.addEventListener("DOMContentLoaded", function () {
     <li class="nav-item compact">
     <a class="nav-link" href="mailto:rafiqfsu@gmail.com?subject&amp;body" target="_blank">
       <i class="bi bi-envelope" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/mohammad-rafiqul-islam/" target="_blank">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/rispace" target="_blank">
+      <i class="bi bi-github" role="img">
 </i> 
     </a>
   </li>  
