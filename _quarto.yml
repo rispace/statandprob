@@ -45,34 +45,34 @@ website:
         href: "https://github.com/rispace"
         target: _blank
 
-page-footer: 
-  left: "Powered by [Quarto](https://quarto.org/) <?quarto.version?>"
-  center:
-    - text: "Copyright 2026 @ Rafiq Islam"
-    - text: "License"
-      href: license.txt  
-    - text: "Research"
-      href: research.qmd
-    - text: "Teaching"
-      href: teaching.qmd
-    - text: "CV"
-      href: cv.qmd
-  right: 
-    - icon: twitter 
-      href: https://twitter.com/rafiqr35 
-      target: _blank
-    - icon: youtube
-      href: https://youtube.com/@quanttube
-      target: _blank
-    - icon: envelope
-      href: mailto:rafiqfsu@gmail.com?subject&body
-      target: _blank  
-    - icon: linkedin
-      href: https://www.linkedin.com/in/mohammad-rafiqul-islam/
-      target: _blank
-    - icon: github
-      href: "https://github.com/rispace"
-      target: _blank
+  page-footer: 
+    left: "Powered by [Quarto](https://quarto.org/) <?quarto.version?>"
+    center:
+      - text: "Copyright 2026 @ Rafiq Islam"
+      - text: "License"
+        href: license.txt  
+      - text: "Research"
+        href: research.qmd
+      - text: "Teaching"
+        href: teaching.qmd
+      - text: "CV"
+        href: cv.qmd
+    right: 
+      - icon: twitter 
+        href: https://twitter.com/rafiqr35 
+        target: _blank
+      - icon: youtube
+        href: https://youtube.com/@quanttube
+        target: _blank
+      - icon: envelope
+        href: mailto:rafiqfsu@gmail.com?subject&body
+        target: _blank  
+      - icon: linkedin
+        href: https://www.linkedin.com/in/mohammad-rafiqul-islam/
+        target: _blank
+      - icon: github
+        href: "https://github.com/rispace"
+        target: _blank
       
 
     border: true
