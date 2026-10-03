@@ -637,7 +637,7 @@ P(\theta | X) = \frac{P(X | \theta) P(\theta)}{P(X)}
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="TWFjaGluZSUyMExlYXJuaW5nJTJDRGF0YSUyMFNjaWVuY2UlMkNCYXllc2lhbiUyMEluZmVyZW5jZSUyQ0JheWVzaWFuJTIwU3RhdGlzdGljcyUyQ1N0YXRpc3RpY3M=" data-listing-date-sort="1722124800000" data-listing-file-modified-sort="1791007399780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1336">
+<div class="g-col-1" data-index="0" data-categories="TWFjaGluZSUyMExlYXJuaW5nJTJDRGF0YSUyMFNjaWVuY2UlMkNCYXllc2lhbiUyMEluZmVyZW5jZSUyQ0JheWVzaWFuJTIwU3RhdGlzdGljcyUyQ1N0YXRpc3RpY3M=" data-listing-date-sort="1722124800000" data-listing-file-modified-sort="1791008523322" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1336">
 <a href="../../posts/bayesianinference/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -659,7 +659,7 @@ Sunday, July 28, 2024
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="RGF0YSUyMFNjaWVuY2UlMkNNYWNoaW5lJTIwTGVhcm5pbmclMkNBcnRpZmljaWFsJTIwSW50ZWxsaWdlbmNlJTJDU3RhdGlzdGljcw==" data-listing-date-sort="1734480000000" data-listing-file-modified-sort="1791007399781" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3623">
+<div class="g-col-1" data-index="1" data-categories="RGF0YSUyMFNjaWVuY2UlMkNNYWNoaW5lJTIwTGVhcm5pbmclMkNBcnRpZmljaWFsJTIwSW50ZWxsaWdlbmNlJTJDU3RhdGlzdGljcw==" data-listing-date-sort="1734480000000" data-listing-file-modified-sort="1791008523323" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="19" data-listing-word-count-sort="3623">
 <a href="../../posts/corrandreg/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -681,7 +681,7 @@ Wednesday, December 18, 2024
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="RGF0YSUyMFNjaWVuY2UlMkNDb21wdXRhdGlvbmFsJTIwTWF0aGVtYXRpY3MlMkNOdW1iZXIlMjBUaGVvcnk=" data-listing-date-sort="1723334400000" data-listing-file-modified-sort="1791007399782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2304">
+<div class="g-col-1" data-index="2" data-categories="RGF0YSUyMFNjaWVuY2UlMkNDb21wdXRhdGlvbmFsJTIwTWF0aGVtYXRpY3MlMkNOdW1iZXIlMjBUaGVvcnk=" data-listing-date-sort="1723334400000" data-listing-file-modified-sort="1791008523323" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2304">
 <a href="../../posts/montecarlo1/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -717,23 +717,49 @@ Islam, Rafiq. 2024. <span>“Some Key Statistical Concepts for Interview
 Prep.”</span> May 9. <a href="https://rispace.github.io/posts/statisticaltalk/">https://rispace.github.io/posts/statisticaltalk/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script>
-// Keep navbar and in-page navigation in the current tab; open content links separately.
+// Internal navigation stays in the current tab.
+// External links open in a new tab.
 document.addEventListener("DOMContentLoaded", function () {
+
   document.querySelectorAll('a[href]').forEach(function (link) {
     const href = link.getAttribute('href');
-    if (link.closest('.navbar')) {
+
+    if (
+      !href ||
+      href.startsWith('#') ||
+      href.startsWith('javascript:')
+    ) {
+      return;
+    }
+
+    // Email and telephone links do not need a new browser tab
+    if (href.startsWith('mailto:') || href.startsWith('tel:')) {
       link.removeAttribute('target');
-      link.removeAttribute('rel');
-    } else if (href && !href.startsWith('#') && !href.startsWith('javascript:')) {
-      link.setAttribute('target', '_blank');
-      link.setAttribute('rel', 'noopener noreferrer');
+      return;
+    }
+
+    try {
+      const url = new URL(href, window.location.href);
+      const isExternal = url.origin !== window.location.origin;
+
+      if (isExternal) {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+      } else {
+        link.removeAttribute('target');
+        link.removeAttribute('rel');
+      }
+    } catch (e) {
+      // Leave unusual links untouched
     }
   });
+
 
   document.querySelectorAll('.bibtex-copy').forEach(function (button) {
     button.addEventListener('click', function () {
       const source = document.getElementById(button.dataset.copyTarget);
       if (!source) return;
+
       const citation = source.textContent.trim();
       const previous = button.textContent;
       button.textContent = 'Copied';
@@ -754,24 +780,33 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         fallbackCopy();
       }
-      setTimeout(function () { button.textContent = previous; }, 1600);
+
+      setTimeout(function () {
+        button.textContent = previous;
+      }, 1600);
     });
   });
+
 
   document.querySelectorAll('.bibtex-dropdown').forEach(function (details) {
     details.addEventListener('toggle', function () {
       if (!details.open) return;
+
       document.querySelectorAll('.bibtex-dropdown[open]').forEach(function (other) {
         if (other !== details) other.removeAttribute('open');
       });
     });
   });
 
+
   document.addEventListener('click', function (event) {
     document.querySelectorAll('.bibtex-dropdown[open]').forEach(function (details) {
-      if (!details.contains(event.target)) details.removeAttribute('open');
+      if (!details.contains(event.target)) {
+        details.removeAttribute('open');
+      }
     });
   });
+
 });
 </script>
 <script id="quarto-html-after-body" type="application/javascript">

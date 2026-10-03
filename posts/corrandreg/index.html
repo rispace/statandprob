@@ -527,7 +527,7 @@ Correlation and regression are two fundamental concepts in statistics, often use
 <section id="correlation-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="correlation-analysis">Correlation Analysis</h2>
 <p>To better explain, we will use the following hypothetical stock data of 10 companies with stock price and their corresponding proportion in the portfolio.</p>
-<div id="ca436633" class="cell" data-execution_count="1">
+<div id="7a36c5b9" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -596,7 +596,7 @@ Correlation and regression are two fundamental concepts in statistics, often use
 </div>
 </div>
 <p>The scatterplot of the data looks like this</p>
-<div id="1dd8e728" class="cell" data-execution_count="2">
+<div id="c25903d0" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> mywebstyle <span class="im">import</span> plot_style</span>
@@ -668,7 +668,7 @@ The sample correlation coefficient, <span class="math inline">\(r\)</span>, is a
 </tbody>
 </table>
 <p>Let’s calculate the correlation of our stock data.</p>
-<div id="39c53737" class="cell" data-execution_count="3">
+<div id="8c4bc1f6" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
@@ -748,7 +748,7 @@ y - \mu_Y = \rho \frac{\sigma_Y}{\sigma_X} (x - \mu_X)
 &amp; = \mu_Y + \rho \frac{\sigma_Y}{\sigma_X} (x - \mu_X)
 \end{align*}\]</span></p>
 <p>This is the equation of a straight line in the <span class="math inline">\((X, Y)\)</span>-plane. The slope of the line is <span class="math inline">\(\rho \frac{\sigma_Y}{\sigma_X}\)</span>, and the line passes through the point <span class="math inline">\((\mu_X, \mu_Y)\)</span>. When <span class="math inline">\(|\rho| = 1\)</span>, all the joint probability mass collapses onto this line, meaning <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are perfectly linearly dependent.</p>
-<div id="cf711ab2" class="cell" data-execution_count="4">
+<div id="7b5f3ab2" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -909,7 +909,7 @@ SS_{RES} &amp; = 6.97 - 5.695 = 1.275 \\
 \implies \hat{\sigma}^2 &amp; = \frac{1.275}{8}=0.1594\\
 R^2 &amp; = \frac{5.695}{6.97}=0.817
 \end{align*}\]</span></p>
-<div id="1daa7dda" class="cell" data-execution_count="5">
+<div id="cd9affc2" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Parameters for the line</span></span>
@@ -991,7 +991,7 @@ vs<br>
 \frac{0.836-0}{\sqrt{0.1594/8.53}}=6.1156
 \]</span></p>
 <p>which is way higher than the critical value at <span class="math inline">\(5\%\)</span> significance level.</p>
-<div id="6d78c618" class="cell" data-execution_count="6">
+<div id="84cab1c5" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> t</span>
@@ -1116,7 +1116,7 @@ Let’s put this two idea through our example. If we want to find a <span class=
 <p style="text-align: justify">
 Scatter plots of residuals versus the explanatory variable (or the fitted response values) are particularly insightful. A lack of random scatter in the residuals, such as the presence of a discernible pattern, indicates potential shortcomings in the model.
 </p>
-<div id="f7b67cd1" class="cell" data-execution_count="7">
+<div id="7c006580" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({</span>
@@ -1150,7 +1150,7 @@ In this plot, we can see that the residuals tend to increase as <span class="mat
 \mathbb{E}[Y_i|X=x_i] &amp;= \alpha e^{\beta x_i}\\
 \implies z_i = \log y_i &amp; = \eta + \beta x_i + \epsilon_i; \hspace{4mm}\text{where }\eta=\log \alpha
 \end{align*}\]</span></p>
-<div id="1cee209e" class="cell" data-execution_count="8">
+<div id="6d7a7c9c" class="cell" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> df.StockPrice.values</span>
@@ -1200,7 +1200,7 @@ S_{xx} &amp;= 8.53 \hspace{4mm} S_{yy}=0.70, \hspace{4mm} S_{xy}=2.29\\
 \hat{\alpha} &amp;= \frac{\sum y}{n} - \hat{\beta} \frac{\sum x}{n} = \bar{y}-\hat{\beta}\bar{x}\\
 &amp; = 1.143 - 0.268 \times 3.566 = 0.1873
 \end{align*}\]</span></p>
-<div id="1c52a7f8" class="cell" data-execution_count="9">
+<div id="c8c32ea8" class="cell" data-execution_count="9">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -1286,7 +1286,7 @@ S_{xx} &amp;= 8.53 \hspace{4mm} S_{yy}=0.70, \hspace{4mm} S_{xy}=2.29\\
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="TWFjaGluZSUyMExlYXJuaW5nJTJDRGF0YSUyMFNjaWVuY2UlMkNCYXllc2lhbiUyMEluZmVyZW5jZSUyQ0JheWVzaWFuJTIwU3RhdGlzdGljcyUyQ1N0YXRpc3RpY3M=" data-listing-date-sort="1722124800000" data-listing-file-modified-sort="1791007399780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1336">
+<div class="g-col-1" data-index="0" data-categories="TWFjaGluZSUyMExlYXJuaW5nJTJDRGF0YSUyMFNjaWVuY2UlMkNCYXllc2lhbiUyMEluZmVyZW5jZSUyQ0JheWVzaWFuJTIwU3RhdGlzdGljcyUyQ1N0YXRpc3RpY3M=" data-listing-date-sort="1722124800000" data-listing-file-modified-sort="1791008523322" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1336">
 <a href="../../posts/bayesianinference/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1308,7 +1308,7 @@ Sunday, July 28, 2024
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="RGF0YSUyMFNjaWVuY2UlMkNDb21wdXRhdGlvbmFsJTIwTWF0aGVtYXRpY3MlMkNOdW1iZXIlMjBUaGVvcnk=" data-listing-date-sort="1723334400000" data-listing-file-modified-sort="1791007399782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2304">
+<div class="g-col-1" data-index="1" data-categories="RGF0YSUyMFNjaWVuY2UlMkNDb21wdXRhdGlvbmFsJTIwTWF0aGVtYXRpY3MlMkNOdW1iZXIlMjBUaGVvcnk=" data-listing-date-sort="1723334400000" data-listing-file-modified-sort="1791008523323" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2304">
 <a href="../../posts/montecarlo1/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1330,7 +1330,7 @@ Sunday, August 11, 2024
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="UHJvZ3JhbW1pbmclMkNGaW5hbmNlJTJDRmluYW5jaWFsJTIwTWF0aGVtYXRpY3MlMkNQcmljaW5nJTJDSGVkZ2luZw==" data-listing-date-sort="1699747200000" data-listing-file-modified-sort="1791007399785" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16" data-listing-word-count-sort="3012">
+<div class="g-col-1" data-index="2" data-categories="UHJvZ3JhbW1pbmclMkNGaW5hbmNlJTJDRmluYW5jaWFsJTIwTWF0aGVtYXRpY3MlMkNQcmljaW5nJTJDSGVkZ2luZw==" data-listing-date-sort="1699747200000" data-listing-file-modified-sort="1791008523326" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16" data-listing-word-count-sort="3012">
 <a href="../../posts/optionprice/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1366,23 +1366,49 @@ Islam, Rafiq. 2024. <span>“Correlation, Bivariate, and Regression
 Analysis.”</span> December 18. <a href="https://rispace.github.io/posts/corrandreg/">https://rispace.github.io/posts/corrandreg/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script>
-// Keep navbar and in-page navigation in the current tab; open content links separately.
+// Internal navigation stays in the current tab.
+// External links open in a new tab.
 document.addEventListener("DOMContentLoaded", function () {
+
   document.querySelectorAll('a[href]').forEach(function (link) {
     const href = link.getAttribute('href');
-    if (link.closest('.navbar')) {
+
+    if (
+      !href ||
+      href.startsWith('#') ||
+      href.startsWith('javascript:')
+    ) {
+      return;
+    }
+
+    // Email and telephone links do not need a new browser tab
+    if (href.startsWith('mailto:') || href.startsWith('tel:')) {
       link.removeAttribute('target');
-      link.removeAttribute('rel');
-    } else if (href && !href.startsWith('#') && !href.startsWith('javascript:')) {
-      link.setAttribute('target', '_blank');
-      link.setAttribute('rel', 'noopener noreferrer');
+      return;
+    }
+
+    try {
+      const url = new URL(href, window.location.href);
+      const isExternal = url.origin !== window.location.origin;
+
+      if (isExternal) {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+      } else {
+        link.removeAttribute('target');
+        link.removeAttribute('rel');
+      }
+    } catch (e) {
+      // Leave unusual links untouched
     }
   });
+
 
   document.querySelectorAll('.bibtex-copy').forEach(function (button) {
     button.addEventListener('click', function () {
       const source = document.getElementById(button.dataset.copyTarget);
       if (!source) return;
+
       const citation = source.textContent.trim();
       const previous = button.textContent;
       button.textContent = 'Copied';
@@ -1403,24 +1429,33 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         fallbackCopy();
       }
-      setTimeout(function () { button.textContent = previous; }, 1600);
+
+      setTimeout(function () {
+        button.textContent = previous;
+      }, 1600);
     });
   });
+
 
   document.querySelectorAll('.bibtex-dropdown').forEach(function (details) {
     details.addEventListener('toggle', function () {
       if (!details.open) return;
+
       document.querySelectorAll('.bibtex-dropdown[open]').forEach(function (other) {
         if (other !== details) other.removeAttribute('open');
       });
     });
   });
 
+
   document.addEventListener('click', function (event) {
     document.querySelectorAll('.bibtex-dropdown[open]').forEach(function (details) {
-      if (!details.contains(event.target)) details.removeAttribute('open');
+      if (!details.contains(event.target)) {
+        details.removeAttribute('open');
+      }
     });
   });
+
 });
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
