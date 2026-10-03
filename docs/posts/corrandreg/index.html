@@ -86,9 +86,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-d55ad538553833994e65ea0dc4f9e74e.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-6f0648c25d1e330123f9948b207cf87e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-c8f962d185217da7fb63d497bbcee168.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-6f0648c25d1e330123f9948b207cf87e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d4574cdef541e0fa40919a8962586ab1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-8598d2e4dfd393001eb172495299b792.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-d4574cdef541e0fa40919a8962586ab1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -521,7 +521,7 @@ Correlation and regression are two fundamental concepts in statistics, often use
 <section id="correlation-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="correlation-analysis">Correlation Analysis</h2>
 <p>To better explain, we will use the following hypothetical stock data of 10 companies with stock price and their corresponding proportion in the portfolio.</p>
-<div id="fe4e3990" class="cell">
+<div id="34a0ebff" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -538,7 +538,7 @@ Correlation and regression are two fundamental concepts in statistics, often use
 </details>
 </div>
 <p>The scatterplot of the data looks like this</p>
-<div id="6ffd3f69" class="cell">
+<div id="ceae96af" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> mywebstyle <span class="im">import</span> plot_style</span>
@@ -603,7 +603,7 @@ The sample correlation coefficient, <span class="math inline">\(r\)</span>, is a
 </tbody>
 </table>
 <p>Let’s calculate the correlation of our stock data.</p>
-<div id="5fa3158a" class="cell">
+<div id="38e63806" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
@@ -674,7 +674,7 @@ y - \mu_Y = \rho \frac{\sigma_Y}{\sigma_X} (x - \mu_X)
 &amp; = \mu_Y + \rho \frac{\sigma_Y}{\sigma_X} (x - \mu_X)
 \end{align*}\]</span></p>
 <p>This is the equation of a straight line in the <span class="math inline">\((X, Y)\)</span>-plane. The slope of the line is <span class="math inline">\(\rho \frac{\sigma_Y}{\sigma_X}\)</span>, and the line passes through the point <span class="math inline">\((\mu_X, \mu_Y)\)</span>. When <span class="math inline">\(|\rho| = 1\)</span>, all the joint probability mass collapses onto this line, meaning <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are perfectly linearly dependent.</p>
-<div id="65a3c6d6" class="cell">
+<div id="66c973d2" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -828,7 +828,7 @@ SS_{RES} &amp; = 6.97 - 5.695 = 1.275 \\
 \implies \hat{\sigma}^2 &amp; = \frac{1.275}{8}=0.1594\\
 R^2 &amp; = \frac{5.695}{6.97}=0.817
 \end{align*}\]</span></p>
-<div id="72ac3b43" class="cell">
+<div id="e52ab94a" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Parameters for the line</span></span>
@@ -903,7 +903,7 @@ vs<br>
 \frac{0.836-0}{\sqrt{0.1594/8.53}}=6.1156
 \]</span></p>
 <p>which is way higher than the critical value at <span class="math inline">\(5\%\)</span> significance level.</p>
-<div id="3144829b" class="cell">
+<div id="34cf35df" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> t</span>
@@ -1021,7 +1021,7 @@ Let’s put this two idea through our example. If we want to find a <span class=
 <p style="text-align: justify">
 Scatter plots of residuals versus the explanatory variable (or the fitted response values) are particularly insightful. A lack of random scatter in the residuals, such as the presence of a discernible pattern, indicates potential shortcomings in the model.
 </p>
-<div id="c2434f67" class="cell">
+<div id="b1bb871e" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({</span>
@@ -1048,7 +1048,7 @@ In this plot, we can see that the residuals tend to increase as <span class="mat
 \mathbb{E}[Y_i|X=x_i] &amp;= \alpha e^{\beta x_i}\\
 \implies z_i = \log y_i &amp; = \eta + \beta x_i + \epsilon_i; \hspace{4mm}\text{where }\eta=\log \alpha
 \end{align*}\]</span></p>
-<div id="4d2502ae" class="cell">
+<div id="8ba58638" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> df.StockPrice.values</span>
@@ -1089,7 +1089,7 @@ S_{xx} &amp;= 8.53 \hspace{4mm} S_{yy}=0.70, \hspace{4mm} S_{xy}=2.29\\
 \hat{\alpha} &amp;= \frac{\sum y}{n} - \hat{\beta} \frac{\sum x}{n} = \bar{y}-\hat{\beta}\bar{x}\\
 &amp; = 1.143 - 0.268 \times 3.566 = 0.1873
 \end{align*}\]</span></p>
-<div id="006e2b08" class="cell">
+<div id="8b5bac5f" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -1262,17 +1262,45 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   document.querySelectorAll('.bibtex-copy').forEach(function (button) {
-    button.addEventListener('click', async function () {
+    button.addEventListener('click', function () {
       const source = document.getElementById(button.dataset.copyTarget);
       if (!source) return;
-      try {
-        await navigator.clipboard.writeText(source.textContent.trim());
-        const previous = button.textContent;
-        button.textContent = 'Copied';
-        setTimeout(function () { button.textContent = previous; }, 1600);
-      } catch (error) {
-        button.textContent = 'Select and copy above';
+      const citation = source.textContent.trim();
+      const previous = button.textContent;
+      button.textContent = 'Copied';
+
+      const fallbackCopy = function () {
+        const field = document.createElement('textarea');
+        field.value = citation;
+        field.style.position = 'fixed';
+        field.style.opacity = '0';
+        document.body.appendChild(field);
+        field.select();
+        document.execCommand('copy');
+        field.remove();
+      };
+
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(citation).catch(fallbackCopy);
+      } else {
+        fallbackCopy();
       }
+      setTimeout(function () { button.textContent = previous; }, 1600);
+    });
+  });
+
+  document.querySelectorAll('.bibtex-dropdown').forEach(function (details) {
+    details.addEventListener('toggle', function () {
+      if (!details.open) return;
+      document.querySelectorAll('.bibtex-dropdown[open]').forEach(function (other) {
+        if (other !== details) other.removeAttribute('open');
+      });
+    });
+  });
+
+  document.addEventListener('click', function (event) {
+    document.querySelectorAll('.bibtex-dropdown[open]').forEach(function (details) {
+      if (!details.contains(event.target)) details.removeAttribute('open');
     });
   });
 });

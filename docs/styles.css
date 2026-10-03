@@ -313,3 +313,246 @@ main p {
   letter-spacing: -0.04em;
   line-height: 1;
 }
+
+
+/* Wide editorial layout, portrait crop, and MRI wordmark */
+.navbar .navbar-title {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 5.4rem;
+  height: 2.75rem;
+  padding: 0;
+  overflow: hidden;
+  color: transparent !important;
+  background: var(--scholar-surface);
+  border: 2px solid var(--scholar-ink);
+  border-radius: 0;
+  box-shadow:
+    inset 0 0 0 3px var(--scholar-surface),
+    inset 0 0 0 4px var(--scholar-border);
+  font-size: 0;
+  line-height: 1;
+}
+
+.navbar .navbar-title::before {
+  content: "MRI";
+  color: var(--scholar-ink);
+  background: linear-gradient(90deg, var(--scholar-ink) 0 68%, var(--scholar-accent) 68% 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: "Bodoni 72", Didot, "Times New Roman", serif;
+  font-size: 1.62rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  line-height: 1;
+  -webkit-text-fill-color: transparent;
+}
+
+.oval-image {
+  width: min(235px, 76vw);
+  height: min(235px, 76vw);
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: 61% 38%;
+  border-radius: 50%;
+}
+
+.home-columns {
+  display: grid !important;
+  grid-template-columns: 300px 24px minmax(0, 1fr);
+  align-items: start;
+  width: min(1400px, calc(100vw - 4rem));
+  max-width: none;
+  margin: 1.5rem auto 3rem;
+}
+
+.home-columns > .column {
+  width: auto !important;
+  min-width: 0;
+}
+
+.home-biography p {
+  max-width: none;
+}
+
+body:has(.home-columns) .margin-sidebar {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .home-columns {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.75rem;
+    width: min(100%, calc(100vw - 2rem));
+  }
+
+  .home-spacer {
+    display: none;
+  }
+
+  .home-profile {
+    text-align: center;
+  }
+
+  .home-profile .oval-image {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+}
+
+
+/* Render the visible wordmark from the real accessible title text. */
+.navbar .navbar-title {
+  color: transparent !important;
+  background-image:
+    linear-gradient(90deg, var(--scholar-ink) 0 68%, var(--scholar-accent) 68% 100%),
+    linear-gradient(var(--scholar-surface), var(--scholar-surface));
+  background-clip: text, border-box;
+  -webkit-background-clip: text, border-box;
+  font-family: "Bodoni 72", Didot, "Times New Roman", serif;
+  font-size: 1.62rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar .navbar-title::before {
+  content: none;
+}
+
+
+/* Distinguish the site chrome from the page canvas in both themes. */
+body:not(.quarto-dark) .navbar,
+body:not(.quarto-dark) .page-footer,
+body:not(.quarto-dark) .nav-footer {
+  background-color: #dfe4df;
+  border-color: #c3cbc4;
+}
+
+body.quarto-dark .navbar,
+body.quarto-dark .page-footer,
+body.quarto-dark .nav-footer {
+  background-color: #31444e;
+  border-color: #53636c;
+}
+
+
+/* Compact, high-contrast site chrome */
+.navbar {
+  min-height: 0 !important;
+  padding-top: 0.16rem;
+  padding-bottom: 0.16rem;
+}
+
+.navbar .navbar-title {
+  width: 4.85rem;
+  height: 2rem;
+  font-size: 1.42rem;
+}
+
+.navbar .navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.nav-footer {
+  min-height: 0 !important;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+body:not(.quarto-dark) .navbar,
+body:not(.quarto-dark) .nav-footer,
+body:not(.quarto-dark) .page-footer {
+  color: #f5f4ef;
+  background-color: #22272b;
+  border-color: #343a3f;
+}
+
+body:not(.quarto-dark) .navbar .nav-link,
+body:not(.quarto-dark) .navbar .navbar-title,
+body:not(.quarto-dark) .navbar .quarto-navigation-tool,
+body:not(.quarto-dark) .nav-footer,
+body:not(.quarto-dark) .nav-footer a {
+  color: #f5f4ef !important;
+}
+
+body:not(.quarto-dark) .navbar .quarto-navigation-tool .bi::before,
+body:not(.quarto-dark) .navbar .quarto-reader-toggle-btn,
+body:not(.quarto-dark) #quarto-search .aa-DetachedSearchButton,
+body:not(.quarto-dark) #quarto-search .aa-SubmitIcon {
+  color: #f5f4ef !important;
+  fill: #f5f4ef !important;
+}
+
+body:not(.quarto-dark) .navbar .quarto-navigation-tool .bi::before {
+  filter: brightness(0) invert(1);
+}
+
+html:has(body:not(.quarto-dark)) { background-color: #22272b; }
+
+body:not(.quarto-dark) .navbar .navbar-title {
+  background-image:
+    linear-gradient(90deg, #f5f4ef 0 68%, #82c9c2 68% 100%),
+    linear-gradient(#22272b, #22272b);
+  border-color: #f5f4ef;
+  box-shadow:
+    inset 0 0 0 3px #22272b,
+    inset 0 0 0 4px #747d82;
+}
+
+body.quarto-dark .navbar,
+body.quarto-dark .nav-footer,
+body.quarto-dark .page-footer {
+  color: #243447;
+  background-color: #f5f4ef;
+  border-color: #d4d6d2;
+}
+
+body.quarto-dark .navbar .nav-link,
+body.quarto-dark .navbar .navbar-title,
+body.quarto-dark .navbar .quarto-navigation-tool,
+body.quarto-dark .nav-footer,
+body.quarto-dark .nav-footer a {
+  color: #243447 !important;
+}
+
+body.quarto-dark .navbar .quarto-navigation-tool .bi::before,
+body.quarto-dark .navbar .quarto-reader-toggle-btn,
+body.quarto-dark #quarto-search .aa-DetachedSearchButton,
+body.quarto-dark #quarto-search .aa-SubmitIcon {
+  color: #243447 !important;
+  fill: #243447 !important;
+}
+
+body.quarto-dark .navbar .quarto-navigation-tool .bi::before {
+  filter: brightness(0) saturate(100%);
+  opacity: 0.82;
+}
+html:has(body.quarto-dark) { background-color: #f5f4ef; }
+
+.nav-footer {
+  height: auto;
+  min-height: 0 !important;
+  padding: 0.16rem 0.8rem;
+  align-items: center;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+.nav-footer p,
+.nav-footer .footer-items,
+.nav-footer .nav-item { margin-top: 0; margin-bottom: 0; }
+.nav-footer .nav-link { padding-top: 0; padding-bottom: 0; line-height: 1; }
+.nav-footer > div { min-height: 0 !important; display: flex; align-items: center; }
+.nav-footer .footer-items { padding-top: 0; padding-bottom: 0; }
+
+body.quarto-dark .navbar .navbar-title {
+  background-image:
+    linear-gradient(90deg, #243447 0 68%, #286c68 68% 100%),
+    linear-gradient(#f5f4ef, #f5f4ef);
+  border-color: #243447;
+  box-shadow:
+    inset 0 0 0 3px #f5f4ef,
+    inset 0 0 0 4px #9fa6a4;
+}

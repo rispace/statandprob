@@ -86,9 +86,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-d55ad538553833994e65ea0dc4f9e74e.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-6f0648c25d1e330123f9948b207cf87e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-c8f962d185217da7fb63d497bbcee168.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-6f0648c25d1e330123f9948b207cf87e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d4574cdef541e0fa40919a8962586ab1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-8598d2e4dfd393001eb172495299b792.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-d4574cdef541e0fa40919a8962586ab1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -618,7 +618,7 @@ A random number generator is designed by<br>
 
 <p>where <span class="math inline">\(X_0=0, Y_0=1, X_{n+1}=(9X_n+3) \mod 8\)</span> and <span class="math inline">\(Y_{n+1}=3Y_n \mod 7\)</span> for <span class="math inline">\(n=0,1,2,\cdots\)</span>. Calculate <span class="math inline">\(R_0,R_1,R_2, \cdots , R_5.\)</span>. What is the period of the generator <span class="math inline">\(\{R_n\}\)</span>?</p>
 <p><strong>Solution</strong></p>
-<div id="a103d4b3" class="cell">
+<div id="a316b70b" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -644,7 +644,7 @@ A random number generator is designed by<br>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(rand_gen(<span class="dv">4</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>So the unique values are</p>
-<div id="3611fc75" class="cell">
+<div id="f4a7c4f1" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>unique_values <span class="op">=</span> rand_gen(<span class="dv">2</span><span class="op">**</span><span class="dv">10</span>)[<span class="st">"R_values"</span>].unique()</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(unique_values)):</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i,<span class="st">' '</span>,np.<span class="bu">round</span>(unique_values[i],<span class="dv">4</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -656,7 +656,7 @@ A random number generator is designed by<br>
 <p>Write a code that would implement RANDU. For debugging purpose print <span class="math inline">\(x_{1000}\)</span> when the seed is <span class="math inline">\(x_0=1\)</span></p>
 <p><strong>(a)</strong><br>
 Using RANDU generate <span class="math inline">\(u_1,u_2,\cdots, u_{20,002}\)</span> where <span class="math inline">\(u=\frac{x_n}{M}\)</span>. For all triplets in your sequence, <span class="math inline">\(u_i, u_{i+1}, u_{i+2}\)</span>, in which <span class="math inline">\(0.5\le u_{i+1} \le 0.51\)</span> plot <span class="math inline">\(u_i\)</span> versus <span class="math inline">\(u_{i+2}\)</span>. Comment on the pattern of your scatterplot.</p>
-<div id="e376ea6c" class="cell">
+<div id="1ef55dfa" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Set seed</span></span>
@@ -697,7 +697,7 @@ Using RANDU generate <span class="math inline">\(u_1,u_2,\cdots, u_{20,002}\)</s
 </div>
 <p><strong>(b)</strong><br>
 Generate a sequence of lenght 1002. Use a program that plots points in 3 dimensions and rotates the axes to rotate the points until you can see the 15 planes.</p>
-<div id="873060e5" class="cell">
+<div id="cd0f8589" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
@@ -756,7 +756,7 @@ Generate a sequence of lenght 1002. Use a program that plots points in 3 dimensi
 <section id="problem-4-approximation-of-pi-using-monte-carlo-method" class="level4">
 <h4 class="anchored" data-anchor-id="problem-4-approximation-of-pi-using-monte-carlo-method">Problem 4 Approximation of pi using Monte-Carlo Method</h4>
 <p>A circle with radius <span class="math inline">\(r=1\)</span> has the area <span class="math inline">\(A=\pi r^2= \pi\)</span> and a square with length <span class="math inline">\(l=1\)</span> has the area <span class="math inline">\(B=1\)</span>. Now if we consider the following situation, where a quarter of a unit circle is inscribed inside a unit square like this</p>
-<div id="99c9c515" class="cell">
+<div id="91bf9b41" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>num_points <span class="op">=</span> <span class="dv">100</span></span>
@@ -791,7 +791,7 @@ Generate a sequence of lenght 1002. Use a program that plots points in 3 dimensi
 <p style="text-align: justify">
 The above relation tells us some interesting fact. If we uniformly create as many points as possible inside the square then the number of points inside the circle will be approximately 4 times the number of the points outside the circular region.
 </p>
-<div id="309241b7" class="cell">
+<div id="e4c25cab" class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> monte_carlo_pi(n):</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    inside_circle <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -943,17 +943,45 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   document.querySelectorAll('.bibtex-copy').forEach(function (button) {
-    button.addEventListener('click', async function () {
+    button.addEventListener('click', function () {
       const source = document.getElementById(button.dataset.copyTarget);
       if (!source) return;
-      try {
-        await navigator.clipboard.writeText(source.textContent.trim());
-        const previous = button.textContent;
-        button.textContent = 'Copied';
-        setTimeout(function () { button.textContent = previous; }, 1600);
-      } catch (error) {
-        button.textContent = 'Select and copy above';
+      const citation = source.textContent.trim();
+      const previous = button.textContent;
+      button.textContent = 'Copied';
+
+      const fallbackCopy = function () {
+        const field = document.createElement('textarea');
+        field.value = citation;
+        field.style.position = 'fixed';
+        field.style.opacity = '0';
+        document.body.appendChild(field);
+        field.select();
+        document.execCommand('copy');
+        field.remove();
+      };
+
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(citation).catch(fallbackCopy);
+      } else {
+        fallbackCopy();
       }
+      setTimeout(function () { button.textContent = previous; }, 1600);
+    });
+  });
+
+  document.querySelectorAll('.bibtex-dropdown').forEach(function (details) {
+    details.addEventListener('toggle', function () {
+      if (!details.open) return;
+      document.querySelectorAll('.bibtex-dropdown[open]').forEach(function (other) {
+        if (other !== details) other.removeAttribute('open');
+      });
+    });
+  });
+
+  document.addEventListener('click', function (event) {
+    document.querySelectorAll('.bibtex-dropdown[open]').forEach(function (details) {
+      if (!details.contains(event.target)) details.removeAttribute('open');
     });
   });
 });

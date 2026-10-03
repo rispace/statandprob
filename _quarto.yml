@@ -87,7 +87,10 @@ format:
     css: styles.css
     toc: true
     grid: 
-      sidebar-width: 330px
+      sidebar-width: 245px
+      body-width: 1050px
+      margin-width: 80px
+      gutter-width: 1.5rem
     code-copy: true
     code-overflow: scroll
     code-line-numbers: false
