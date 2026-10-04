@@ -91,6 +91,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/bootstrap/bootstrap-d4574cdef541e0fa40919a8962586ab1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -469,7 +472,7 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(29)</span></div><div class="category" data-category="QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZQ==">Artificial Intelligence <span class="quarto-category-count">(2)</span></div><div class="category" data-category="QmF5ZXNpYW4lMjBJbmZlcmVuY2U=">Bayesian Inference <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QmF5ZXNpYW4lMjBTdGF0aXN0aWNz">Bayesian Statistics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q29tcHV0YXRpb25hbCUyME1hdGhlbWF0aWNz">Computational Mathematics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyMFNjaWVuY2U=">Data Science <span class="quarto-category-count">(4)</span></div><div class="category" data-category="TWFjaGluZSUyMExlYXJuaW5n">Machine Learning <span class="quarto-category-count">(3)</span></div><div class="category" data-category="TnVtYmVyJTIwVGhlb3J5">Number Theory <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHJvYmFiaWxpdHk=">Probability <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U3RhdGlzdGljcw==">Statistics <span class="quarto-category-count">(5)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(27)</span></div><div class="category" data-category="QXJ0aWZpY2lhbCUyMEludGVsbGlnZW5jZQ==">Artificial Intelligence <span class="quarto-category-count">(2)</span></div><div class="category" data-category="QmF5ZXNpYW4lMjBJbmZlcmVuY2U=">Bayesian Inference <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QmF5ZXNpYW4lMjBTdGF0aXN0aWNz">Bayesian Statistics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q29tcHV0YXRpb25hbCUyME1hdGhlbWF0aWNz">Computational Mathematics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyMFNjaWVuY2U=">Data Science <span class="quarto-category-count">(4)</span></div><div class="category" data-category="TWFjaGluZSUyMExlYXJuaW5n">Machine Learning <span class="quarto-category-count">(3)</span></div><div class="category" data-category="TnVtYmVyJTIwVGhlb3J5">Number Theory <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHJvYmFiaWxpdHk=">Probability <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U3RhdGlzdGljcw==">Statistics <span class="quarto-category-count">(5)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -528,7 +531,7 @@ window.Quarto = {
 <li>For <span class="math inline">\(t &gt; s\)</span>, <span class="math inline">\(B_t - B_s \sim N(0, t-s)\)</span> (normally distributed with mean 0 and variance <span class="math inline">\(t-s\)</span>).</li>
 <li><span class="math inline">\(B_t\)</span> has continuous paths almost surely.</li>
 </ul>
-<div id="429f0c48" class="cell">
+<div id="e27e0e4e" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> mywebstyle <span class="im">import</span> plot_style</span>
@@ -574,6 +577,13 @@ window.Quarto = {
 <span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
 <span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="index_files/figure-html/cell-2-output-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="index_files/figure-html/cell-2-output-1.png" width="743" height="358" class="figure-img"></a></p>
+</figure>
+</div>
+</div>
 </div>
 <p><strong>Geometric Brownian Motion (GBM)</strong><br>
 A stochastic process <span class="math inline">\(S_t\)</span> is said to follow a geometric Brownian motion if it satisfies the following equation:<br>
@@ -778,7 +788,7 @@ d_1 = \frac{\ln(\frac{S}{K}) + (r - q + \frac{\sigma^2}{2})T}{\sigma \sqrt{T}}, 
 <li><span class="math inline">\(\sigma\)</span>: Volatility of the stock.</li>
 <li><span class="math inline">\(N(\cdot)\)</span>: Cumulative distribution function of the standard normal distribution.</li>
 </ul>
-<div id="27fdb639" class="cell">
+<div id="a73cfa61" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dataclasses <span class="im">import</span> dataclass</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> norm</span>
@@ -890,7 +900,7 @@ d_1 = \frac{\ln(\frac{S}{K}) + (r - q + \frac{\sigma^2}{2})T}{\sigma \sqrt{T}}, 
 <p style="text-align: justify">
 Say, we want to price a call option on an equity with spot price <span class="math inline">\(S_0 = 450\)</span> with dividend yield <span class="math inline">\(q=1.4\%\)</span>, and volatility <span class="math inline">\(14\%\)</span>. The strike price of the call is <span class="math inline">\(K=470\)</span>, with time to maturity in years <span class="math inline">\(T=0.23\)</span> and the risk free rate <span class="math inline">\(r = 0.05\)</span>.<br> <br> Next, we want to see the asymptotic behavior of the call option if the strike price <span class="math inline">\(K\rightarrow 0\)</span> with interest rate 0.<br> <br> Next, we want to price a put option on the same equity but strike price <span class="math inline">\(K=500\)</span>, time to maturity in years <span class="math inline">\(T=0.26\)</span> and interest rate is 0.<br> <br> Finally, we want to check if the put-call parity relationship is hold. <br> <br> In each case, we consider <span class="math inline">\(h=0.01\)</span> a bump or small change in the stock price.
 </p>
-<div id="ac003f33" class="cell">
+<div id="6ca61936" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    eq <span class="op">=</span> Equity(<span class="dv">450</span>, <span class="fl">0.014</span>, <span class="fl">0.14</span>)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    option_call <span class="op">=</span> EquityOption(<span class="dv">470</span>, <span class="fl">0.23</span>, <span class="st">"call"</span>)</span>
@@ -905,6 +915,12 @@ Say, we want to price a call option on an equity with spot price <span class="ma
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    option_call <span class="op">=</span> EquityOption(<span class="dv">470</span>, <span class="fl">0.26</span>, <span class="st">"call"</span>)</span>
 <span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    option_put <span class="op">=</span> EquityOption(<span class="dv">470</span>, <span class="fl">0.26</span>, <span class="st">"put"</span>)</span>
 <span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(check_put_call_parity(eq, option_call, option_put, <span class="fl">0.05</span>)) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>5.834035584709994
+450
+50.0
+True</code></pre>
+</div>
 </div>
 </section>
 </section>
@@ -1029,23 +1045,49 @@ Islam, Rafiq. 2023. <span>“Pricing Derivatives Using
 Black-Scholes-Merton Model.”</span> November 12. <a href="https://rispace.github.io/posts/optionprice/">https://rispace.github.io/posts/optionprice/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script>
-// Keep navbar and in-page navigation in the current tab; open content links separately.
+// Internal navigation stays in the current tab.
+// External links open in a new tab.
 document.addEventListener("DOMContentLoaded", function () {
+
   document.querySelectorAll('a[href]').forEach(function (link) {
     const href = link.getAttribute('href');
-    if (link.closest('.navbar')) {
+
+    if (
+      !href ||
+      href.startsWith('#') ||
+      href.startsWith('javascript:')
+    ) {
+      return;
+    }
+
+    // Email and telephone links do not need a new browser tab
+    if (href.startsWith('mailto:') || href.startsWith('tel:')) {
       link.removeAttribute('target');
-      link.removeAttribute('rel');
-    } else if (href && !href.startsWith('#') && !href.startsWith('javascript:')) {
-      link.setAttribute('target', '_blank');
-      link.setAttribute('rel', 'noopener noreferrer');
+      return;
+    }
+
+    try {
+      const url = new URL(href, window.location.href);
+      const isExternal = url.origin !== window.location.origin;
+
+      if (isExternal) {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+      } else {
+        link.removeAttribute('target');
+        link.removeAttribute('rel');
+      }
+    } catch (e) {
+      // Leave unusual links untouched
     }
   });
+
 
   document.querySelectorAll('.bibtex-copy').forEach(function (button) {
     button.addEventListener('click', function () {
       const source = document.getElementById(button.dataset.copyTarget);
       if (!source) return;
+
       const citation = source.textContent.trim();
       const previous = button.textContent;
       button.textContent = 'Copied';
@@ -1066,24 +1108,33 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         fallbackCopy();
       }
-      setTimeout(function () { button.textContent = previous; }, 1600);
+
+      setTimeout(function () {
+        button.textContent = previous;
+      }, 1600);
     });
   });
+
 
   document.querySelectorAll('.bibtex-dropdown').forEach(function (details) {
     details.addEventListener('toggle', function () {
       if (!details.open) return;
+
       document.querySelectorAll('.bibtex-dropdown[open]').forEach(function (other) {
         if (other !== details) other.removeAttribute('open');
       });
     });
   });
 
+
   document.addEventListener('click', function (event) {
     document.querySelectorAll('.bibtex-dropdown[open]').forEach(function (details) {
-      if (!details.contains(event.target)) details.removeAttribute('open');
+      if (!details.contains(event.target)) {
+        details.removeAttribute('open');
+      }
     });
   });
+
 });
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1550,563 +1601,563 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Pricing Derivatives Using Black-Scholes-Merton Model"</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "11/12/2023"</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> Rafiq Islam</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [Programming, Finance, Financial Mathematics, Pricing, Hedging]</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="an">citation:</span><span class="co"> true</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="an">search:</span><span class="co"> true</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> bsm.png</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="an">lightbox:</span><span class="co"> true</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="an">listing:</span><span class="co"> </span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">    contents: "/../../posts"</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co">    max-items: 3</span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co">    type: grid</span></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co">    categories: true</span></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co">    date-format: full</span></span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="co">    fields: [image, date, title, author, reading-time]</span></span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="co">    html: default</span></span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="co">    ipynb: default</span></span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="co">    docx: </span></span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="co">      toc: true</span></span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="co">      adsense:</span></span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="co">        enable-ads: false</span></span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="co">    epub:</span></span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="co">      toc: true</span></span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="co">      adsense:</span></span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a><span class="co">        enable-ads: false</span></span>
-<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a><span class="co">    pdf: </span></span>
-<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a><span class="co">      toc: true</span></span>
-<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a><span class="co">      pdf-engine: pdflatex</span></span>
-<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a><span class="co">      adsense:</span></span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a><span class="co">        enable-ads: false</span></span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a><span class="co">      number-sections: false</span></span>
-<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a><span class="co">      colorlinks: true</span></span>
-<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a><span class="co">      cite-method: biblatex</span></span>
-<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a><span class="an">toc-depth:</span><span class="co"> 4</span></span>
-<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a><span class="co">---</span>   </span>
-<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introduction</span></span>
-<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>In this blog, we will explore how to price simple equity derivatives using the Black-Scholes-Merton (BSM) model. We will derive the mathematical formula and then provide Python code to implement it.   </span>
-<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a><span class="fu">### Background and Preliminaries  </span></span>
-<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>Before proceeding to the deep of the discussion, we need to know some definition and terminology </span>
-<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> style</span><span class="op">=</span><span class="st">"text-align: justify"</span><span class="dt">&gt;</span></span>
-<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>**Brownian Motion:**  Brownian motion is a concept with definitions and applications across various disciplines, named after the botanist Robert Brown, is the random, erratic movement of particles suspended in a fluid (liquid or gas) due to their collisions with the fast-moving molecules of the fluid.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span>  </span>
-<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>*Brownian motion is a stochastic process $(B_t)_{t \geq 0}$ defined as a continuous-time process with the following properties:*  </span>
-<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$B_0 = 0$ almost surely.</span>
-<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$B_t$ has independent increments.</span>
-<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>For $t &gt; s$, $B_t - B_s \sim N(0, t-s)$ (normally distributed with mean 0 and variance $t-s$).</span>
-<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$B_t$ has continuous paths almost surely.  </span>
-<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a><span class="co">#| code-fold: true</span></span>
-<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> mywebstyle <span class="im">import</span> plot_style</span>
-<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a>plot_style(<span class="st">'#f4f4f4'</span>)</span>
-<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a><span class="co"># Parameters</span></span>
-<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a>n_steps <span class="op">=</span> <span class="dv">100</span>  <span class="co"># Number of steps</span></span>
-<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a>n_paths <span class="op">=</span> <span class="dv">20</span>   <span class="co"># Number of paths</span></span>
-<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a>time_horizon <span class="op">=</span> <span class="dv">1</span>  <span class="co"># Total time</span></span>
-<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> time_horizon <span class="op">/</span> n_steps  <span class="co"># Time step</span></span>
-<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> np.linspace(<span class="dv">0</span>, time_horizon, n_steps)  <span class="co"># Time array</span></span>
-<span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-72"><a href="#cb4-72" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Brownian motion</span></span>
-<span id="cb4-73"><a href="#cb4-73" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> generate_brownian_paths(n_paths, n_steps, dt):</span>
-<span id="cb4-74"><a href="#cb4-74" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Standard normal increments scaled by sqrt(dt)</span></span>
-<span id="cb4-75"><a href="#cb4-75" aria-hidden="true" tabindex="-1"></a>    increments <span class="op">=</span> np.random.normal(<span class="dv">0</span>, np.sqrt(dt), (n_paths, n_steps))</span>
-<span id="cb4-76"><a href="#cb4-76" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Cumulative sum to generate paths</span></span>
-<span id="cb4-77"><a href="#cb4-77" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.cumsum(increments, axis<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb4-78"><a href="#cb4-78" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-79"><a href="#cb4-79" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate one path and multiple paths</span></span>
-<span id="cb4-80"><a href="#cb4-80" aria-hidden="true" tabindex="-1"></a>single_path <span class="op">=</span> generate_brownian_paths(<span class="dv">1</span>, n_steps, dt)[<span class="dv">0</span>]</span>
-<span id="cb4-81"><a href="#cb4-81" aria-hidden="true" tabindex="-1"></a>multiple_paths <span class="op">=</span> generate_brownian_paths(n_paths, n_steps, dt)</span>
-<span id="cb4-82"><a href="#cb4-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-83"><a href="#cb4-83" aria-hidden="true" tabindex="-1"></a><span class="co"># Plotting</span></span>
-<span id="cb4-84"><a href="#cb4-84" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="fl">7.9</span>, <span class="fl">3.9</span>))</span>
-<span id="cb4-85"><a href="#cb4-85" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-86"><a href="#cb4-86" aria-hidden="true" tabindex="-1"></a><span class="co"># Single path</span></span>
-<span id="cb4-87"><a href="#cb4-87" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].plot(t, single_path, label<span class="op">=</span><span class="st">"Single Path"</span>)</span>
-<span id="cb4-88"><a href="#cb4-88" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].set_title(<span class="st">"Brownian Motion: Single Path"</span>)</span>
-<span id="cb4-89"><a href="#cb4-89" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].set_xlabel(<span class="st">"Time"</span>)</span>
-<span id="cb4-90"><a href="#cb4-90" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].set_ylabel(<span class="st">"Position"</span>)</span>
-<span id="cb4-91"><a href="#cb4-91" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].legend()</span>
-<span id="cb4-92"><a href="#cb4-92" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-93"><a href="#cb4-93" aria-hidden="true" tabindex="-1"></a><span class="co"># Multiple paths</span></span>
-<span id="cb4-94"><a href="#cb4-94" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> path <span class="kw">in</span> multiple_paths:</span>
-<span id="cb4-95"><a href="#cb4-95" aria-hidden="true" tabindex="-1"></a>    axes[<span class="dv">1</span>].plot(t, path, alpha<span class="op">=</span><span class="fl">0.5</span>, linewidth<span class="op">=</span><span class="fl">0.8</span>)</span>
-<span id="cb4-96"><a href="#cb4-96" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].set_title(<span class="ss">f"Brownian Motion: </span><span class="sc">{</span>n_paths<span class="sc">}</span><span class="ss"> Paths"</span>)</span>
-<span id="cb4-97"><a href="#cb4-97" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].set_xlabel(<span class="st">"Time"</span>)</span>
-<span id="cb4-98"><a href="#cb4-98" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].set_ylabel(<span class="st">"Position"</span>)</span>
-<span id="cb4-99"><a href="#cb4-99" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-100"><a href="#cb4-100" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb4-101"><a href="#cb4-101" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb4-102"><a href="#cb4-102" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-103"><a href="#cb4-103" aria-hidden="true" tabindex="-1"></a><span class="in">```</span>    </span>
-<span id="cb4-104"><a href="#cb4-104" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-105"><a href="#cb4-105" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-106"><a href="#cb4-106" aria-hidden="true" tabindex="-1"></a>**Geometric Brownian Motion (GBM)**  </span>
-<span id="cb4-107"><a href="#cb4-107" aria-hidden="true" tabindex="-1"></a>A stochastic process $S_t$ is said to follow a geometric Brownian motion if it satisfies the following equation:  </span>
-<span id="cb4-108"><a href="#cb4-108" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-109"><a href="#cb4-109" aria-hidden="true" tabindex="-1"></a>dS_t = \mu S_t dt+\sigma S_t dB_t</span>
-<span id="cb4-110"><a href="#cb4-110" aria-hidden="true" tabindex="-1"></a>$$  </span>
-<span id="cb4-111"><a href="#cb4-111" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-112"><a href="#cb4-112" aria-hidden="true" tabindex="-1"></a>Which can be written as  </span>
-<span id="cb4-113"><a href="#cb4-113" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-114"><a href="#cb4-114" aria-hidden="true" tabindex="-1"></a>S_t - S_0 =\int_0^t \mu S_u du + \int_0^t \sigma S_u dB_u</span>
-<span id="cb4-115"><a href="#cb4-115" aria-hidden="true" tabindex="-1"></a>$$  </span>
-<span id="cb4-116"><a href="#cb4-116" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-117"><a href="#cb4-117" aria-hidden="true" tabindex="-1"></a>To solve the GBM, we apply Ito's formula to the function $Z_t = f(t, S_t)= \ln(S_t)$ and then by Taylor's expansion, we have </span>
-<span id="cb4-118"><a href="#cb4-118" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-119"><a href="#cb4-119" aria-hidden="true" tabindex="-1"></a>\begin{align*}</span>
-<span id="cb4-120"><a href="#cb4-120" aria-hidden="true" tabindex="-1"></a>df &amp; = \frac{\partial f}{\partial t}dt+ \frac{\partial f}{\partial s}dS_t + \frac{1}{2} \frac{\partial ^2f}{\partial s^2}(dS_t)^2+\frac{1}{2}\frac{\partial ^2f}{\partial s^2}(dt)^2+\frac{\partial^2 f}{\partial t\partial s}dtdS_t</span>
-<span id="cb4-121"><a href="#cb4-121" aria-hidden="true" tabindex="-1"></a>\end{align*}  </span>
-<span id="cb4-122"><a href="#cb4-122" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-123"><a href="#cb4-123" aria-hidden="true" tabindex="-1"></a>By definition we have </span>
-<span id="cb4-124"><a href="#cb4-124" aria-hidden="true" tabindex="-1"></a>\begin{align*}</span>
-<span id="cb4-125"><a href="#cb4-125" aria-hidden="true" tabindex="-1"></a>dS_t &amp;= \mu S_t dt+\sigma S_t dB_t<span class="sc">\\</span></span>
-<span id="cb4-126"><a href="#cb4-126" aria-hidden="true" tabindex="-1"></a>(dS_t)^2 &amp; = \mu^2 (dt)^2+2\mu \sigma dt dB_t + \sigma^2 (dB_t)^2</span>
-<span id="cb4-127"><a href="#cb4-127" aria-hidden="true" tabindex="-1"></a>\end{align*}  </span>
-<span id="cb4-128"><a href="#cb4-128" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-129"><a href="#cb4-129" aria-hidden="true" tabindex="-1"></a>The term $(dt)^2$ is negligible compared to the term $dt$ and it is also assume that the product $dtdB_t$ is negligible. Furthermore, the quadratic variation of $B_t$ i.e., $(dB_t)^2= dt$. With these values, we obtain </span>
-<span id="cb4-130"><a href="#cb4-130" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-131"><a href="#cb4-131" aria-hidden="true" tabindex="-1"></a>\begin{align*}</span>
-<span id="cb4-132"><a href="#cb4-132" aria-hidden="true" tabindex="-1"></a>dZ_t &amp; = \frac{1}{S_t} dS_t + \frac{1}{2} \left<span class="sc">\{</span>-\frac{1}{S_t^2}\right<span class="sc">\}</span><span class="co">[</span><span class="ot">dS_t</span><span class="co">]</span>^2<span class="sc">\\</span></span>
-<span id="cb4-133"><a href="#cb4-133" aria-hidden="true" tabindex="-1"></a>&amp; =  \frac{1}{S_t} (\mu S_t dt+\sigma S_t dB_t) + \frac{1}{2} \left<span class="sc">\{</span>-\frac{1}{S_t^2}\right<span class="sc">\}</span>\sigma^2S_t^2dt<span class="sc">\\</span></span>
-<span id="cb4-134"><a href="#cb4-134" aria-hidden="true" tabindex="-1"></a>\implies dZ_t &amp;= (\mu dt +\sigma dB_t) -\frac{1}{2}\sigma^2 dt<span class="sc">\\</span></span>
-<span id="cb4-135"><a href="#cb4-135" aria-hidden="true" tabindex="-1"></a>&amp; = \left(\mu-\frac{1}{2}\sigma^2\right)dt+\sigma dB_t</span>
-<span id="cb4-136"><a href="#cb4-136" aria-hidden="true" tabindex="-1"></a>\end{align*}  </span>
-<span id="cb4-137"><a href="#cb4-137" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-138"><a href="#cb4-138" aria-hidden="true" tabindex="-1"></a>with $Z_0=\ln S_0$. Now we have the following  </span>
-<span id="cb4-139"><a href="#cb4-139" aria-hidden="true" tabindex="-1"></a>\begin{align*}</span>
-<span id="cb4-140"><a href="#cb4-140" aria-hidden="true" tabindex="-1"></a>\int_0^t dZ_s &amp;= \int_0^t \left(\mu-\frac{1}{2}\sigma^2\right)ds + \int_0^t\sigma dB_s<span class="sc">\\</span></span>
-<span id="cb4-141"><a href="#cb4-141" aria-hidden="true" tabindex="-1"></a>\implies Z_t - Z_0 &amp;= \left(\mu-\frac{1}{2}\sigma^2\right)t + \sigma B_t<span class="sc">\\</span></span>
-<span id="cb4-142"><a href="#cb4-142" aria-hidden="true" tabindex="-1"></a>\implies \ln S_t - \ln S_0&amp;= \left(\mu-\frac{1}{2}\sigma^2\right)t + \sigma B_t<span class="sc">\\</span></span>
-<span id="cb4-143"><a href="#cb4-143" aria-hidden="true" tabindex="-1"></a>\implies \ln \left(\frac{S_t}{S_0}\right) &amp;= \left(\mu-\frac{1}{2}\sigma^2\right)t + \sigma B_t<span class="sc">\\</span></span>
-<span id="cb4-144"><a href="#cb4-144" aria-hidden="true" tabindex="-1"></a>\implies S_t &amp;= S_0 \exp{\left<span class="sc">\{</span>\left(\mu-\frac{1}{2}\sigma^2\right)t + \sigma B_t\right<span class="sc">\}</span>}</span>
-<span id="cb4-145"><a href="#cb4-145" aria-hidden="true" tabindex="-1"></a>\end{align*}</span>
-<span id="cb4-146"><a href="#cb4-146" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-147"><a href="#cb4-147" aria-hidden="true" tabindex="-1"></a><span class="fu">## Black-Scholes-Merton Formula  </span></span>
-<span id="cb4-148"><a href="#cb4-148" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-149"><a href="#cb4-149" aria-hidden="true" tabindex="-1"></a>Now we are ready to derive the BSM PDE. The payoff of an *option* $V(S,T)$ at maturity is is known. To find the value at an earlier stage, we need to know how V behaves as a function of $S$ and $t$. By Ito's lemma we have </span>
-<span id="cb4-150"><a href="#cb4-150" aria-hidden="true" tabindex="-1"></a>\begin{align*}</span>
-<span id="cb4-151"><a href="#cb4-151" aria-hidden="true" tabindex="-1"></a>dV&amp; = \left(\mu S\frac{\partial V}{\partial S}+\frac{\partial V}{\partial t}+\frac{1}{2}\sigma^2S^2\frac{\partial^2 V}{\partial S^2}\right)dt+\sigma S\frac{\partial V}{\partial S}dB.</span>
-<span id="cb4-152"><a href="#cb4-152" aria-hidden="true" tabindex="-1"></a>\end{align*}  </span>
-<span id="cb4-153"><a href="#cb4-153" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-154"><a href="#cb4-154" aria-hidden="true" tabindex="-1"></a>Now let's consider a portfolio consisting of a short one option and long $\frac{\partial V}{\partial S}$ shares at time $t$. The value of this portfolio is </span>
-<span id="cb4-155"><a href="#cb4-155" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-156"><a href="#cb4-156" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-157"><a href="#cb4-157" aria-hidden="true" tabindex="-1"></a>\Pi = -V+\frac{\partial V}{\partial S}S</span>
-<span id="cb4-158"><a href="#cb4-158" aria-hidden="true" tabindex="-1"></a>$$  </span>
-<span id="cb4-159"><a href="#cb4-159" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-160"><a href="#cb4-160" aria-hidden="true" tabindex="-1"></a>over the time $<span class="co">[</span><span class="ot">t,t+\Delta t</span><span class="co">]</span>$, the total profit or loss from the changes in the values of the portfolio is </span>
-<span id="cb4-161"><a href="#cb4-161" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-162"><a href="#cb4-162" aria-hidden="true" tabindex="-1"></a>\Delta \Pi = -\Delta V + \frac{\partial V}{\partial S}\Delta S</span>
-<span id="cb4-163"><a href="#cb4-163" aria-hidden="true" tabindex="-1"></a>$$  </span>
-<span id="cb4-164"><a href="#cb4-164" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-165"><a href="#cb4-165" aria-hidden="true" tabindex="-1"></a>Now by the discretization we have, </span>
-<span id="cb4-166"><a href="#cb4-166" aria-hidden="true" tabindex="-1"></a>\begin{align*}</span>
-<span id="cb4-167"><a href="#cb4-167" aria-hidden="true" tabindex="-1"></a>\Delta S &amp;= \mu S \Delta t +\sigma S \Delta B<span class="sc">\\</span></span>
-<span id="cb4-168"><a href="#cb4-168" aria-hidden="true" tabindex="-1"></a>\Delta V &amp; = \left(\mu S\frac{\partial V}{\partial S}+\frac{\partial V}{\partial t}+\frac{1}{2}\sigma^2S^2\frac{\partial^2 V}{\partial S^2}\right)\Delta t+\sigma S\frac{\partial V}{\partial S}\Delta B<span class="sc">\\</span></span>
-<span id="cb4-169"><a href="#cb4-169" aria-hidden="true" tabindex="-1"></a>\implies \Delta \Pi  &amp; = \left(-\frac{\partial V}{\partial t} -\frac{1}{2}\sigma^2S^2\frac{\partial^2 V}{\partial S^2}\right)\Delta t</span>
-<span id="cb4-170"><a href="#cb4-170" aria-hidden="true" tabindex="-1"></a>\end{align*}</span>
-<span id="cb4-171"><a href="#cb4-171" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-172"><a href="#cb4-172" aria-hidden="true" tabindex="-1"></a>At this point, if $r$ is the risk-free interest rate then we will have following relationship </span>
-<span id="cb4-173"><a href="#cb4-173" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-174"><a href="#cb4-174" aria-hidden="true" tabindex="-1"></a>r\Pi \Delta t = \Delta \Pi </span>
-<span id="cb4-175"><a href="#cb4-175" aria-hidden="true" tabindex="-1"></a>$$ </span>
-<span id="cb4-176"><a href="#cb4-176" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-177"><a href="#cb4-177" aria-hidden="true" tabindex="-1"></a>The rationale of this relation is that no-aribtrage assumption. Thus, we have  </span>
-<span id="cb4-178"><a href="#cb4-178" aria-hidden="true" tabindex="-1"></a>\begin{align*}</span>
-<span id="cb4-179"><a href="#cb4-179" aria-hidden="true" tabindex="-1"></a>\left(-\frac{\partial V}{\partial t} -\frac{1}{2}\sigma^2S^2\frac{\partial^2 V}{\partial S^2}\right)\Delta t &amp; = r \left(- V + \frac{\partial V}{\partial S} S\right)\Delta t <span class="sc">\\</span></span>
-<span id="cb4-180"><a href="#cb4-180" aria-hidden="true" tabindex="-1"></a>\implies \frac{\partial V}{\partial t} + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} + rS \frac{\partial V}{\partial S} -rV &amp;=0</span>
-<span id="cb4-181"><a href="#cb4-181" aria-hidden="true" tabindex="-1"></a>\end{align*}  </span>
-<span id="cb4-182"><a href="#cb4-182" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-183"><a href="#cb4-183" aria-hidden="true" tabindex="-1"></a>This is the famous Black-Scholes-Merton PDF, formally written with the boundary conditions as follows  </span>
-<span id="cb4-184"><a href="#cb4-184" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-185"><a href="#cb4-185" aria-hidden="true" tabindex="-1"></a>\begin{align*}</span>
-<span id="cb4-186"><a href="#cb4-186" aria-hidden="true" tabindex="-1"></a>\frac{\partial c}{\partial t} + \frac{1}{2} \sigma^2 c^2 \frac{\partial^2 c}{\partial S^2} + rc \frac{\partial c}{\partial S} -rc &amp;=0<span class="sc">\\</span></span>
-<span id="cb4-187"><a href="#cb4-187" aria-hidden="true" tabindex="-1"></a>c(0,t) &amp;= 0<span class="sc">\\</span> </span>
-<span id="cb4-188"><a href="#cb4-188" aria-hidden="true" tabindex="-1"></a>c(S_{+\infty}, t) &amp;= S - Ke^{-r(T-t)}<span class="sc">\\</span></span>
-<span id="cb4-189"><a href="#cb4-189" aria-hidden="true" tabindex="-1"></a>c(S,T) &amp; = max<span class="sc">\{</span>S-K,0<span class="sc">\}</span></span>
-<span id="cb4-190"><a href="#cb4-190" aria-hidden="true" tabindex="-1"></a>\end{align*}  </span>
-<span id="cb4-191"><a href="#cb4-191" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-192"><a href="#cb4-192" aria-hidden="true" tabindex="-1"></a>This Black-Scholes-Merton PDE can be reduced to the heat equation using the substitutions $S = K e^x$, $t = T - \frac{\tau}{\frac{1}{2} \sigma^2}$, and $c(S, t) = K v(x, \tau)$. Let’s derive the solution step by step in full mathematical detail and show how this leads to the normal CDF.</span>
-<span id="cb4-193"><a href="#cb4-193" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-194"><a href="#cb4-194" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Step 1: Substitutions</span></span>
-<span id="cb4-195"><a href="#cb4-195" aria-hidden="true" tabindex="-1"></a>We aim to reduce the BSM PDE:</span>
-<span id="cb4-196"><a href="#cb4-196" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-197"><a href="#cb4-197" aria-hidden="true" tabindex="-1"></a>\frac{\partial c}{\partial t} + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 c}{\partial S^2} + r S \frac{\partial c}{\partial S} - r c = 0</span>
-<span id="cb4-198"><a href="#cb4-198" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-199"><a href="#cb4-199" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-200"><a href="#cb4-200" aria-hidden="true" tabindex="-1"></a>to the heat equation. Using the substitutions:</span>
-<span id="cb4-201"><a href="#cb4-201" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-202"><a href="#cb4-202" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$S = K e^x$, where $x = \ln(S / K)$, and $S \in (0, \infty)$ maps $x \in (-\infty, \infty)$,</span>
-<span id="cb4-203"><a href="#cb4-203" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$t = T - \frac{\tau}{\frac{1}{2} \sigma^2}$, so $\tau = \frac{1}{2} \sigma^2 (T - t)$,</span>
-<span id="cb4-204"><a href="#cb4-204" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$c(S, t) = K v(x, \tau)$, where $v(x, \tau)$ is the transformed function.</span>
-<span id="cb4-205"><a href="#cb4-205" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-206"><a href="#cb4-206" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Step 2: Derivative Transformations</span></span>
-<span id="cb4-207"><a href="#cb4-207" aria-hidden="true" tabindex="-1"></a>For $c(S, t) = K v(x, \tau)$, we compute derivatives.</span>
-<span id="cb4-208"><a href="#cb4-208" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-209"><a href="#cb4-209" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>The first derivative of $c$ with respect to $S$:</span>
-<span id="cb4-210"><a href="#cb4-210" aria-hidden="true" tabindex="-1"></a>   $$</span>
-<span id="cb4-211"><a href="#cb4-211" aria-hidden="true" tabindex="-1"></a>   \frac{\partial c}{\partial S} = \frac{\partial}{\partial S} \big(K v(x, \tau)\big) = K \frac{\partial v}{\partial x} \frac{\partial x}{\partial S},</span>
-<span id="cb4-212"><a href="#cb4-212" aria-hidden="true" tabindex="-1"></a>   $$</span>
-<span id="cb4-213"><a href="#cb4-213" aria-hidden="true" tabindex="-1"></a>   where $x = \ln(S / K)$ implies $\frac{\partial x}{\partial S} = \frac{1}{S}$. Thus:</span>
-<span id="cb4-214"><a href="#cb4-214" aria-hidden="true" tabindex="-1"></a>   $$</span>
-<span id="cb4-215"><a href="#cb4-215" aria-hidden="true" tabindex="-1"></a>   \frac{\partial c}{\partial S} = K \frac{\partial v}{\partial x} \frac{1}{S}.</span>
-<span id="cb4-216"><a href="#cb4-216" aria-hidden="true" tabindex="-1"></a>   $$</span>
-<span id="cb4-217"><a href="#cb4-217" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-218"><a href="#cb4-218" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>The second derivative of $c$ with respect to $S$:</span>
-<span id="cb4-219"><a href="#cb4-219" aria-hidden="true" tabindex="-1"></a>   $$</span>
-<span id="cb4-220"><a href="#cb4-220" aria-hidden="true" tabindex="-1"></a>   \frac{\partial^2 c}{\partial S^2} = \frac{\partial}{\partial S} \left( K \frac{\partial v}{\partial x} \frac{1}{S} \right).</span>
-<span id="cb4-221"><a href="#cb4-221" aria-hidden="true" tabindex="-1"></a>   $$</span>
-<span id="cb4-222"><a href="#cb4-222" aria-hidden="true" tabindex="-1"></a>   Using the product rule:</span>
-<span id="cb4-223"><a href="#cb4-223" aria-hidden="true" tabindex="-1"></a>   $$</span>
-<span id="cb4-224"><a href="#cb4-224" aria-hidden="true" tabindex="-1"></a>   \frac{\partial^2 c}{\partial S^2} = K \frac{\partial^2 v}{\partial x^2} \frac{1}{S^2} - K \frac{\partial v}{\partial x} \frac{1}{S^2}.</span>
-<span id="cb4-225"><a href="#cb4-225" aria-hidden="true" tabindex="-1"></a>   $$</span>
-<span id="cb4-226"><a href="#cb4-226" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-227"><a href="#cb4-227" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>The time derivative:</span>
-<span id="cb4-228"><a href="#cb4-228" aria-hidden="true" tabindex="-1"></a>   $$</span>
-<span id="cb4-229"><a href="#cb4-229" aria-hidden="true" tabindex="-1"></a>   \frac{\partial c}{\partial t} = K \frac{\partial v}{\partial \tau} \frac{\partial \tau}{\partial t}, \quad \text{and } \frac{\partial \tau}{\partial t} = -\frac{1}{\frac{1}{2} \sigma^2}.</span>
-<span id="cb4-230"><a href="#cb4-230" aria-hidden="true" tabindex="-1"></a>   $$</span>
-<span id="cb4-231"><a href="#cb4-231" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-232"><a href="#cb4-232" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Step 3: Transforming the PDE</span></span>
-<span id="cb4-233"><a href="#cb4-233" aria-hidden="true" tabindex="-1"></a>Substituting the above derivatives into the BSM PDE, we rewrite each term.</span>
-<span id="cb4-234"><a href="#cb4-234" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-235"><a href="#cb4-235" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>For $\frac{\partial c}{\partial t}$:</span>
-<span id="cb4-236"><a href="#cb4-236" aria-hidden="true" tabindex="-1"></a>   $$</span>
-<span id="cb4-237"><a href="#cb4-237" aria-hidden="true" tabindex="-1"></a>   \frac{\partial c}{\partial t} = -\frac{1}{\frac{1}{2} \sigma^2} K \frac{\partial v}{\partial \tau}.</span>
-<span id="cb4-238"><a href="#cb4-238" aria-hidden="true" tabindex="-1"></a>   $$</span>
-<span id="cb4-239"><a href="#cb4-239" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-240"><a href="#cb4-240" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>For $\frac{\partial c}{\partial S}$:</span>
-<span id="cb4-241"><a href="#cb4-241" aria-hidden="true" tabindex="-1"></a>   $$</span>
-<span id="cb4-242"><a href="#cb4-242" aria-hidden="true" tabindex="-1"></a>   S \frac{\partial c}{\partial S} = S \cdot \left(K \frac{\partial v}{\partial x} \frac{1}{S}\right) = K \frac{\partial v}{\partial x}.</span>
-<span id="cb4-243"><a href="#cb4-243" aria-hidden="true" tabindex="-1"></a>   $$</span>
-<span id="cb4-244"><a href="#cb4-244" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-245"><a href="#cb4-245" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>For $\frac{\partial^2 c}{\partial S^2}$:</span>
-<span id="cb4-246"><a href="#cb4-246" aria-hidden="true" tabindex="-1"></a>   $$</span>
-<span id="cb4-247"><a href="#cb4-247" aria-hidden="true" tabindex="-1"></a>   \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 c}{\partial S^2} = \frac{1}{2} \sigma^2 S^2 \left(K \frac{\partial^2 v}{\partial x^2} \frac{1}{S^2} - K \frac{\partial v}{\partial x} \frac{1}{S^2}\right) = \frac{1}{2} \sigma^2 K \frac{\partial^2 v}{\partial x^2}.</span>
-<span id="cb4-248"><a href="#cb4-248" aria-hidden="true" tabindex="-1"></a>   $$</span>
-<span id="cb4-249"><a href="#cb4-249" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-250"><a href="#cb4-250" aria-hidden="true" tabindex="-1"></a>Substituting all these into the BSM PDE:</span>
-<span id="cb4-251"><a href="#cb4-251" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-252"><a href="#cb4-252" aria-hidden="true" tabindex="-1"></a>-\frac{1}{\frac{1}{2} \sigma^2} K \frac{\partial v}{\partial \tau} + \frac{1}{2} \sigma^2 K \frac{\partial^2 v}{\partial x^2} + r K \frac{\partial v}{\partial x} - r K v = 0.</span>
-<span id="cb4-253"><a href="#cb4-253" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-254"><a href="#cb4-254" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-255"><a href="#cb4-255" aria-hidden="true" tabindex="-1"></a>Divide through by $K$:</span>
-<span id="cb4-256"><a href="#cb4-256" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-257"><a href="#cb4-257" aria-hidden="true" tabindex="-1"></a>-\frac{\partial v}{\partial \tau} + \frac{\partial^2 v}{\partial x^2} + \frac{2r}{\sigma^2} \frac{\partial v}{\partial x} - \frac{2r}{\sigma^2} v = 0.</span>
-<span id="cb4-258"><a href="#cb4-258" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-259"><a href="#cb4-259" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-260"><a href="#cb4-260" aria-hidden="true" tabindex="-1"></a>To simplify, let $v(x, \tau) = e^{\alpha x + \beta \tau} u(x, \tau)$, where $\alpha$ and $\beta$ are constants. Substituting and choosing $\alpha = -\frac{r}{\sigma^2}$ and $\beta = -\frac{r^2}{2 \sigma^2}$, the equation reduces to:</span>
-<span id="cb4-261"><a href="#cb4-261" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-262"><a href="#cb4-262" aria-hidden="true" tabindex="-1"></a>\frac{\partial u}{\partial \tau} = \frac{\partial^2 u}{\partial x^2}.</span>
-<span id="cb4-263"><a href="#cb4-263" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-264"><a href="#cb4-264" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-265"><a href="#cb4-265" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Step 4: Solving the Heat Equation</span></span>
-<span id="cb4-266"><a href="#cb4-266" aria-hidden="true" tabindex="-1"></a>The heat equation $\frac{\partial u}{\partial \tau} = \frac{\partial^2 u}{\partial x^2}$ has a well-known solution using Fourier methods:</span>
-<span id="cb4-267"><a href="#cb4-267" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-268"><a href="#cb4-268" aria-hidden="true" tabindex="-1"></a>u(x, \tau) = \frac{1}{\sqrt{2 \pi \tau}} \int_{-\infty}^\infty e^{-\frac{(x-y)^2}{2\tau}} f(y) \, dy,</span>
-<span id="cb4-269"><a href="#cb4-269" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-270"><a href="#cb4-270" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-271"><a href="#cb4-271" aria-hidden="true" tabindex="-1"></a>where $f(y)$ is the initial condition.</span>
-<span id="cb4-272"><a href="#cb4-272" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-273"><a href="#cb4-273" aria-hidden="true" tabindex="-1"></a>For the BSM problem, the initial condition is the payoff:</span>
-<span id="cb4-274"><a href="#cb4-274" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-275"><a href="#cb4-275" aria-hidden="true" tabindex="-1"></a>f(y) = \max(e^y - 1, 0).</span>
-<span id="cb4-276"><a href="#cb4-276" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-277"><a href="#cb4-277" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-278"><a href="#cb4-278" aria-hidden="true" tabindex="-1"></a>Performing the integration leads to the final solution involving the cumulative normal distribution function:</span>
-<span id="cb4-279"><a href="#cb4-279" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-280"><a href="#cb4-280" aria-hidden="true" tabindex="-1"></a>v(x, \tau) = N(d_1) - e^{-x} N(d_2),</span>
-<span id="cb4-281"><a href="#cb4-281" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-282"><a href="#cb4-282" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-283"><a href="#cb4-283" aria-hidden="true" tabindex="-1"></a>where:</span>
-<span id="cb4-284"><a href="#cb4-284" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-285"><a href="#cb4-285" aria-hidden="true" tabindex="-1"></a>d_1 = \frac{x + \frac{1}{2} \tau}{\sqrt{\tau}}, \quad d_2 = \frac{x - \frac{1}{2} \tau}{\sqrt{\tau}}.</span>
-<span id="cb4-286"><a href="#cb4-286" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-287"><a href="#cb4-287" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-288"><a href="#cb4-288" aria-hidden="true" tabindex="-1"></a>Transforming back to the original variables gives the Black-Scholes formula:</span>
-<span id="cb4-289"><a href="#cb4-289" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-290"><a href="#cb4-290" aria-hidden="true" tabindex="-1"></a>C(S, t) = S e^{-q(T-t)} N(d_1) - K e^{-r(T-t)} N(d_2),</span>
-<span id="cb4-291"><a href="#cb4-291" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-292"><a href="#cb4-292" aria-hidden="true" tabindex="-1"></a>where:</span>
-<span id="cb4-293"><a href="#cb4-293" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-294"><a href="#cb4-294" aria-hidden="true" tabindex="-1"></a>d_1 = \frac{\ln(S / K) + (r - q + \frac{\sigma^2}{2})(T-t)}{\sigma \sqrt{T-t}}, \quad d_2 = d_1 - \sigma \sqrt{T-t}.</span>
-<span id="cb4-295"><a href="#cb4-295" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-296"><a href="#cb4-296" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-297"><a href="#cb4-297" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-298"><a href="#cb4-298" aria-hidden="true" tabindex="-1"></a>Similarly, we can derive the price of a European put option:</span>
-<span id="cb4-299"><a href="#cb4-299" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-300"><a href="#cb4-300" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-301"><a href="#cb4-301" aria-hidden="true" tabindex="-1"></a>P = K e^{-rT} N(-d_2) - S e^{-qT} N(-d_1)</span>
-<span id="cb4-302"><a href="#cb4-302" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-303"><a href="#cb4-303" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-304"><a href="#cb4-304" aria-hidden="true" tabindex="-1"></a>Where:</span>
-<span id="cb4-305"><a href="#cb4-305" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-306"><a href="#cb4-306" aria-hidden="true" tabindex="-1"></a>d_1 = \frac{\ln(\frac{S}{K}) + (r - q + \frac{\sigma^2}{2})T}{\sigma \sqrt{T}}, \quad d_2 = d_1 - \sigma \sqrt{T}</span>
-<span id="cb4-307"><a href="#cb4-307" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-308"><a href="#cb4-308" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-309"><a href="#cb4-309" aria-hidden="true" tabindex="-1"></a><span class="fu">### Asymptotic Behavior of the BSM formula for call and put options  </span></span>
-<span id="cb4-310"><a href="#cb4-310" aria-hidden="true" tabindex="-1"></a>What if $K\rightarrow 0$? In that case,  </span>
-<span id="cb4-311"><a href="#cb4-311" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-312"><a href="#cb4-312" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>$\ln(S_0/K)\rightarrow \infty$, causing $d_1 \rightarrow \infty$ and $d_2 \rightarrow \infty$  </span>
-<span id="cb4-313"><a href="#cb4-313" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>The cdf $N(d_1)\rightarrow 1$ and $N(d_2)\rightarrow 1$  </span>
-<span id="cb4-314"><a href="#cb4-314" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>The second term $Ke^{-rT}N(d_2)\rightarrow 0$ as $K\rightarrow 0$  </span>
-<span id="cb4-315"><a href="#cb4-315" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-316"><a href="#cb4-316" aria-hidden="true" tabindex="-1"></a>In this case, the price of a call option $C\rightarrow S_0$ and the price of a put option $P \rightarrow 0$</span>
-<span id="cb4-317"><a href="#cb4-317" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-318"><a href="#cb4-318" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-319"><a href="#cb4-319" aria-hidden="true" tabindex="-1"></a><span class="fu">## Greeks: Delta and Gamma</span></span>
-<span id="cb4-320"><a href="#cb4-320" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-321"><a href="#cb4-321" aria-hidden="true" tabindex="-1"></a>**Delta** ($\Delta$) is the sensitivity of the option price to changes in the underlying asset price:</span>
-<span id="cb4-322"><a href="#cb4-322" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-323"><a href="#cb4-323" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-324"><a href="#cb4-324" aria-hidden="true" tabindex="-1"></a>\Delta = \frac{\partial C}{\partial S}\approx \frac{C(S_0 + h) - C(S_0 - h)}{2h}</span>
-<span id="cb4-325"><a href="#cb4-325" aria-hidden="true" tabindex="-1"></a>$$  </span>
-<span id="cb4-326"><a href="#cb4-326" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-327"><a href="#cb4-327" aria-hidden="true" tabindex="-1"></a>This is the **central difference approximation**, which provides a more accurate estimate of delta compared to the forward or backward difference methods.</span>
-<span id="cb4-328"><a href="#cb4-328" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-329"><a href="#cb4-329" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$C(S_0 + h)$: Calculate the option price with the spot price increased by $h$.</span>
-<span id="cb4-330"><a href="#cb4-330" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$C(S_0 - h)$: Calculate the option price with the spot price decreased by $h$.</span>
-<span id="cb4-331"><a href="#cb4-331" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-332"><a href="#cb4-332" aria-hidden="true" tabindex="-1"></a>**Gamma** ($\Gamma$) measures the rate of change of delta with respect to the underlying asset price:</span>
-<span id="cb4-333"><a href="#cb4-333" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-334"><a href="#cb4-334" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-335"><a href="#cb4-335" aria-hidden="true" tabindex="-1"></a>\Gamma = \frac{\partial^2 C}{\partial S^2}\approx \frac{\Delta(S_0 + h) - \Delta(S_0 - h)}{2h}\approx \frac{C(S_0 + h) - 2C(S_0) + C(S_0 - h)}{h^2}</span>
-<span id="cb4-336"><a href="#cb4-336" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb4-337"><a href="#cb4-337" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-338"><a href="#cb4-338" aria-hidden="true" tabindex="-1"></a>Gamma ($\Gamma$) measures the rate of change of delta ($\Delta$) with respect to the underlying spot price ($S_0$). </span>
-<span id="cb4-339"><a href="#cb4-339" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-340"><a href="#cb4-340" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$C(S_0 + h)$: Option price with the spot price increased by $h$.</span>
-<span id="cb4-341"><a href="#cb4-341" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$C(S_0)$: Option price at the current spot price.</span>
-<span id="cb4-342"><a href="#cb4-342" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$C(S_0 - h)$: Option price with the spot price decreased by $h$.</span>
-<span id="cb4-343"><a href="#cb4-343" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-344"><a href="#cb4-344" aria-hidden="true" tabindex="-1"></a>**Relationship Between Delta and Gamma:**  </span>
-<span id="cb4-345"><a href="#cb4-345" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-346"><a href="#cb4-346" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Gamma represents how much delta changes for a small change in $S_0$.</span>
-<span id="cb4-347"><a href="#cb4-347" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If gamma is high, delta is more sensitive to changes in $S_0$, which is important for hedging strategies.</span>
-<span id="cb4-348"><a href="#cb4-348" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-349"><a href="#cb4-349" aria-hidden="true" tabindex="-1"></a><span class="fu">## Implementation  </span></span>
-<span id="cb4-350"><a href="#cb4-350" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-351"><a href="#cb4-351" aria-hidden="true" tabindex="-1"></a><span class="fu">### Notation </span></span>
-<span id="cb4-352"><a href="#cb4-352" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-353"><a href="#cb4-353" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$S$: Spot price of the stock.</span>
-<span id="cb4-354"><a href="#cb4-354" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$K$: Strike price of the option.</span>
-<span id="cb4-355"><a href="#cb4-355" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$T$: Time to maturity (in years).</span>
-<span id="cb4-356"><a href="#cb4-356" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$r$: Risk-free rate (continuously compounded).</span>
-<span id="cb4-357"><a href="#cb4-357" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$q$: Dividend yield (continuously compounded).</span>
-<span id="cb4-358"><a href="#cb4-358" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\sigma$: Volatility of the stock.</span>
-<span id="cb4-359"><a href="#cb4-359" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$N(\cdot)$: Cumulative distribution function of the standard normal distribution.</span>
-<span id="cb4-360"><a href="#cb4-360" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-363"><a href="#cb4-363" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb4-364"><a href="#cb4-364" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dataclasses <span class="im">import</span> dataclass</span>
-<span id="cb4-365"><a href="#cb4-365" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb4-366"><a href="#cb4-366" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> norm</span>
-<span id="cb4-367"><a href="#cb4-367" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-368"><a href="#cb4-368" aria-hidden="true" tabindex="-1"></a><span class="at">@dataclass</span></span>
-<span id="cb4-369"><a href="#cb4-369" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Equity:</span>
-<span id="cb4-370"><a href="#cb4-370" aria-hidden="true" tabindex="-1"></a>    spot: <span class="bu">float</span></span>
-<span id="cb4-371"><a href="#cb4-371" aria-hidden="true" tabindex="-1"></a>    dividend_yield: <span class="bu">float</span></span>
-<span id="cb4-372"><a href="#cb4-372" aria-hidden="true" tabindex="-1"></a>    volatility: <span class="bu">float</span></span>
-<span id="cb4-373"><a href="#cb4-373" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-374"><a href="#cb4-374" aria-hidden="true" tabindex="-1"></a><span class="at">@dataclass</span></span>
-<span id="cb4-375"><a href="#cb4-375" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> EquityOption:</span>
-<span id="cb4-376"><a href="#cb4-376" aria-hidden="true" tabindex="-1"></a>    strike: <span class="bu">float</span></span>
-<span id="cb4-377"><a href="#cb4-377" aria-hidden="true" tabindex="-1"></a>    time_to_maturity: <span class="bu">float</span></span>
-<span id="cb4-378"><a href="#cb4-378" aria-hidden="true" tabindex="-1"></a>    put_call: <span class="bu">str</span></span>
-<span id="cb4-379"><a href="#cb4-379" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-380"><a href="#cb4-380" aria-hidden="true" tabindex="-1"></a><span class="at">@dataclass</span></span>
-<span id="cb4-381"><a href="#cb4-381" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> EquityForward:</span>
-<span id="cb4-382"><a href="#cb4-382" aria-hidden="true" tabindex="-1"></a>    strike: <span class="bu">float</span></span>
-<span id="cb4-383"><a href="#cb4-383" aria-hidden="true" tabindex="-1"></a>    time_to_maturity: <span class="bu">float</span></span>
-<span id="cb4-384"><a href="#cb4-384" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-385"><a href="#cb4-385" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> bsm(underlying: Equity, option: EquityOption, rate: <span class="bu">float</span>) <span class="op">-&gt;</span> <span class="bu">float</span>:</span>
-<span id="cb4-386"><a href="#cb4-386" aria-hidden="true" tabindex="-1"></a>    S <span class="op">=</span> underlying.spot</span>
-<span id="cb4-387"><a href="#cb4-387" aria-hidden="true" tabindex="-1"></a>    K <span class="op">=</span> option.strike</span>
-<span id="cb4-388"><a href="#cb4-388" aria-hidden="true" tabindex="-1"></a>    T <span class="op">=</span> option.time_to_maturity</span>
-<span id="cb4-389"><a href="#cb4-389" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> rate</span>
-<span id="cb4-390"><a href="#cb4-390" aria-hidden="true" tabindex="-1"></a>    q <span class="op">=</span> underlying.dividend_yield</span>
-<span id="cb4-391"><a href="#cb4-391" aria-hidden="true" tabindex="-1"></a>    sigma <span class="op">=</span> underlying.volatility</span>
-<span id="cb4-392"><a href="#cb4-392" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-393"><a href="#cb4-393" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Handle edge case where strike is effectively zero</span></span>
-<span id="cb4-394"><a href="#cb4-394" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> K <span class="op">&lt;</span> <span class="fl">1e-8</span>:</span>
-<span id="cb4-395"><a href="#cb4-395" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> option.put_call.lower() <span class="op">==</span> <span class="st">"call"</span>:</span>
-<span id="cb4-396"><a href="#cb4-396" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> S </span>
-<span id="cb4-397"><a href="#cb4-397" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
-<span id="cb4-398"><a href="#cb4-398" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="fl">0.0</span></span>
-<span id="cb4-399"><a href="#cb4-399" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-400"><a href="#cb4-400" aria-hidden="true" tabindex="-1"></a>    d1 <span class="op">=</span> (np.log(S <span class="op">/</span> K) <span class="op">+</span> (r <span class="op">-</span> q <span class="op">+</span> <span class="fl">0.5</span> <span class="op">*</span> sigma<span class="op">**</span><span class="dv">2</span>) <span class="op">*</span> T) <span class="op">/</span> (sigma <span class="op">*</span> np.sqrt(T))</span>
-<span id="cb4-401"><a href="#cb4-401" aria-hidden="true" tabindex="-1"></a>    d2 <span class="op">=</span> d1 <span class="op">-</span> sigma <span class="op">*</span> np.sqrt(T)</span>
-<span id="cb4-402"><a href="#cb4-402" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-403"><a href="#cb4-403" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> option.put_call.lower() <span class="op">==</span> <span class="st">"call"</span>:</span>
-<span id="cb4-404"><a href="#cb4-404" aria-hidden="true" tabindex="-1"></a>        price <span class="op">=</span> S <span class="op">*</span> np.exp(<span class="op">-</span>q <span class="op">*</span> T) <span class="op">*</span> norm.cdf(d1) <span class="op">\</span></span>
-<span id="cb4-405"><a href="#cb4-405" aria-hidden="true" tabindex="-1"></a>                <span class="op">-</span> K <span class="op">*</span> np.exp(<span class="op">-</span>r <span class="op">*</span> T) <span class="op">*</span> norm.cdf(d2)</span>
-<span id="cb4-406"><a href="#cb4-406" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> option.put_call.lower() <span class="op">==</span> <span class="st">"put"</span>:</span>
-<span id="cb4-407"><a href="#cb4-407" aria-hidden="true" tabindex="-1"></a>        price <span class="op">=</span> K <span class="op">*</span> np.exp(<span class="op">-</span>r <span class="op">*</span> T) <span class="op">*</span> norm.cdf(<span class="op">-</span>d2) <span class="op">\</span></span>
-<span id="cb4-408"><a href="#cb4-408" aria-hidden="true" tabindex="-1"></a>                <span class="op">-</span> S <span class="op">*</span> np.exp(<span class="op">-</span>q <span class="op">*</span> T) <span class="op">*</span> norm.cdf(<span class="op">-</span>d1)</span>
-<span id="cb4-409"><a href="#cb4-409" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb4-410"><a href="#cb4-410" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="st">"Invalid option type. Must be 'call' or 'put'."</span>)</span>
-<span id="cb4-411"><a href="#cb4-411" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-412"><a href="#cb4-412" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> price</span>
-<span id="cb4-413"><a href="#cb4-413" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-414"><a href="#cb4-414" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> delta(underlying: Equity, option: EquityOption, rate: <span class="bu">float</span>) <span class="op">-&gt;</span> <span class="bu">float</span>:</span>
-<span id="cb4-415"><a href="#cb4-415" aria-hidden="true" tabindex="-1"></a>    bump <span class="op">=</span> <span class="fl">0.01</span> <span class="op">*</span> underlying.spot</span>
-<span id="cb4-416"><a href="#cb4-416" aria-hidden="true" tabindex="-1"></a>    bumped_up <span class="op">=</span> Equity(spot<span class="op">=</span>underlying.spot <span class="op">+</span> bump, </span>
-<span id="cb4-417"><a href="#cb4-417" aria-hidden="true" tabindex="-1"></a>                       dividend_yield<span class="op">=</span>underlying.dividend_yield, </span>
-<span id="cb4-418"><a href="#cb4-418" aria-hidden="true" tabindex="-1"></a>                       volatility<span class="op">=</span>underlying.volatility)</span>
-<span id="cb4-419"><a href="#cb4-419" aria-hidden="true" tabindex="-1"></a>    bumped_down <span class="op">=</span> Equity(spot<span class="op">=</span>underlying.spot <span class="op">-</span> bump, </span>
-<span id="cb4-420"><a href="#cb4-420" aria-hidden="true" tabindex="-1"></a>                         dividend_yield<span class="op">=</span>underlying.dividend_yield, </span>
-<span id="cb4-421"><a href="#cb4-421" aria-hidden="true" tabindex="-1"></a>                         volatility<span class="op">=</span>underlying.volatility)</span>
-<span id="cb4-422"><a href="#cb4-422" aria-hidden="true" tabindex="-1"></a>    price_up <span class="op">=</span> bsm(bumped_up, option, rate)</span>
-<span id="cb4-423"><a href="#cb4-423" aria-hidden="true" tabindex="-1"></a>    price_down <span class="op">=</span> bsm(bumped_down, option, rate)</span>
-<span id="cb4-424"><a href="#cb4-424" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (price_up <span class="op">-</span> price_down) <span class="op">/</span> (<span class="dv">2</span> <span class="op">*</span> bump)</span>
-<span id="cb4-425"><a href="#cb4-425" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-426"><a href="#cb4-426" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> gamma(underlying: Equity, option: EquityOption, rate: <span class="bu">float</span>) <span class="op">-&gt;</span> <span class="bu">float</span>:</span>
-<span id="cb4-427"><a href="#cb4-427" aria-hidden="true" tabindex="-1"></a>    bump <span class="op">=</span> <span class="fl">0.01</span> <span class="op">*</span> underlying.spot</span>
-<span id="cb4-428"><a href="#cb4-428" aria-hidden="true" tabindex="-1"></a>    bumped_up <span class="op">=</span> Equity(spot<span class="op">=</span>underlying.spot <span class="op">+</span> bump, </span>
-<span id="cb4-429"><a href="#cb4-429" aria-hidden="true" tabindex="-1"></a>                       dividend_yield<span class="op">=</span>underlying.dividend_yield, </span>
-<span id="cb4-430"><a href="#cb4-430" aria-hidden="true" tabindex="-1"></a>                       volatility<span class="op">=</span>underlying.volatility)</span>
-<span id="cb4-431"><a href="#cb4-431" aria-hidden="true" tabindex="-1"></a>    bumped_down <span class="op">=</span> Equity(spot<span class="op">=</span>underlying.spot <span class="op">-</span> bump, </span>
-<span id="cb4-432"><a href="#cb4-432" aria-hidden="true" tabindex="-1"></a>                         dividend_yield<span class="op">=</span>underlying.dividend_yield, </span>
-<span id="cb4-433"><a href="#cb4-433" aria-hidden="true" tabindex="-1"></a>                         volatility<span class="op">=</span>underlying.volatility)</span>
-<span id="cb4-434"><a href="#cb4-434" aria-hidden="true" tabindex="-1"></a>    original_price <span class="op">=</span> bsm(underlying, option, rate)</span>
-<span id="cb4-435"><a href="#cb4-435" aria-hidden="true" tabindex="-1"></a>    price_up <span class="op">=</span> bsm(bumped_up, option, rate)</span>
-<span id="cb4-436"><a href="#cb4-436" aria-hidden="true" tabindex="-1"></a>    price_down <span class="op">=</span> bsm(bumped_down, option, rate)</span>
-<span id="cb4-437"><a href="#cb4-437" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (price_up <span class="op">-</span> <span class="dv">2</span> <span class="op">*</span> original_price <span class="op">+</span> price_down) <span class="op">/</span> (bump<span class="op">**</span><span class="dv">2</span>)</span>
-<span id="cb4-438"><a href="#cb4-438" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-439"><a href="#cb4-439" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fwd(underlying: Equity, forward: EquityForward, rate: <span class="bu">float</span>) <span class="op">-&gt;</span> <span class="bu">float</span>:</span>
-<span id="cb4-440"><a href="#cb4-440" aria-hidden="true" tabindex="-1"></a>    S <span class="op">=</span> underlying.spot</span>
-<span id="cb4-441"><a href="#cb4-441" aria-hidden="true" tabindex="-1"></a>    K <span class="op">=</span> forward.strike</span>
-<span id="cb4-442"><a href="#cb4-442" aria-hidden="true" tabindex="-1"></a>    T <span class="op">=</span> forward.time_to_maturity</span>
-<span id="cb4-443"><a href="#cb4-443" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> rate</span>
-<span id="cb4-444"><a href="#cb4-444" aria-hidden="true" tabindex="-1"></a>    q <span class="op">=</span> underlying.dividend_yield</span>
-<span id="cb4-445"><a href="#cb4-445" aria-hidden="true" tabindex="-1"></a>    forward_price <span class="op">=</span> S <span class="op">*</span> np.exp((r <span class="op">-</span> q) <span class="op">*</span> T) <span class="op">-</span> K</span>
-<span id="cb4-446"><a href="#cb4-446" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-447"><a href="#cb4-447" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> forward_price</span>
-<span id="cb4-448"><a href="#cb4-448" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-449"><a href="#cb4-449" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> check_put_call_parity(</span>
-<span id="cb4-450"><a href="#cb4-450" aria-hidden="true" tabindex="-1"></a>    underlying: Equity, </span>
-<span id="cb4-451"><a href="#cb4-451" aria-hidden="true" tabindex="-1"></a>    call_option: EquityOption, </span>
-<span id="cb4-452"><a href="#cb4-452" aria-hidden="true" tabindex="-1"></a>    put_option: EquityOption, </span>
-<span id="cb4-453"><a href="#cb4-453" aria-hidden="true" tabindex="-1"></a>    rate: <span class="bu">float</span></span>
-<span id="cb4-454"><a href="#cb4-454" aria-hidden="true" tabindex="-1"></a>    ) <span class="op">-&gt;</span> <span class="bu">bool</span>:</span>
-<span id="cb4-455"><a href="#cb4-455" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-456"><a href="#cb4-456" aria-hidden="true" tabindex="-1"></a>    call_price <span class="op">=</span> bsm(underlying, call_option, rate)</span>
-<span id="cb4-457"><a href="#cb4-457" aria-hidden="true" tabindex="-1"></a>    put_price <span class="op">=</span> bsm(underlying, put_option, rate)</span>
-<span id="cb4-458"><a href="#cb4-458" aria-hidden="true" tabindex="-1"></a>    S <span class="op">=</span> underlying.spot</span>
-<span id="cb4-459"><a href="#cb4-459" aria-hidden="true" tabindex="-1"></a>    K <span class="op">=</span> call_option.strike</span>
-<span id="cb4-460"><a href="#cb4-460" aria-hidden="true" tabindex="-1"></a>    T <span class="op">=</span> call_option.time_to_maturity</span>
-<span id="cb4-461"><a href="#cb4-461" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> rate</span>
-<span id="cb4-462"><a href="#cb4-462" aria-hidden="true" tabindex="-1"></a>    q <span class="op">=</span> underlying.dividend_yield</span>
-<span id="cb4-463"><a href="#cb4-463" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-464"><a href="#cb4-464" aria-hidden="true" tabindex="-1"></a>    parity_lhs <span class="op">=</span> call_price <span class="op">-</span> put_price</span>
-<span id="cb4-465"><a href="#cb4-465" aria-hidden="true" tabindex="-1"></a>    parity_rhs <span class="op">=</span> S <span class="op">*</span> np.exp(<span class="op">-</span>q <span class="op">*</span> T) <span class="op">-</span> K <span class="op">*</span> np.exp(<span class="op">-</span>r <span class="op">*</span> T)</span>
-<span id="cb4-466"><a href="#cb4-466" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-467"><a href="#cb4-467" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.isclose(parity_lhs, parity_rhs, atol<span class="op">=</span><span class="fl">1e-4</span>)</span>
-<span id="cb4-468"><a href="#cb4-468" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-469"><a href="#cb4-469" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb4-470"><a href="#cb4-470" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-471"><a href="#cb4-471" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-472"><a href="#cb4-472" aria-hidden="true" tabindex="-1"></a><span class="fu">### Example Usage</span></span>
-<span id="cb4-473"><a href="#cb4-473" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> style</span><span class="op">=</span><span class="st">"text-align: justify"</span><span class="dt">&gt;</span></span>
-<span id="cb4-474"><a href="#cb4-474" aria-hidden="true" tabindex="-1"></a>Say, we want to price a call option on an equity with spot price $S_0 = 450$ with dividend yield $q=1.4\%$, and volatility $14\%$. The strike price of the call is $K=470$, with time to maturity in years $T=0.23$ and the risk free rate $r = 0.05$.<span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
-<span id="cb4-475"><a href="#cb4-475" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
-<span id="cb4-476"><a href="#cb4-476" aria-hidden="true" tabindex="-1"></a>Next, we want to see the asymptotic behavior of the call option if the strike price $K\rightarrow 0$ with interest rate 0.<span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
-<span id="cb4-477"><a href="#cb4-477" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
-<span id="cb4-478"><a href="#cb4-478" aria-hidden="true" tabindex="-1"></a>Next, we want to price a put option on the same equity but strike price $K=500$, time to maturity in years $T=0.26$ and interest rate is 0.<span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
-<span id="cb4-479"><a href="#cb4-479" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
-<span id="cb4-480"><a href="#cb4-480" aria-hidden="true" tabindex="-1"></a>Finally, we want to check if the put-call parity relationship is hold. <span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
-<span id="cb4-481"><a href="#cb4-481" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
-<span id="cb4-482"><a href="#cb4-482" aria-hidden="true" tabindex="-1"></a>In each case, we consider $h=0.01$ a bump or small change in the stock price.</span>
-<span id="cb4-483"><a href="#cb4-483" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span> </span>
-<span id="cb4-484"><a href="#cb4-484" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-487"><a href="#cb4-487" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb4-488"><a href="#cb4-488" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
-<span id="cb4-489"><a href="#cb4-489" aria-hidden="true" tabindex="-1"></a>    eq <span class="op">=</span> Equity(<span class="dv">450</span>, <span class="fl">0.014</span>, <span class="fl">0.14</span>)</span>
-<span id="cb4-490"><a href="#cb4-490" aria-hidden="true" tabindex="-1"></a>    option_call <span class="op">=</span> EquityOption(<span class="dv">470</span>, <span class="fl">0.23</span>, <span class="st">"call"</span>)</span>
-<span id="cb4-491"><a href="#cb4-491" aria-hidden="true" tabindex="-1"></a>    option_put <span class="op">=</span> EquityOption(<span class="dv">500</span>, <span class="fl">0.26</span>, <span class="st">"put"</span>)</span>
-<span id="cb4-492"><a href="#cb4-492" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb4-493"><a href="#cb4-493" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(bsm(eq, option_call, <span class="fl">0.05</span>))  </span>
-<span id="cb4-494"><a href="#cb4-494" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(bsm(eq, EquityOption(<span class="fl">1e-15</span>, <span class="fl">0.26</span>, <span class="st">"call"</span>), <span class="fl">0.0</span>))  </span>
-<span id="cb4-495"><a href="#cb4-495" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(bsm(Equity(<span class="dv">450</span>, <span class="fl">0.0</span>, <span class="fl">1e-9</span>), option_put, <span class="fl">0.0</span>))  </span>
-<span id="cb4-496"><a href="#cb4-496" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-497"><a href="#cb4-497" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Check put-call parity</span></span>
-<span id="cb4-498"><a href="#cb4-498" aria-hidden="true" tabindex="-1"></a>    eq <span class="op">=</span> Equity(<span class="dv">450</span>, <span class="fl">0.015</span>, <span class="fl">0.15</span>)</span>
-<span id="cb4-499"><a href="#cb4-499" aria-hidden="true" tabindex="-1"></a>    option_call <span class="op">=</span> EquityOption(<span class="dv">470</span>, <span class="fl">0.26</span>, <span class="st">"call"</span>)</span>
-<span id="cb4-500"><a href="#cb4-500" aria-hidden="true" tabindex="-1"></a>    option_put <span class="op">=</span> EquityOption(<span class="dv">470</span>, <span class="fl">0.26</span>, <span class="st">"put"</span>)</span>
-<span id="cb4-501"><a href="#cb4-501" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(check_put_call_parity(eq, option_call, option_put, <span class="fl">0.05</span>)) </span>
-<span id="cb4-502"><a href="#cb4-502" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-503"><a href="#cb4-503" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb4-504"><a href="#cb4-504" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-505"><a href="#cb4-505" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-506"><a href="#cb4-506" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-507"><a href="#cb4-507" aria-hidden="true" tabindex="-1"></a><span class="fu">## References  </span></span>
-<span id="cb4-508"><a href="#cb4-508" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-509"><a href="#cb4-509" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Karatzas, I., &amp; Shreve, S. E. (1991). *Brownian Motion and Stochastic Calculus*.  </span>
-<span id="cb4-510"><a href="#cb4-510" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Options, Futures, and Other Derivatives by John C. Hull  </span>
-<span id="cb4-511"><a href="#cb4-511" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Arbitrage Theory in Continuous Time Book by Tomas Björk</span>
-<span id="cb4-512"><a href="#cb4-512" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-513"><a href="#cb4-513" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-514"><a href="#cb4-514" aria-hidden="true" tabindex="-1"></a>**Share on**  </span>
-<span id="cb4-515"><a href="#cb4-515" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-516"><a href="#cb4-516" aria-hidden="true" tabindex="-1"></a>::::{.columns}</span>
-<span id="cb4-517"><a href="#cb4-517" aria-hidden="true" tabindex="-1"></a>:::{.column width="33%"}</span>
-<span id="cb4-518"><a href="#cb4-518" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"https://www.facebook.com/sharer.php?u=https://mrislambd.github.io/statandprob/posts/optionprice/"</span><span class="ot"> target</span><span class="op">=</span><span class="st">"_blank"</span><span class="ot"> style</span><span class="op">=</span><span class="st">"color:#1877F2; text-decoration: none;"</span><span class="dt">&gt;</span></span>
-<span id="cb4-519"><a href="#cb4-519" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb4-520"><a href="#cb4-520" aria-hidden="true" tabindex="-1"></a>{{&lt; fa brands facebook size=3x &gt;}}</span>
-<span id="cb4-521"><a href="#cb4-521" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
-<span id="cb4-522"><a href="#cb4-522" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb4-523"><a href="#cb4-523" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb4-524"><a href="#cb4-524" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb4-525"><a href="#cb4-525" aria-hidden="true" tabindex="-1"></a>:::{.column width="33%"}</span>
-<span id="cb4-526"><a href="#cb4-526" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"https://www.linkedin.com/sharing/share-offsite/?url=https://mrislambd.github.io/statandprob/posts/optionprice/"</span><span class="ot"> target</span><span class="op">=</span><span class="st">"_blank"</span><span class="ot"> style</span><span class="op">=</span><span class="st">"color:#0077B5; text-decoration: none;"</span><span class="dt">&gt;</span></span>
-<span id="cb4-527"><a href="#cb4-527" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb4-528"><a href="#cb4-528" aria-hidden="true" tabindex="-1"></a>{{&lt; fa brands linkedin size=3x &gt;}}</span>
-<span id="cb4-529"><a href="#cb4-529" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
-<span id="cb4-530"><a href="#cb4-530" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb4-531"><a href="#cb4-531" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb4-532"><a href="#cb4-532" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb4-533"><a href="#cb4-533" aria-hidden="true" tabindex="-1"></a>:::{.column width="33%"}</span>
-<span id="cb4-534"><a href="#cb4-534" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"https://www.twitter.com/intent/tweet?url=https://mrislambd.github.io/statandprob/posts/optionprice/"</span><span class="ot"> target</span><span class="op">=</span><span class="st">"_blank"</span><span class="ot"> style</span><span class="op">=</span><span class="st">"color:#1DA1F2; text-decoration: none;"</span><span class="dt">&gt;</span></span>
-<span id="cb4-535"><a href="#cb4-535" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb4-536"><a href="#cb4-536" aria-hidden="true" tabindex="-1"></a>{{&lt; fa brands twitter size=3x &gt;}}</span>
-<span id="cb4-537"><a href="#cb4-537" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
-<span id="cb4-538"><a href="#cb4-538" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb4-539"><a href="#cb4-539" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb4-540"><a href="#cb4-540" aria-hidden="true" tabindex="-1"></a>::::</span>
-<span id="cb4-541"><a href="#cb4-541" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb4-542"><a href="#cb4-542" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="ot"> src</span><span class="op">=</span><span class="st">"https://giscus.app/client.js"</span></span>
-<span id="cb4-543"><a href="#cb4-543" aria-hidden="true" tabindex="-1"></a><span class="ot">        data-repo</span><span class="op">=</span><span class="st">"mrislambd/mrislambd.github.io"</span><span class="ot"> </span></span>
-<span id="cb4-544"><a href="#cb4-544" aria-hidden="true" tabindex="-1"></a><span class="ot">        data-repo-id</span><span class="op">=</span><span class="st">"R_kgDOMV8crA"</span></span>
-<span id="cb4-545"><a href="#cb4-545" aria-hidden="true" tabindex="-1"></a><span class="ot">        data-category</span><span class="op">=</span><span class="st">"Announcements"</span></span>
-<span id="cb4-546"><a href="#cb4-546" aria-hidden="true" tabindex="-1"></a><span class="ot">        data-category-id</span><span class="op">=</span><span class="st">"DIC_kwDOMV8crM4CjbQW"</span></span>
-<span id="cb4-547"><a href="#cb4-547" aria-hidden="true" tabindex="-1"></a><span class="ot">        data-mapping</span><span class="op">=</span><span class="st">"pathname"</span></span>
-<span id="cb4-548"><a href="#cb4-548" aria-hidden="true" tabindex="-1"></a><span class="ot">        data-strict</span><span class="op">=</span><span class="st">"0"</span></span>
-<span id="cb4-549"><a href="#cb4-549" aria-hidden="true" tabindex="-1"></a><span class="ot">        data-reactions-enabled</span><span class="op">=</span><span class="st">"1"</span></span>
-<span id="cb4-550"><a href="#cb4-550" aria-hidden="true" tabindex="-1"></a><span class="ot">        data-emit-metadata</span><span class="op">=</span><span class="st">"0"</span></span>
-<span id="cb4-551"><a href="#cb4-551" aria-hidden="true" tabindex="-1"></a><span class="ot">        data-input-position</span><span class="op">=</span><span class="st">"bottom"</span></span>
-<span id="cb4-552"><a href="#cb4-552" aria-hidden="true" tabindex="-1"></a><span class="ot">        data-theme</span><span class="op">=</span><span class="st">"light"</span></span>
-<span id="cb4-553"><a href="#cb4-553" aria-hidden="true" tabindex="-1"></a><span class="ot">        data-lang</span><span class="op">=</span><span class="st">"en"</span></span>
-<span id="cb4-554"><a href="#cb4-554" aria-hidden="true" tabindex="-1"></a><span class="ot">        crossorigin</span><span class="op">=</span><span class="st">"anonymous"</span></span>
-<span id="cb4-555"><a href="#cb4-555" aria-hidden="true" tabindex="-1"></a><span class="ot">        async</span><span class="dt">&gt;</span></span>
-<span id="cb4-556"><a href="#cb4-556" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span>
-<span id="cb4-557"><a href="#cb4-557" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb4-558"><a href="#cb4-558" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> id</span><span class="op">=</span><span class="st">"fb-root"</span><span class="dt">&gt;&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
-<span id="cb4-559"><a href="#cb4-559" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="ot"> async defer crossorigin</span><span class="op">=</span><span class="st">"anonymous"</span></span>
-<span id="cb4-560"><a href="#cb4-560" aria-hidden="true" tabindex="-1"></a><span class="ot"> src</span><span class="op">=</span><span class="st">"https://connect.facebook.net/en_US/sdk.js#xfbml=1</span><span class="er">&amp;</span><span class="st">version=v20.0"</span><span class="dt">&gt;&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span>
-<span id="cb4-561"><a href="#cb4-561" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"fb-comments"</span><span class="ot"> data-href</span><span class="op">=</span><span class="st">"https://mrislambd.github.io/statandprob/posts/optionprice/"</span><span class="ot"> data-width</span><span class="op">=</span><span class="st">"750"</span><span class="ot"> data-numposts</span><span class="op">=</span><span class="st">"5"</span><span class="dt">&gt;&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
-<span id="cb4-562"><a href="#cb4-562" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-563"><a href="#cb4-563" aria-hidden="true" tabindex="-1"></a>**You may also like**  </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Pricing Derivatives Using Black-Scholes-Merton Model"</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "11/12/2023"</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> Rafiq Islam</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [Programming, Finance, Financial Mathematics, Pricing, Hedging]</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="an">citation:</span><span class="co"> true</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="an">search:</span><span class="co"> true</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> bsm.png</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="an">lightbox:</span><span class="co"> true</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="an">listing:</span><span class="co"> </span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="co">    contents: "/../../posts"</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="co">    max-items: 3</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="co">    type: grid</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="co">    categories: true</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="co">    date-format: full</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="co">    fields: [image, date, title, author, reading-time]</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> </span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="co">    html: default</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="co">    ipynb: default</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="co">    docx: </span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="co">      toc: true</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="co">      adsense:</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="co">        enable-ads: false</span></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="co">    epub:</span></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="co">      toc: true</span></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a><span class="co">      adsense:</span></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="co">        enable-ads: false</span></span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a><span class="co">    pdf: </span></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a><span class="co">      toc: true</span></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a><span class="co">      pdf-engine: pdflatex</span></span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a><span class="co">      adsense:</span></span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a><span class="co">        enable-ads: false</span></span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a><span class="co">      number-sections: false</span></span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a><span class="co">      colorlinks: true</span></span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a><span class="co">      cite-method: biblatex</span></span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a><span class="an">toc-depth:</span><span class="co"> 4</span></span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a><span class="co">---</span>   </span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introduction</span></span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>In this blog, we will explore how to price simple equity derivatives using the Black-Scholes-Merton (BSM) model. We will derive the mathematical formula and then provide Python code to implement it.   </span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a><span class="fu">### Background and Preliminaries  </span></span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>Before proceeding to the deep of the discussion, we need to know some definition and terminology </span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> style</span><span class="op">=</span><span class="st">"text-align: justify"</span><span class="dt">&gt;</span></span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a>**Brownian Motion:**  Brownian motion is a concept with definitions and applications across various disciplines, named after the botanist Robert Brown, is the random, erratic movement of particles suspended in a fluid (liquid or gas) due to their collisions with the fast-moving molecules of the fluid.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span>  </span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a>*Brownian motion is a stochastic process $(B_t)_{t \geq 0}$ defined as a continuous-time process with the following properties:*  </span>
+<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$B_0 = 0$ almost surely.</span>
+<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$B_t$ has independent increments.</span>
+<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>For $t &gt; s$, $B_t - B_s \sim N(0, t-s)$ (normally distributed with mean 0 and variance $t-s$).</span>
+<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$B_t$ has continuous paths almost surely.  </span>
+<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a><span class="co">#| code-fold: true</span></span>
+<span id="cb5-60"><a href="#cb5-60" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> mywebstyle <span class="im">import</span> plot_style</span>
+<span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a>plot_style(<span class="st">'#f4f4f4'</span>)</span>
+<span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb5-64"><a href="#cb5-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a><span class="co"># Parameters</span></span>
+<span id="cb5-66"><a href="#cb5-66" aria-hidden="true" tabindex="-1"></a>n_steps <span class="op">=</span> <span class="dv">100</span>  <span class="co"># Number of steps</span></span>
+<span id="cb5-67"><a href="#cb5-67" aria-hidden="true" tabindex="-1"></a>n_paths <span class="op">=</span> <span class="dv">20</span>   <span class="co"># Number of paths</span></span>
+<span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a>time_horizon <span class="op">=</span> <span class="dv">1</span>  <span class="co"># Total time</span></span>
+<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a>dt <span class="op">=</span> time_horizon <span class="op">/</span> n_steps  <span class="co"># Time step</span></span>
+<span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a>t <span class="op">=</span> np.linspace(<span class="dv">0</span>, time_horizon, n_steps)  <span class="co"># Time array</span></span>
+<span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-72"><a href="#cb5-72" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate Brownian motion</span></span>
+<span id="cb5-73"><a href="#cb5-73" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> generate_brownian_paths(n_paths, n_steps, dt):</span>
+<span id="cb5-74"><a href="#cb5-74" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Standard normal increments scaled by sqrt(dt)</span></span>
+<span id="cb5-75"><a href="#cb5-75" aria-hidden="true" tabindex="-1"></a>    increments <span class="op">=</span> np.random.normal(<span class="dv">0</span>, np.sqrt(dt), (n_paths, n_steps))</span>
+<span id="cb5-76"><a href="#cb5-76" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Cumulative sum to generate paths</span></span>
+<span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.cumsum(increments, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-79"><a href="#cb5-79" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate one path and multiple paths</span></span>
+<span id="cb5-80"><a href="#cb5-80" aria-hidden="true" tabindex="-1"></a>single_path <span class="op">=</span> generate_brownian_paths(<span class="dv">1</span>, n_steps, dt)[<span class="dv">0</span>]</span>
+<span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a>multiple_paths <span class="op">=</span> generate_brownian_paths(n_paths, n_steps, dt)</span>
+<span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a><span class="co"># Plotting</span></span>
+<span id="cb5-84"><a href="#cb5-84" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="fl">7.9</span>, <span class="fl">3.9</span>))</span>
+<span id="cb5-85"><a href="#cb5-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-86"><a href="#cb5-86" aria-hidden="true" tabindex="-1"></a><span class="co"># Single path</span></span>
+<span id="cb5-87"><a href="#cb5-87" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].plot(t, single_path, label<span class="op">=</span><span class="st">"Single Path"</span>)</span>
+<span id="cb5-88"><a href="#cb5-88" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].set_title(<span class="st">"Brownian Motion: Single Path"</span>)</span>
+<span id="cb5-89"><a href="#cb5-89" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].set_xlabel(<span class="st">"Time"</span>)</span>
+<span id="cb5-90"><a href="#cb5-90" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].set_ylabel(<span class="st">"Position"</span>)</span>
+<span id="cb5-91"><a href="#cb5-91" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].legend()</span>
+<span id="cb5-92"><a href="#cb5-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-93"><a href="#cb5-93" aria-hidden="true" tabindex="-1"></a><span class="co"># Multiple paths</span></span>
+<span id="cb5-94"><a href="#cb5-94" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> path <span class="kw">in</span> multiple_paths:</span>
+<span id="cb5-95"><a href="#cb5-95" aria-hidden="true" tabindex="-1"></a>    axes[<span class="dv">1</span>].plot(t, path, alpha<span class="op">=</span><span class="fl">0.5</span>, linewidth<span class="op">=</span><span class="fl">0.8</span>)</span>
+<span id="cb5-96"><a href="#cb5-96" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].set_title(<span class="ss">f"Brownian Motion: </span><span class="sc">{</span>n_paths<span class="sc">}</span><span class="ss"> Paths"</span>)</span>
+<span id="cb5-97"><a href="#cb5-97" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].set_xlabel(<span class="st">"Time"</span>)</span>
+<span id="cb5-98"><a href="#cb5-98" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].set_ylabel(<span class="st">"Position"</span>)</span>
+<span id="cb5-99"><a href="#cb5-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-100"><a href="#cb5-100" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb5-101"><a href="#cb5-101" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb5-102"><a href="#cb5-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-103"><a href="#cb5-103" aria-hidden="true" tabindex="-1"></a><span class="in">```</span>    </span>
+<span id="cb5-104"><a href="#cb5-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-105"><a href="#cb5-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-106"><a href="#cb5-106" aria-hidden="true" tabindex="-1"></a>**Geometric Brownian Motion (GBM)**  </span>
+<span id="cb5-107"><a href="#cb5-107" aria-hidden="true" tabindex="-1"></a>A stochastic process $S_t$ is said to follow a geometric Brownian motion if it satisfies the following equation:  </span>
+<span id="cb5-108"><a href="#cb5-108" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-109"><a href="#cb5-109" aria-hidden="true" tabindex="-1"></a>dS_t = \mu S_t dt+\sigma S_t dB_t</span>
+<span id="cb5-110"><a href="#cb5-110" aria-hidden="true" tabindex="-1"></a>$$  </span>
+<span id="cb5-111"><a href="#cb5-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-112"><a href="#cb5-112" aria-hidden="true" tabindex="-1"></a>Which can be written as  </span>
+<span id="cb5-113"><a href="#cb5-113" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-114"><a href="#cb5-114" aria-hidden="true" tabindex="-1"></a>S_t - S_0 =\int_0^t \mu S_u du + \int_0^t \sigma S_u dB_u</span>
+<span id="cb5-115"><a href="#cb5-115" aria-hidden="true" tabindex="-1"></a>$$  </span>
+<span id="cb5-116"><a href="#cb5-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-117"><a href="#cb5-117" aria-hidden="true" tabindex="-1"></a>To solve the GBM, we apply Ito's formula to the function $Z_t = f(t, S_t)= \ln(S_t)$ and then by Taylor's expansion, we have </span>
+<span id="cb5-118"><a href="#cb5-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-119"><a href="#cb5-119" aria-hidden="true" tabindex="-1"></a>\begin{align*}</span>
+<span id="cb5-120"><a href="#cb5-120" aria-hidden="true" tabindex="-1"></a>df &amp; = \frac{\partial f}{\partial t}dt+ \frac{\partial f}{\partial s}dS_t + \frac{1}{2} \frac{\partial ^2f}{\partial s^2}(dS_t)^2+\frac{1}{2}\frac{\partial ^2f}{\partial s^2}(dt)^2+\frac{\partial^2 f}{\partial t\partial s}dtdS_t</span>
+<span id="cb5-121"><a href="#cb5-121" aria-hidden="true" tabindex="-1"></a>\end{align*}  </span>
+<span id="cb5-122"><a href="#cb5-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-123"><a href="#cb5-123" aria-hidden="true" tabindex="-1"></a>By definition we have </span>
+<span id="cb5-124"><a href="#cb5-124" aria-hidden="true" tabindex="-1"></a>\begin{align*}</span>
+<span id="cb5-125"><a href="#cb5-125" aria-hidden="true" tabindex="-1"></a>dS_t &amp;= \mu S_t dt+\sigma S_t dB_t<span class="sc">\\</span></span>
+<span id="cb5-126"><a href="#cb5-126" aria-hidden="true" tabindex="-1"></a>(dS_t)^2 &amp; = \mu^2 (dt)^2+2\mu \sigma dt dB_t + \sigma^2 (dB_t)^2</span>
+<span id="cb5-127"><a href="#cb5-127" aria-hidden="true" tabindex="-1"></a>\end{align*}  </span>
+<span id="cb5-128"><a href="#cb5-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-129"><a href="#cb5-129" aria-hidden="true" tabindex="-1"></a>The term $(dt)^2$ is negligible compared to the term $dt$ and it is also assume that the product $dtdB_t$ is negligible. Furthermore, the quadratic variation of $B_t$ i.e., $(dB_t)^2= dt$. With these values, we obtain </span>
+<span id="cb5-130"><a href="#cb5-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-131"><a href="#cb5-131" aria-hidden="true" tabindex="-1"></a>\begin{align*}</span>
+<span id="cb5-132"><a href="#cb5-132" aria-hidden="true" tabindex="-1"></a>dZ_t &amp; = \frac{1}{S_t} dS_t + \frac{1}{2} \left<span class="sc">\{</span>-\frac{1}{S_t^2}\right<span class="sc">\}</span><span class="co">[</span><span class="ot">dS_t</span><span class="co">]</span>^2<span class="sc">\\</span></span>
+<span id="cb5-133"><a href="#cb5-133" aria-hidden="true" tabindex="-1"></a>&amp; =  \frac{1}{S_t} (\mu S_t dt+\sigma S_t dB_t) + \frac{1}{2} \left<span class="sc">\{</span>-\frac{1}{S_t^2}\right<span class="sc">\}</span>\sigma^2S_t^2dt<span class="sc">\\</span></span>
+<span id="cb5-134"><a href="#cb5-134" aria-hidden="true" tabindex="-1"></a>\implies dZ_t &amp;= (\mu dt +\sigma dB_t) -\frac{1}{2}\sigma^2 dt<span class="sc">\\</span></span>
+<span id="cb5-135"><a href="#cb5-135" aria-hidden="true" tabindex="-1"></a>&amp; = \left(\mu-\frac{1}{2}\sigma^2\right)dt+\sigma dB_t</span>
+<span id="cb5-136"><a href="#cb5-136" aria-hidden="true" tabindex="-1"></a>\end{align*}  </span>
+<span id="cb5-137"><a href="#cb5-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-138"><a href="#cb5-138" aria-hidden="true" tabindex="-1"></a>with $Z_0=\ln S_0$. Now we have the following  </span>
+<span id="cb5-139"><a href="#cb5-139" aria-hidden="true" tabindex="-1"></a>\begin{align*}</span>
+<span id="cb5-140"><a href="#cb5-140" aria-hidden="true" tabindex="-1"></a>\int_0^t dZ_s &amp;= \int_0^t \left(\mu-\frac{1}{2}\sigma^2\right)ds + \int_0^t\sigma dB_s<span class="sc">\\</span></span>
+<span id="cb5-141"><a href="#cb5-141" aria-hidden="true" tabindex="-1"></a>\implies Z_t - Z_0 &amp;= \left(\mu-\frac{1}{2}\sigma^2\right)t + \sigma B_t<span class="sc">\\</span></span>
+<span id="cb5-142"><a href="#cb5-142" aria-hidden="true" tabindex="-1"></a>\implies \ln S_t - \ln S_0&amp;= \left(\mu-\frac{1}{2}\sigma^2\right)t + \sigma B_t<span class="sc">\\</span></span>
+<span id="cb5-143"><a href="#cb5-143" aria-hidden="true" tabindex="-1"></a>\implies \ln \left(\frac{S_t}{S_0}\right) &amp;= \left(\mu-\frac{1}{2}\sigma^2\right)t + \sigma B_t<span class="sc">\\</span></span>
+<span id="cb5-144"><a href="#cb5-144" aria-hidden="true" tabindex="-1"></a>\implies S_t &amp;= S_0 \exp{\left<span class="sc">\{</span>\left(\mu-\frac{1}{2}\sigma^2\right)t + \sigma B_t\right<span class="sc">\}</span>}</span>
+<span id="cb5-145"><a href="#cb5-145" aria-hidden="true" tabindex="-1"></a>\end{align*}</span>
+<span id="cb5-146"><a href="#cb5-146" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-147"><a href="#cb5-147" aria-hidden="true" tabindex="-1"></a><span class="fu">## Black-Scholes-Merton Formula  </span></span>
+<span id="cb5-148"><a href="#cb5-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-149"><a href="#cb5-149" aria-hidden="true" tabindex="-1"></a>Now we are ready to derive the BSM PDE. The payoff of an *option* $V(S,T)$ at maturity is is known. To find the value at an earlier stage, we need to know how V behaves as a function of $S$ and $t$. By Ito's lemma we have </span>
+<span id="cb5-150"><a href="#cb5-150" aria-hidden="true" tabindex="-1"></a>\begin{align*}</span>
+<span id="cb5-151"><a href="#cb5-151" aria-hidden="true" tabindex="-1"></a>dV&amp; = \left(\mu S\frac{\partial V}{\partial S}+\frac{\partial V}{\partial t}+\frac{1}{2}\sigma^2S^2\frac{\partial^2 V}{\partial S^2}\right)dt+\sigma S\frac{\partial V}{\partial S}dB.</span>
+<span id="cb5-152"><a href="#cb5-152" aria-hidden="true" tabindex="-1"></a>\end{align*}  </span>
+<span id="cb5-153"><a href="#cb5-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-154"><a href="#cb5-154" aria-hidden="true" tabindex="-1"></a>Now let's consider a portfolio consisting of a short one option and long $\frac{\partial V}{\partial S}$ shares at time $t$. The value of this portfolio is </span>
+<span id="cb5-155"><a href="#cb5-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-156"><a href="#cb5-156" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-157"><a href="#cb5-157" aria-hidden="true" tabindex="-1"></a>\Pi = -V+\frac{\partial V}{\partial S}S</span>
+<span id="cb5-158"><a href="#cb5-158" aria-hidden="true" tabindex="-1"></a>$$  </span>
+<span id="cb5-159"><a href="#cb5-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-160"><a href="#cb5-160" aria-hidden="true" tabindex="-1"></a>over the time $<span class="co">[</span><span class="ot">t,t+\Delta t</span><span class="co">]</span>$, the total profit or loss from the changes in the values of the portfolio is </span>
+<span id="cb5-161"><a href="#cb5-161" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-162"><a href="#cb5-162" aria-hidden="true" tabindex="-1"></a>\Delta \Pi = -\Delta V + \frac{\partial V}{\partial S}\Delta S</span>
+<span id="cb5-163"><a href="#cb5-163" aria-hidden="true" tabindex="-1"></a>$$  </span>
+<span id="cb5-164"><a href="#cb5-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-165"><a href="#cb5-165" aria-hidden="true" tabindex="-1"></a>Now by the discretization we have, </span>
+<span id="cb5-166"><a href="#cb5-166" aria-hidden="true" tabindex="-1"></a>\begin{align*}</span>
+<span id="cb5-167"><a href="#cb5-167" aria-hidden="true" tabindex="-1"></a>\Delta S &amp;= \mu S \Delta t +\sigma S \Delta B<span class="sc">\\</span></span>
+<span id="cb5-168"><a href="#cb5-168" aria-hidden="true" tabindex="-1"></a>\Delta V &amp; = \left(\mu S\frac{\partial V}{\partial S}+\frac{\partial V}{\partial t}+\frac{1}{2}\sigma^2S^2\frac{\partial^2 V}{\partial S^2}\right)\Delta t+\sigma S\frac{\partial V}{\partial S}\Delta B<span class="sc">\\</span></span>
+<span id="cb5-169"><a href="#cb5-169" aria-hidden="true" tabindex="-1"></a>\implies \Delta \Pi  &amp; = \left(-\frac{\partial V}{\partial t} -\frac{1}{2}\sigma^2S^2\frac{\partial^2 V}{\partial S^2}\right)\Delta t</span>
+<span id="cb5-170"><a href="#cb5-170" aria-hidden="true" tabindex="-1"></a>\end{align*}</span>
+<span id="cb5-171"><a href="#cb5-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-172"><a href="#cb5-172" aria-hidden="true" tabindex="-1"></a>At this point, if $r$ is the risk-free interest rate then we will have following relationship </span>
+<span id="cb5-173"><a href="#cb5-173" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-174"><a href="#cb5-174" aria-hidden="true" tabindex="-1"></a>r\Pi \Delta t = \Delta \Pi </span>
+<span id="cb5-175"><a href="#cb5-175" aria-hidden="true" tabindex="-1"></a>$$ </span>
+<span id="cb5-176"><a href="#cb5-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-177"><a href="#cb5-177" aria-hidden="true" tabindex="-1"></a>The rationale of this relation is that no-aribtrage assumption. Thus, we have  </span>
+<span id="cb5-178"><a href="#cb5-178" aria-hidden="true" tabindex="-1"></a>\begin{align*}</span>
+<span id="cb5-179"><a href="#cb5-179" aria-hidden="true" tabindex="-1"></a>\left(-\frac{\partial V}{\partial t} -\frac{1}{2}\sigma^2S^2\frac{\partial^2 V}{\partial S^2}\right)\Delta t &amp; = r \left(- V + \frac{\partial V}{\partial S} S\right)\Delta t <span class="sc">\\</span></span>
+<span id="cb5-180"><a href="#cb5-180" aria-hidden="true" tabindex="-1"></a>\implies \frac{\partial V}{\partial t} + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} + rS \frac{\partial V}{\partial S} -rV &amp;=0</span>
+<span id="cb5-181"><a href="#cb5-181" aria-hidden="true" tabindex="-1"></a>\end{align*}  </span>
+<span id="cb5-182"><a href="#cb5-182" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-183"><a href="#cb5-183" aria-hidden="true" tabindex="-1"></a>This is the famous Black-Scholes-Merton PDF, formally written with the boundary conditions as follows  </span>
+<span id="cb5-184"><a href="#cb5-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-185"><a href="#cb5-185" aria-hidden="true" tabindex="-1"></a>\begin{align*}</span>
+<span id="cb5-186"><a href="#cb5-186" aria-hidden="true" tabindex="-1"></a>\frac{\partial c}{\partial t} + \frac{1}{2} \sigma^2 c^2 \frac{\partial^2 c}{\partial S^2} + rc \frac{\partial c}{\partial S} -rc &amp;=0<span class="sc">\\</span></span>
+<span id="cb5-187"><a href="#cb5-187" aria-hidden="true" tabindex="-1"></a>c(0,t) &amp;= 0<span class="sc">\\</span> </span>
+<span id="cb5-188"><a href="#cb5-188" aria-hidden="true" tabindex="-1"></a>c(S_{+\infty}, t) &amp;= S - Ke^{-r(T-t)}<span class="sc">\\</span></span>
+<span id="cb5-189"><a href="#cb5-189" aria-hidden="true" tabindex="-1"></a>c(S,T) &amp; = max<span class="sc">\{</span>S-K,0<span class="sc">\}</span></span>
+<span id="cb5-190"><a href="#cb5-190" aria-hidden="true" tabindex="-1"></a>\end{align*}  </span>
+<span id="cb5-191"><a href="#cb5-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-192"><a href="#cb5-192" aria-hidden="true" tabindex="-1"></a>This Black-Scholes-Merton PDE can be reduced to the heat equation using the substitutions $S = K e^x$, $t = T - \frac{\tau}{\frac{1}{2} \sigma^2}$, and $c(S, t) = K v(x, \tau)$. Let’s derive the solution step by step in full mathematical detail and show how this leads to the normal CDF.</span>
+<span id="cb5-193"><a href="#cb5-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-194"><a href="#cb5-194" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Step 1: Substitutions</span></span>
+<span id="cb5-195"><a href="#cb5-195" aria-hidden="true" tabindex="-1"></a>We aim to reduce the BSM PDE:</span>
+<span id="cb5-196"><a href="#cb5-196" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-197"><a href="#cb5-197" aria-hidden="true" tabindex="-1"></a>\frac{\partial c}{\partial t} + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 c}{\partial S^2} + r S \frac{\partial c}{\partial S} - r c = 0</span>
+<span id="cb5-198"><a href="#cb5-198" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-199"><a href="#cb5-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-200"><a href="#cb5-200" aria-hidden="true" tabindex="-1"></a>to the heat equation. Using the substitutions:</span>
+<span id="cb5-201"><a href="#cb5-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-202"><a href="#cb5-202" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$S = K e^x$, where $x = \ln(S / K)$, and $S \in (0, \infty)$ maps $x \in (-\infty, \infty)$,</span>
+<span id="cb5-203"><a href="#cb5-203" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$t = T - \frac{\tau}{\frac{1}{2} \sigma^2}$, so $\tau = \frac{1}{2} \sigma^2 (T - t)$,</span>
+<span id="cb5-204"><a href="#cb5-204" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$c(S, t) = K v(x, \tau)$, where $v(x, \tau)$ is the transformed function.</span>
+<span id="cb5-205"><a href="#cb5-205" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-206"><a href="#cb5-206" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Step 2: Derivative Transformations</span></span>
+<span id="cb5-207"><a href="#cb5-207" aria-hidden="true" tabindex="-1"></a>For $c(S, t) = K v(x, \tau)$, we compute derivatives.</span>
+<span id="cb5-208"><a href="#cb5-208" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-209"><a href="#cb5-209" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>The first derivative of $c$ with respect to $S$:</span>
+<span id="cb5-210"><a href="#cb5-210" aria-hidden="true" tabindex="-1"></a>   $$</span>
+<span id="cb5-211"><a href="#cb5-211" aria-hidden="true" tabindex="-1"></a>   \frac{\partial c}{\partial S} = \frac{\partial}{\partial S} \big(K v(x, \tau)\big) = K \frac{\partial v}{\partial x} \frac{\partial x}{\partial S},</span>
+<span id="cb5-212"><a href="#cb5-212" aria-hidden="true" tabindex="-1"></a>   $$</span>
+<span id="cb5-213"><a href="#cb5-213" aria-hidden="true" tabindex="-1"></a>   where $x = \ln(S / K)$ implies $\frac{\partial x}{\partial S} = \frac{1}{S}$. Thus:</span>
+<span id="cb5-214"><a href="#cb5-214" aria-hidden="true" tabindex="-1"></a>   $$</span>
+<span id="cb5-215"><a href="#cb5-215" aria-hidden="true" tabindex="-1"></a>   \frac{\partial c}{\partial S} = K \frac{\partial v}{\partial x} \frac{1}{S}.</span>
+<span id="cb5-216"><a href="#cb5-216" aria-hidden="true" tabindex="-1"></a>   $$</span>
+<span id="cb5-217"><a href="#cb5-217" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-218"><a href="#cb5-218" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>The second derivative of $c$ with respect to $S$:</span>
+<span id="cb5-219"><a href="#cb5-219" aria-hidden="true" tabindex="-1"></a>   $$</span>
+<span id="cb5-220"><a href="#cb5-220" aria-hidden="true" tabindex="-1"></a>   \frac{\partial^2 c}{\partial S^2} = \frac{\partial}{\partial S} \left( K \frac{\partial v}{\partial x} \frac{1}{S} \right).</span>
+<span id="cb5-221"><a href="#cb5-221" aria-hidden="true" tabindex="-1"></a>   $$</span>
+<span id="cb5-222"><a href="#cb5-222" aria-hidden="true" tabindex="-1"></a>   Using the product rule:</span>
+<span id="cb5-223"><a href="#cb5-223" aria-hidden="true" tabindex="-1"></a>   $$</span>
+<span id="cb5-224"><a href="#cb5-224" aria-hidden="true" tabindex="-1"></a>   \frac{\partial^2 c}{\partial S^2} = K \frac{\partial^2 v}{\partial x^2} \frac{1}{S^2} - K \frac{\partial v}{\partial x} \frac{1}{S^2}.</span>
+<span id="cb5-225"><a href="#cb5-225" aria-hidden="true" tabindex="-1"></a>   $$</span>
+<span id="cb5-226"><a href="#cb5-226" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-227"><a href="#cb5-227" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>The time derivative:</span>
+<span id="cb5-228"><a href="#cb5-228" aria-hidden="true" tabindex="-1"></a>   $$</span>
+<span id="cb5-229"><a href="#cb5-229" aria-hidden="true" tabindex="-1"></a>   \frac{\partial c}{\partial t} = K \frac{\partial v}{\partial \tau} \frac{\partial \tau}{\partial t}, \quad \text{and } \frac{\partial \tau}{\partial t} = -\frac{1}{\frac{1}{2} \sigma^2}.</span>
+<span id="cb5-230"><a href="#cb5-230" aria-hidden="true" tabindex="-1"></a>   $$</span>
+<span id="cb5-231"><a href="#cb5-231" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-232"><a href="#cb5-232" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Step 3: Transforming the PDE</span></span>
+<span id="cb5-233"><a href="#cb5-233" aria-hidden="true" tabindex="-1"></a>Substituting the above derivatives into the BSM PDE, we rewrite each term.</span>
+<span id="cb5-234"><a href="#cb5-234" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-235"><a href="#cb5-235" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>For $\frac{\partial c}{\partial t}$:</span>
+<span id="cb5-236"><a href="#cb5-236" aria-hidden="true" tabindex="-1"></a>   $$</span>
+<span id="cb5-237"><a href="#cb5-237" aria-hidden="true" tabindex="-1"></a>   \frac{\partial c}{\partial t} = -\frac{1}{\frac{1}{2} \sigma^2} K \frac{\partial v}{\partial \tau}.</span>
+<span id="cb5-238"><a href="#cb5-238" aria-hidden="true" tabindex="-1"></a>   $$</span>
+<span id="cb5-239"><a href="#cb5-239" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-240"><a href="#cb5-240" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>For $\frac{\partial c}{\partial S}$:</span>
+<span id="cb5-241"><a href="#cb5-241" aria-hidden="true" tabindex="-1"></a>   $$</span>
+<span id="cb5-242"><a href="#cb5-242" aria-hidden="true" tabindex="-1"></a>   S \frac{\partial c}{\partial S} = S \cdot \left(K \frac{\partial v}{\partial x} \frac{1}{S}\right) = K \frac{\partial v}{\partial x}.</span>
+<span id="cb5-243"><a href="#cb5-243" aria-hidden="true" tabindex="-1"></a>   $$</span>
+<span id="cb5-244"><a href="#cb5-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-245"><a href="#cb5-245" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>For $\frac{\partial^2 c}{\partial S^2}$:</span>
+<span id="cb5-246"><a href="#cb5-246" aria-hidden="true" tabindex="-1"></a>   $$</span>
+<span id="cb5-247"><a href="#cb5-247" aria-hidden="true" tabindex="-1"></a>   \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 c}{\partial S^2} = \frac{1}{2} \sigma^2 S^2 \left(K \frac{\partial^2 v}{\partial x^2} \frac{1}{S^2} - K \frac{\partial v}{\partial x} \frac{1}{S^2}\right) = \frac{1}{2} \sigma^2 K \frac{\partial^2 v}{\partial x^2}.</span>
+<span id="cb5-248"><a href="#cb5-248" aria-hidden="true" tabindex="-1"></a>   $$</span>
+<span id="cb5-249"><a href="#cb5-249" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-250"><a href="#cb5-250" aria-hidden="true" tabindex="-1"></a>Substituting all these into the BSM PDE:</span>
+<span id="cb5-251"><a href="#cb5-251" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-252"><a href="#cb5-252" aria-hidden="true" tabindex="-1"></a>-\frac{1}{\frac{1}{2} \sigma^2} K \frac{\partial v}{\partial \tau} + \frac{1}{2} \sigma^2 K \frac{\partial^2 v}{\partial x^2} + r K \frac{\partial v}{\partial x} - r K v = 0.</span>
+<span id="cb5-253"><a href="#cb5-253" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-254"><a href="#cb5-254" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-255"><a href="#cb5-255" aria-hidden="true" tabindex="-1"></a>Divide through by $K$:</span>
+<span id="cb5-256"><a href="#cb5-256" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-257"><a href="#cb5-257" aria-hidden="true" tabindex="-1"></a>-\frac{\partial v}{\partial \tau} + \frac{\partial^2 v}{\partial x^2} + \frac{2r}{\sigma^2} \frac{\partial v}{\partial x} - \frac{2r}{\sigma^2} v = 0.</span>
+<span id="cb5-258"><a href="#cb5-258" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-259"><a href="#cb5-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-260"><a href="#cb5-260" aria-hidden="true" tabindex="-1"></a>To simplify, let $v(x, \tau) = e^{\alpha x + \beta \tau} u(x, \tau)$, where $\alpha$ and $\beta$ are constants. Substituting and choosing $\alpha = -\frac{r}{\sigma^2}$ and $\beta = -\frac{r^2}{2 \sigma^2}$, the equation reduces to:</span>
+<span id="cb5-261"><a href="#cb5-261" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-262"><a href="#cb5-262" aria-hidden="true" tabindex="-1"></a>\frac{\partial u}{\partial \tau} = \frac{\partial^2 u}{\partial x^2}.</span>
+<span id="cb5-263"><a href="#cb5-263" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-264"><a href="#cb5-264" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-265"><a href="#cb5-265" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Step 4: Solving the Heat Equation</span></span>
+<span id="cb5-266"><a href="#cb5-266" aria-hidden="true" tabindex="-1"></a>The heat equation $\frac{\partial u}{\partial \tau} = \frac{\partial^2 u}{\partial x^2}$ has a well-known solution using Fourier methods:</span>
+<span id="cb5-267"><a href="#cb5-267" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-268"><a href="#cb5-268" aria-hidden="true" tabindex="-1"></a>u(x, \tau) = \frac{1}{\sqrt{2 \pi \tau}} \int_{-\infty}^\infty e^{-\frac{(x-y)^2}{2\tau}} f(y) \, dy,</span>
+<span id="cb5-269"><a href="#cb5-269" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-270"><a href="#cb5-270" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-271"><a href="#cb5-271" aria-hidden="true" tabindex="-1"></a>where $f(y)$ is the initial condition.</span>
+<span id="cb5-272"><a href="#cb5-272" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-273"><a href="#cb5-273" aria-hidden="true" tabindex="-1"></a>For the BSM problem, the initial condition is the payoff:</span>
+<span id="cb5-274"><a href="#cb5-274" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-275"><a href="#cb5-275" aria-hidden="true" tabindex="-1"></a>f(y) = \max(e^y - 1, 0).</span>
+<span id="cb5-276"><a href="#cb5-276" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-277"><a href="#cb5-277" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-278"><a href="#cb5-278" aria-hidden="true" tabindex="-1"></a>Performing the integration leads to the final solution involving the cumulative normal distribution function:</span>
+<span id="cb5-279"><a href="#cb5-279" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-280"><a href="#cb5-280" aria-hidden="true" tabindex="-1"></a>v(x, \tau) = N(d_1) - e^{-x} N(d_2),</span>
+<span id="cb5-281"><a href="#cb5-281" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-282"><a href="#cb5-282" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-283"><a href="#cb5-283" aria-hidden="true" tabindex="-1"></a>where:</span>
+<span id="cb5-284"><a href="#cb5-284" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-285"><a href="#cb5-285" aria-hidden="true" tabindex="-1"></a>d_1 = \frac{x + \frac{1}{2} \tau}{\sqrt{\tau}}, \quad d_2 = \frac{x - \frac{1}{2} \tau}{\sqrt{\tau}}.</span>
+<span id="cb5-286"><a href="#cb5-286" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-287"><a href="#cb5-287" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-288"><a href="#cb5-288" aria-hidden="true" tabindex="-1"></a>Transforming back to the original variables gives the Black-Scholes formula:</span>
+<span id="cb5-289"><a href="#cb5-289" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-290"><a href="#cb5-290" aria-hidden="true" tabindex="-1"></a>C(S, t) = S e^{-q(T-t)} N(d_1) - K e^{-r(T-t)} N(d_2),</span>
+<span id="cb5-291"><a href="#cb5-291" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-292"><a href="#cb5-292" aria-hidden="true" tabindex="-1"></a>where:</span>
+<span id="cb5-293"><a href="#cb5-293" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-294"><a href="#cb5-294" aria-hidden="true" tabindex="-1"></a>d_1 = \frac{\ln(S / K) + (r - q + \frac{\sigma^2}{2})(T-t)}{\sigma \sqrt{T-t}}, \quad d_2 = d_1 - \sigma \sqrt{T-t}.</span>
+<span id="cb5-295"><a href="#cb5-295" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-296"><a href="#cb5-296" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-297"><a href="#cb5-297" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-298"><a href="#cb5-298" aria-hidden="true" tabindex="-1"></a>Similarly, we can derive the price of a European put option:</span>
+<span id="cb5-299"><a href="#cb5-299" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-300"><a href="#cb5-300" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-301"><a href="#cb5-301" aria-hidden="true" tabindex="-1"></a>P = K e^{-rT} N(-d_2) - S e^{-qT} N(-d_1)</span>
+<span id="cb5-302"><a href="#cb5-302" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-303"><a href="#cb5-303" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-304"><a href="#cb5-304" aria-hidden="true" tabindex="-1"></a>Where:</span>
+<span id="cb5-305"><a href="#cb5-305" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-306"><a href="#cb5-306" aria-hidden="true" tabindex="-1"></a>d_1 = \frac{\ln(\frac{S}{K}) + (r - q + \frac{\sigma^2}{2})T}{\sigma \sqrt{T}}, \quad d_2 = d_1 - \sigma \sqrt{T}</span>
+<span id="cb5-307"><a href="#cb5-307" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-308"><a href="#cb5-308" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-309"><a href="#cb5-309" aria-hidden="true" tabindex="-1"></a><span class="fu">### Asymptotic Behavior of the BSM formula for call and put options  </span></span>
+<span id="cb5-310"><a href="#cb5-310" aria-hidden="true" tabindex="-1"></a>What if $K\rightarrow 0$? In that case,  </span>
+<span id="cb5-311"><a href="#cb5-311" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-312"><a href="#cb5-312" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>$\ln(S_0/K)\rightarrow \infty$, causing $d_1 \rightarrow \infty$ and $d_2 \rightarrow \infty$  </span>
+<span id="cb5-313"><a href="#cb5-313" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>The cdf $N(d_1)\rightarrow 1$ and $N(d_2)\rightarrow 1$  </span>
+<span id="cb5-314"><a href="#cb5-314" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>The second term $Ke^{-rT}N(d_2)\rightarrow 0$ as $K\rightarrow 0$  </span>
+<span id="cb5-315"><a href="#cb5-315" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-316"><a href="#cb5-316" aria-hidden="true" tabindex="-1"></a>In this case, the price of a call option $C\rightarrow S_0$ and the price of a put option $P \rightarrow 0$</span>
+<span id="cb5-317"><a href="#cb5-317" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-318"><a href="#cb5-318" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-319"><a href="#cb5-319" aria-hidden="true" tabindex="-1"></a><span class="fu">## Greeks: Delta and Gamma</span></span>
+<span id="cb5-320"><a href="#cb5-320" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-321"><a href="#cb5-321" aria-hidden="true" tabindex="-1"></a>**Delta** ($\Delta$) is the sensitivity of the option price to changes in the underlying asset price:</span>
+<span id="cb5-322"><a href="#cb5-322" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-323"><a href="#cb5-323" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-324"><a href="#cb5-324" aria-hidden="true" tabindex="-1"></a>\Delta = \frac{\partial C}{\partial S}\approx \frac{C(S_0 + h) - C(S_0 - h)}{2h}</span>
+<span id="cb5-325"><a href="#cb5-325" aria-hidden="true" tabindex="-1"></a>$$  </span>
+<span id="cb5-326"><a href="#cb5-326" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-327"><a href="#cb5-327" aria-hidden="true" tabindex="-1"></a>This is the **central difference approximation**, which provides a more accurate estimate of delta compared to the forward or backward difference methods.</span>
+<span id="cb5-328"><a href="#cb5-328" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-329"><a href="#cb5-329" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$C(S_0 + h)$: Calculate the option price with the spot price increased by $h$.</span>
+<span id="cb5-330"><a href="#cb5-330" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$C(S_0 - h)$: Calculate the option price with the spot price decreased by $h$.</span>
+<span id="cb5-331"><a href="#cb5-331" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-332"><a href="#cb5-332" aria-hidden="true" tabindex="-1"></a>**Gamma** ($\Gamma$) measures the rate of change of delta with respect to the underlying asset price:</span>
+<span id="cb5-333"><a href="#cb5-333" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-334"><a href="#cb5-334" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-335"><a href="#cb5-335" aria-hidden="true" tabindex="-1"></a>\Gamma = \frac{\partial^2 C}{\partial S^2}\approx \frac{\Delta(S_0 + h) - \Delta(S_0 - h)}{2h}\approx \frac{C(S_0 + h) - 2C(S_0) + C(S_0 - h)}{h^2}</span>
+<span id="cb5-336"><a href="#cb5-336" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb5-337"><a href="#cb5-337" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-338"><a href="#cb5-338" aria-hidden="true" tabindex="-1"></a>Gamma ($\Gamma$) measures the rate of change of delta ($\Delta$) with respect to the underlying spot price ($S_0$). </span>
+<span id="cb5-339"><a href="#cb5-339" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-340"><a href="#cb5-340" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$C(S_0 + h)$: Option price with the spot price increased by $h$.</span>
+<span id="cb5-341"><a href="#cb5-341" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$C(S_0)$: Option price at the current spot price.</span>
+<span id="cb5-342"><a href="#cb5-342" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$C(S_0 - h)$: Option price with the spot price decreased by $h$.</span>
+<span id="cb5-343"><a href="#cb5-343" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-344"><a href="#cb5-344" aria-hidden="true" tabindex="-1"></a>**Relationship Between Delta and Gamma:**  </span>
+<span id="cb5-345"><a href="#cb5-345" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-346"><a href="#cb5-346" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Gamma represents how much delta changes for a small change in $S_0$.</span>
+<span id="cb5-347"><a href="#cb5-347" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If gamma is high, delta is more sensitive to changes in $S_0$, which is important for hedging strategies.</span>
+<span id="cb5-348"><a href="#cb5-348" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-349"><a href="#cb5-349" aria-hidden="true" tabindex="-1"></a><span class="fu">## Implementation  </span></span>
+<span id="cb5-350"><a href="#cb5-350" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-351"><a href="#cb5-351" aria-hidden="true" tabindex="-1"></a><span class="fu">### Notation </span></span>
+<span id="cb5-352"><a href="#cb5-352" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-353"><a href="#cb5-353" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$S$: Spot price of the stock.</span>
+<span id="cb5-354"><a href="#cb5-354" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$K$: Strike price of the option.</span>
+<span id="cb5-355"><a href="#cb5-355" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$T$: Time to maturity (in years).</span>
+<span id="cb5-356"><a href="#cb5-356" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$r$: Risk-free rate (continuously compounded).</span>
+<span id="cb5-357"><a href="#cb5-357" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$q$: Dividend yield (continuously compounded).</span>
+<span id="cb5-358"><a href="#cb5-358" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\sigma$: Volatility of the stock.</span>
+<span id="cb5-359"><a href="#cb5-359" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$N(\cdot)$: Cumulative distribution function of the standard normal distribution.</span>
+<span id="cb5-360"><a href="#cb5-360" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-363"><a href="#cb5-363" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb5-364"><a href="#cb5-364" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dataclasses <span class="im">import</span> dataclass</span>
+<span id="cb5-365"><a href="#cb5-365" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb5-366"><a href="#cb5-366" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> norm</span>
+<span id="cb5-367"><a href="#cb5-367" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-368"><a href="#cb5-368" aria-hidden="true" tabindex="-1"></a><span class="at">@dataclass</span></span>
+<span id="cb5-369"><a href="#cb5-369" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Equity:</span>
+<span id="cb5-370"><a href="#cb5-370" aria-hidden="true" tabindex="-1"></a>    spot: <span class="bu">float</span></span>
+<span id="cb5-371"><a href="#cb5-371" aria-hidden="true" tabindex="-1"></a>    dividend_yield: <span class="bu">float</span></span>
+<span id="cb5-372"><a href="#cb5-372" aria-hidden="true" tabindex="-1"></a>    volatility: <span class="bu">float</span></span>
+<span id="cb5-373"><a href="#cb5-373" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-374"><a href="#cb5-374" aria-hidden="true" tabindex="-1"></a><span class="at">@dataclass</span></span>
+<span id="cb5-375"><a href="#cb5-375" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> EquityOption:</span>
+<span id="cb5-376"><a href="#cb5-376" aria-hidden="true" tabindex="-1"></a>    strike: <span class="bu">float</span></span>
+<span id="cb5-377"><a href="#cb5-377" aria-hidden="true" tabindex="-1"></a>    time_to_maturity: <span class="bu">float</span></span>
+<span id="cb5-378"><a href="#cb5-378" aria-hidden="true" tabindex="-1"></a>    put_call: <span class="bu">str</span></span>
+<span id="cb5-379"><a href="#cb5-379" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-380"><a href="#cb5-380" aria-hidden="true" tabindex="-1"></a><span class="at">@dataclass</span></span>
+<span id="cb5-381"><a href="#cb5-381" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> EquityForward:</span>
+<span id="cb5-382"><a href="#cb5-382" aria-hidden="true" tabindex="-1"></a>    strike: <span class="bu">float</span></span>
+<span id="cb5-383"><a href="#cb5-383" aria-hidden="true" tabindex="-1"></a>    time_to_maturity: <span class="bu">float</span></span>
+<span id="cb5-384"><a href="#cb5-384" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-385"><a href="#cb5-385" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> bsm(underlying: Equity, option: EquityOption, rate: <span class="bu">float</span>) <span class="op">-&gt;</span> <span class="bu">float</span>:</span>
+<span id="cb5-386"><a href="#cb5-386" aria-hidden="true" tabindex="-1"></a>    S <span class="op">=</span> underlying.spot</span>
+<span id="cb5-387"><a href="#cb5-387" aria-hidden="true" tabindex="-1"></a>    K <span class="op">=</span> option.strike</span>
+<span id="cb5-388"><a href="#cb5-388" aria-hidden="true" tabindex="-1"></a>    T <span class="op">=</span> option.time_to_maturity</span>
+<span id="cb5-389"><a href="#cb5-389" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> rate</span>
+<span id="cb5-390"><a href="#cb5-390" aria-hidden="true" tabindex="-1"></a>    q <span class="op">=</span> underlying.dividend_yield</span>
+<span id="cb5-391"><a href="#cb5-391" aria-hidden="true" tabindex="-1"></a>    sigma <span class="op">=</span> underlying.volatility</span>
+<span id="cb5-392"><a href="#cb5-392" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-393"><a href="#cb5-393" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Handle edge case where strike is effectively zero</span></span>
+<span id="cb5-394"><a href="#cb5-394" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> K <span class="op">&lt;</span> <span class="fl">1e-8</span>:</span>
+<span id="cb5-395"><a href="#cb5-395" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> option.put_call.lower() <span class="op">==</span> <span class="st">"call"</span>:</span>
+<span id="cb5-396"><a href="#cb5-396" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> S </span>
+<span id="cb5-397"><a href="#cb5-397" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb5-398"><a href="#cb5-398" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="fl">0.0</span></span>
+<span id="cb5-399"><a href="#cb5-399" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-400"><a href="#cb5-400" aria-hidden="true" tabindex="-1"></a>    d1 <span class="op">=</span> (np.log(S <span class="op">/</span> K) <span class="op">+</span> (r <span class="op">-</span> q <span class="op">+</span> <span class="fl">0.5</span> <span class="op">*</span> sigma<span class="op">**</span><span class="dv">2</span>) <span class="op">*</span> T) <span class="op">/</span> (sigma <span class="op">*</span> np.sqrt(T))</span>
+<span id="cb5-401"><a href="#cb5-401" aria-hidden="true" tabindex="-1"></a>    d2 <span class="op">=</span> d1 <span class="op">-</span> sigma <span class="op">*</span> np.sqrt(T)</span>
+<span id="cb5-402"><a href="#cb5-402" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-403"><a href="#cb5-403" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> option.put_call.lower() <span class="op">==</span> <span class="st">"call"</span>:</span>
+<span id="cb5-404"><a href="#cb5-404" aria-hidden="true" tabindex="-1"></a>        price <span class="op">=</span> S <span class="op">*</span> np.exp(<span class="op">-</span>q <span class="op">*</span> T) <span class="op">*</span> norm.cdf(d1) <span class="op">\</span></span>
+<span id="cb5-405"><a href="#cb5-405" aria-hidden="true" tabindex="-1"></a>                <span class="op">-</span> K <span class="op">*</span> np.exp(<span class="op">-</span>r <span class="op">*</span> T) <span class="op">*</span> norm.cdf(d2)</span>
+<span id="cb5-406"><a href="#cb5-406" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> option.put_call.lower() <span class="op">==</span> <span class="st">"put"</span>:</span>
+<span id="cb5-407"><a href="#cb5-407" aria-hidden="true" tabindex="-1"></a>        price <span class="op">=</span> K <span class="op">*</span> np.exp(<span class="op">-</span>r <span class="op">*</span> T) <span class="op">*</span> norm.cdf(<span class="op">-</span>d2) <span class="op">\</span></span>
+<span id="cb5-408"><a href="#cb5-408" aria-hidden="true" tabindex="-1"></a>                <span class="op">-</span> S <span class="op">*</span> np.exp(<span class="op">-</span>q <span class="op">*</span> T) <span class="op">*</span> norm.cdf(<span class="op">-</span>d1)</span>
+<span id="cb5-409"><a href="#cb5-409" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb5-410"><a href="#cb5-410" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="st">"Invalid option type. Must be 'call' or 'put'."</span>)</span>
+<span id="cb5-411"><a href="#cb5-411" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-412"><a href="#cb5-412" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> price</span>
+<span id="cb5-413"><a href="#cb5-413" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-414"><a href="#cb5-414" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> delta(underlying: Equity, option: EquityOption, rate: <span class="bu">float</span>) <span class="op">-&gt;</span> <span class="bu">float</span>:</span>
+<span id="cb5-415"><a href="#cb5-415" aria-hidden="true" tabindex="-1"></a>    bump <span class="op">=</span> <span class="fl">0.01</span> <span class="op">*</span> underlying.spot</span>
+<span id="cb5-416"><a href="#cb5-416" aria-hidden="true" tabindex="-1"></a>    bumped_up <span class="op">=</span> Equity(spot<span class="op">=</span>underlying.spot <span class="op">+</span> bump, </span>
+<span id="cb5-417"><a href="#cb5-417" aria-hidden="true" tabindex="-1"></a>                       dividend_yield<span class="op">=</span>underlying.dividend_yield, </span>
+<span id="cb5-418"><a href="#cb5-418" aria-hidden="true" tabindex="-1"></a>                       volatility<span class="op">=</span>underlying.volatility)</span>
+<span id="cb5-419"><a href="#cb5-419" aria-hidden="true" tabindex="-1"></a>    bumped_down <span class="op">=</span> Equity(spot<span class="op">=</span>underlying.spot <span class="op">-</span> bump, </span>
+<span id="cb5-420"><a href="#cb5-420" aria-hidden="true" tabindex="-1"></a>                         dividend_yield<span class="op">=</span>underlying.dividend_yield, </span>
+<span id="cb5-421"><a href="#cb5-421" aria-hidden="true" tabindex="-1"></a>                         volatility<span class="op">=</span>underlying.volatility)</span>
+<span id="cb5-422"><a href="#cb5-422" aria-hidden="true" tabindex="-1"></a>    price_up <span class="op">=</span> bsm(bumped_up, option, rate)</span>
+<span id="cb5-423"><a href="#cb5-423" aria-hidden="true" tabindex="-1"></a>    price_down <span class="op">=</span> bsm(bumped_down, option, rate)</span>
+<span id="cb5-424"><a href="#cb5-424" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (price_up <span class="op">-</span> price_down) <span class="op">/</span> (<span class="dv">2</span> <span class="op">*</span> bump)</span>
+<span id="cb5-425"><a href="#cb5-425" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-426"><a href="#cb5-426" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> gamma(underlying: Equity, option: EquityOption, rate: <span class="bu">float</span>) <span class="op">-&gt;</span> <span class="bu">float</span>:</span>
+<span id="cb5-427"><a href="#cb5-427" aria-hidden="true" tabindex="-1"></a>    bump <span class="op">=</span> <span class="fl">0.01</span> <span class="op">*</span> underlying.spot</span>
+<span id="cb5-428"><a href="#cb5-428" aria-hidden="true" tabindex="-1"></a>    bumped_up <span class="op">=</span> Equity(spot<span class="op">=</span>underlying.spot <span class="op">+</span> bump, </span>
+<span id="cb5-429"><a href="#cb5-429" aria-hidden="true" tabindex="-1"></a>                       dividend_yield<span class="op">=</span>underlying.dividend_yield, </span>
+<span id="cb5-430"><a href="#cb5-430" aria-hidden="true" tabindex="-1"></a>                       volatility<span class="op">=</span>underlying.volatility)</span>
+<span id="cb5-431"><a href="#cb5-431" aria-hidden="true" tabindex="-1"></a>    bumped_down <span class="op">=</span> Equity(spot<span class="op">=</span>underlying.spot <span class="op">-</span> bump, </span>
+<span id="cb5-432"><a href="#cb5-432" aria-hidden="true" tabindex="-1"></a>                         dividend_yield<span class="op">=</span>underlying.dividend_yield, </span>
+<span id="cb5-433"><a href="#cb5-433" aria-hidden="true" tabindex="-1"></a>                         volatility<span class="op">=</span>underlying.volatility)</span>
+<span id="cb5-434"><a href="#cb5-434" aria-hidden="true" tabindex="-1"></a>    original_price <span class="op">=</span> bsm(underlying, option, rate)</span>
+<span id="cb5-435"><a href="#cb5-435" aria-hidden="true" tabindex="-1"></a>    price_up <span class="op">=</span> bsm(bumped_up, option, rate)</span>
+<span id="cb5-436"><a href="#cb5-436" aria-hidden="true" tabindex="-1"></a>    price_down <span class="op">=</span> bsm(bumped_down, option, rate)</span>
+<span id="cb5-437"><a href="#cb5-437" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (price_up <span class="op">-</span> <span class="dv">2</span> <span class="op">*</span> original_price <span class="op">+</span> price_down) <span class="op">/</span> (bump<span class="op">**</span><span class="dv">2</span>)</span>
+<span id="cb5-438"><a href="#cb5-438" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-439"><a href="#cb5-439" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fwd(underlying: Equity, forward: EquityForward, rate: <span class="bu">float</span>) <span class="op">-&gt;</span> <span class="bu">float</span>:</span>
+<span id="cb5-440"><a href="#cb5-440" aria-hidden="true" tabindex="-1"></a>    S <span class="op">=</span> underlying.spot</span>
+<span id="cb5-441"><a href="#cb5-441" aria-hidden="true" tabindex="-1"></a>    K <span class="op">=</span> forward.strike</span>
+<span id="cb5-442"><a href="#cb5-442" aria-hidden="true" tabindex="-1"></a>    T <span class="op">=</span> forward.time_to_maturity</span>
+<span id="cb5-443"><a href="#cb5-443" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> rate</span>
+<span id="cb5-444"><a href="#cb5-444" aria-hidden="true" tabindex="-1"></a>    q <span class="op">=</span> underlying.dividend_yield</span>
+<span id="cb5-445"><a href="#cb5-445" aria-hidden="true" tabindex="-1"></a>    forward_price <span class="op">=</span> S <span class="op">*</span> np.exp((r <span class="op">-</span> q) <span class="op">*</span> T) <span class="op">-</span> K</span>
+<span id="cb5-446"><a href="#cb5-446" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-447"><a href="#cb5-447" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> forward_price</span>
+<span id="cb5-448"><a href="#cb5-448" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-449"><a href="#cb5-449" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> check_put_call_parity(</span>
+<span id="cb5-450"><a href="#cb5-450" aria-hidden="true" tabindex="-1"></a>    underlying: Equity, </span>
+<span id="cb5-451"><a href="#cb5-451" aria-hidden="true" tabindex="-1"></a>    call_option: EquityOption, </span>
+<span id="cb5-452"><a href="#cb5-452" aria-hidden="true" tabindex="-1"></a>    put_option: EquityOption, </span>
+<span id="cb5-453"><a href="#cb5-453" aria-hidden="true" tabindex="-1"></a>    rate: <span class="bu">float</span></span>
+<span id="cb5-454"><a href="#cb5-454" aria-hidden="true" tabindex="-1"></a>    ) <span class="op">-&gt;</span> <span class="bu">bool</span>:</span>
+<span id="cb5-455"><a href="#cb5-455" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-456"><a href="#cb5-456" aria-hidden="true" tabindex="-1"></a>    call_price <span class="op">=</span> bsm(underlying, call_option, rate)</span>
+<span id="cb5-457"><a href="#cb5-457" aria-hidden="true" tabindex="-1"></a>    put_price <span class="op">=</span> bsm(underlying, put_option, rate)</span>
+<span id="cb5-458"><a href="#cb5-458" aria-hidden="true" tabindex="-1"></a>    S <span class="op">=</span> underlying.spot</span>
+<span id="cb5-459"><a href="#cb5-459" aria-hidden="true" tabindex="-1"></a>    K <span class="op">=</span> call_option.strike</span>
+<span id="cb5-460"><a href="#cb5-460" aria-hidden="true" tabindex="-1"></a>    T <span class="op">=</span> call_option.time_to_maturity</span>
+<span id="cb5-461"><a href="#cb5-461" aria-hidden="true" tabindex="-1"></a>    r <span class="op">=</span> rate</span>
+<span id="cb5-462"><a href="#cb5-462" aria-hidden="true" tabindex="-1"></a>    q <span class="op">=</span> underlying.dividend_yield</span>
+<span id="cb5-463"><a href="#cb5-463" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-464"><a href="#cb5-464" aria-hidden="true" tabindex="-1"></a>    parity_lhs <span class="op">=</span> call_price <span class="op">-</span> put_price</span>
+<span id="cb5-465"><a href="#cb5-465" aria-hidden="true" tabindex="-1"></a>    parity_rhs <span class="op">=</span> S <span class="op">*</span> np.exp(<span class="op">-</span>q <span class="op">*</span> T) <span class="op">-</span> K <span class="op">*</span> np.exp(<span class="op">-</span>r <span class="op">*</span> T)</span>
+<span id="cb5-466"><a href="#cb5-466" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-467"><a href="#cb5-467" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> np.isclose(parity_lhs, parity_rhs, atol<span class="op">=</span><span class="fl">1e-4</span>)</span>
+<span id="cb5-468"><a href="#cb5-468" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-469"><a href="#cb5-469" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-470"><a href="#cb5-470" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-471"><a href="#cb5-471" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-472"><a href="#cb5-472" aria-hidden="true" tabindex="-1"></a><span class="fu">### Example Usage</span></span>
+<span id="cb5-473"><a href="#cb5-473" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> style</span><span class="op">=</span><span class="st">"text-align: justify"</span><span class="dt">&gt;</span></span>
+<span id="cb5-474"><a href="#cb5-474" aria-hidden="true" tabindex="-1"></a>Say, we want to price a call option on an equity with spot price $S_0 = 450$ with dividend yield $q=1.4\%$, and volatility $14\%$. The strike price of the call is $K=470$, with time to maturity in years $T=0.23$ and the risk free rate $r = 0.05$.<span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb5-475"><a href="#cb5-475" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb5-476"><a href="#cb5-476" aria-hidden="true" tabindex="-1"></a>Next, we want to see the asymptotic behavior of the call option if the strike price $K\rightarrow 0$ with interest rate 0.<span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb5-477"><a href="#cb5-477" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb5-478"><a href="#cb5-478" aria-hidden="true" tabindex="-1"></a>Next, we want to price a put option on the same equity but strike price $K=500$, time to maturity in years $T=0.26$ and interest rate is 0.<span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb5-479"><a href="#cb5-479" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb5-480"><a href="#cb5-480" aria-hidden="true" tabindex="-1"></a>Finally, we want to check if the put-call parity relationship is hold. <span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb5-481"><a href="#cb5-481" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span></span>
+<span id="cb5-482"><a href="#cb5-482" aria-hidden="true" tabindex="-1"></a>In each case, we consider $h=0.01$ a bump or small change in the stock price.</span>
+<span id="cb5-483"><a href="#cb5-483" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span> </span>
+<span id="cb5-484"><a href="#cb5-484" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-487"><a href="#cb5-487" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb5-488"><a href="#cb5-488" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
+<span id="cb5-489"><a href="#cb5-489" aria-hidden="true" tabindex="-1"></a>    eq <span class="op">=</span> Equity(<span class="dv">450</span>, <span class="fl">0.014</span>, <span class="fl">0.14</span>)</span>
+<span id="cb5-490"><a href="#cb5-490" aria-hidden="true" tabindex="-1"></a>    option_call <span class="op">=</span> EquityOption(<span class="dv">470</span>, <span class="fl">0.23</span>, <span class="st">"call"</span>)</span>
+<span id="cb5-491"><a href="#cb5-491" aria-hidden="true" tabindex="-1"></a>    option_put <span class="op">=</span> EquityOption(<span class="dv">500</span>, <span class="fl">0.26</span>, <span class="st">"put"</span>)</span>
+<span id="cb5-492"><a href="#cb5-492" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-493"><a href="#cb5-493" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(bsm(eq, option_call, <span class="fl">0.05</span>))  </span>
+<span id="cb5-494"><a href="#cb5-494" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(bsm(eq, EquityOption(<span class="fl">1e-15</span>, <span class="fl">0.26</span>, <span class="st">"call"</span>), <span class="fl">0.0</span>))  </span>
+<span id="cb5-495"><a href="#cb5-495" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(bsm(Equity(<span class="dv">450</span>, <span class="fl">0.0</span>, <span class="fl">1e-9</span>), option_put, <span class="fl">0.0</span>))  </span>
+<span id="cb5-496"><a href="#cb5-496" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-497"><a href="#cb5-497" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Check put-call parity</span></span>
+<span id="cb5-498"><a href="#cb5-498" aria-hidden="true" tabindex="-1"></a>    eq <span class="op">=</span> Equity(<span class="dv">450</span>, <span class="fl">0.015</span>, <span class="fl">0.15</span>)</span>
+<span id="cb5-499"><a href="#cb5-499" aria-hidden="true" tabindex="-1"></a>    option_call <span class="op">=</span> EquityOption(<span class="dv">470</span>, <span class="fl">0.26</span>, <span class="st">"call"</span>)</span>
+<span id="cb5-500"><a href="#cb5-500" aria-hidden="true" tabindex="-1"></a>    option_put <span class="op">=</span> EquityOption(<span class="dv">470</span>, <span class="fl">0.26</span>, <span class="st">"put"</span>)</span>
+<span id="cb5-501"><a href="#cb5-501" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(check_put_call_parity(eq, option_call, option_put, <span class="fl">0.05</span>)) </span>
+<span id="cb5-502"><a href="#cb5-502" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-503"><a href="#cb5-503" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb5-504"><a href="#cb5-504" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-505"><a href="#cb5-505" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-506"><a href="#cb5-506" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-507"><a href="#cb5-507" aria-hidden="true" tabindex="-1"></a><span class="fu">## References  </span></span>
+<span id="cb5-508"><a href="#cb5-508" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-509"><a href="#cb5-509" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Karatzas, I., &amp; Shreve, S. E. (1991). *Brownian Motion and Stochastic Calculus*.  </span>
+<span id="cb5-510"><a href="#cb5-510" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Options, Futures, and Other Derivatives by John C. Hull  </span>
+<span id="cb5-511"><a href="#cb5-511" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Arbitrage Theory in Continuous Time Book by Tomas Björk</span>
+<span id="cb5-512"><a href="#cb5-512" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-513"><a href="#cb5-513" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-514"><a href="#cb5-514" aria-hidden="true" tabindex="-1"></a>**Share on**  </span>
+<span id="cb5-515"><a href="#cb5-515" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-516"><a href="#cb5-516" aria-hidden="true" tabindex="-1"></a>::::{.columns}</span>
+<span id="cb5-517"><a href="#cb5-517" aria-hidden="true" tabindex="-1"></a>:::{.column width="33%"}</span>
+<span id="cb5-518"><a href="#cb5-518" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"https://www.facebook.com/sharer.php?u=https://mrislambd.github.io/statandprob/posts/optionprice/"</span><span class="ot"> target</span><span class="op">=</span><span class="st">"_blank"</span><span class="ot"> style</span><span class="op">=</span><span class="st">"color:#1877F2; text-decoration: none;"</span><span class="dt">&gt;</span></span>
+<span id="cb5-519"><a href="#cb5-519" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb5-520"><a href="#cb5-520" aria-hidden="true" tabindex="-1"></a>{{&lt; fa brands facebook size=3x &gt;}}</span>
+<span id="cb5-521"><a href="#cb5-521" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
+<span id="cb5-522"><a href="#cb5-522" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb5-523"><a href="#cb5-523" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-524"><a href="#cb5-524" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb5-525"><a href="#cb5-525" aria-hidden="true" tabindex="-1"></a>:::{.column width="33%"}</span>
+<span id="cb5-526"><a href="#cb5-526" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"https://www.linkedin.com/sharing/share-offsite/?url=https://mrislambd.github.io/statandprob/posts/optionprice/"</span><span class="ot"> target</span><span class="op">=</span><span class="st">"_blank"</span><span class="ot"> style</span><span class="op">=</span><span class="st">"color:#0077B5; text-decoration: none;"</span><span class="dt">&gt;</span></span>
+<span id="cb5-527"><a href="#cb5-527" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb5-528"><a href="#cb5-528" aria-hidden="true" tabindex="-1"></a>{{&lt; fa brands linkedin size=3x &gt;}}</span>
+<span id="cb5-529"><a href="#cb5-529" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
+<span id="cb5-530"><a href="#cb5-530" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb5-531"><a href="#cb5-531" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-532"><a href="#cb5-532" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb5-533"><a href="#cb5-533" aria-hidden="true" tabindex="-1"></a>:::{.column width="33%"}</span>
+<span id="cb5-534"><a href="#cb5-534" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"https://www.twitter.com/intent/tweet?url=https://mrislambd.github.io/statandprob/posts/optionprice/"</span><span class="ot"> target</span><span class="op">=</span><span class="st">"_blank"</span><span class="ot"> style</span><span class="op">=</span><span class="st">"color:#1DA1F2; text-decoration: none;"</span><span class="dt">&gt;</span></span>
+<span id="cb5-535"><a href="#cb5-535" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb5-536"><a href="#cb5-536" aria-hidden="true" tabindex="-1"></a>{{&lt; fa brands twitter size=3x &gt;}}</span>
+<span id="cb5-537"><a href="#cb5-537" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
+<span id="cb5-538"><a href="#cb5-538" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb5-539"><a href="#cb5-539" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb5-540"><a href="#cb5-540" aria-hidden="true" tabindex="-1"></a>::::</span>
+<span id="cb5-541"><a href="#cb5-541" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb5-542"><a href="#cb5-542" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="ot"> src</span><span class="op">=</span><span class="st">"https://giscus.app/client.js"</span></span>
+<span id="cb5-543"><a href="#cb5-543" aria-hidden="true" tabindex="-1"></a><span class="ot">        data-repo</span><span class="op">=</span><span class="st">"mrislambd/mrislambd.github.io"</span><span class="ot"> </span></span>
+<span id="cb5-544"><a href="#cb5-544" aria-hidden="true" tabindex="-1"></a><span class="ot">        data-repo-id</span><span class="op">=</span><span class="st">"R_kgDOMV8crA"</span></span>
+<span id="cb5-545"><a href="#cb5-545" aria-hidden="true" tabindex="-1"></a><span class="ot">        data-category</span><span class="op">=</span><span class="st">"Announcements"</span></span>
+<span id="cb5-546"><a href="#cb5-546" aria-hidden="true" tabindex="-1"></a><span class="ot">        data-category-id</span><span class="op">=</span><span class="st">"DIC_kwDOMV8crM4CjbQW"</span></span>
+<span id="cb5-547"><a href="#cb5-547" aria-hidden="true" tabindex="-1"></a><span class="ot">        data-mapping</span><span class="op">=</span><span class="st">"pathname"</span></span>
+<span id="cb5-548"><a href="#cb5-548" aria-hidden="true" tabindex="-1"></a><span class="ot">        data-strict</span><span class="op">=</span><span class="st">"0"</span></span>
+<span id="cb5-549"><a href="#cb5-549" aria-hidden="true" tabindex="-1"></a><span class="ot">        data-reactions-enabled</span><span class="op">=</span><span class="st">"1"</span></span>
+<span id="cb5-550"><a href="#cb5-550" aria-hidden="true" tabindex="-1"></a><span class="ot">        data-emit-metadata</span><span class="op">=</span><span class="st">"0"</span></span>
+<span id="cb5-551"><a href="#cb5-551" aria-hidden="true" tabindex="-1"></a><span class="ot">        data-input-position</span><span class="op">=</span><span class="st">"bottom"</span></span>
+<span id="cb5-552"><a href="#cb5-552" aria-hidden="true" tabindex="-1"></a><span class="ot">        data-theme</span><span class="op">=</span><span class="st">"light"</span></span>
+<span id="cb5-553"><a href="#cb5-553" aria-hidden="true" tabindex="-1"></a><span class="ot">        data-lang</span><span class="op">=</span><span class="st">"en"</span></span>
+<span id="cb5-554"><a href="#cb5-554" aria-hidden="true" tabindex="-1"></a><span class="ot">        crossorigin</span><span class="op">=</span><span class="st">"anonymous"</span></span>
+<span id="cb5-555"><a href="#cb5-555" aria-hidden="true" tabindex="-1"></a><span class="ot">        async</span><span class="dt">&gt;</span></span>
+<span id="cb5-556"><a href="#cb5-556" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span>
+<span id="cb5-557"><a href="#cb5-557" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb5-558"><a href="#cb5-558" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> id</span><span class="op">=</span><span class="st">"fb-root"</span><span class="dt">&gt;&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb5-559"><a href="#cb5-559" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="ot"> async defer crossorigin</span><span class="op">=</span><span class="st">"anonymous"</span></span>
+<span id="cb5-560"><a href="#cb5-560" aria-hidden="true" tabindex="-1"></a><span class="ot"> src</span><span class="op">=</span><span class="st">"https://connect.facebook.net/en_US/sdk.js#xfbml=1</span><span class="er">&amp;</span><span class="st">version=v20.0"</span><span class="dt">&gt;&lt;/</span><span class="kw">script</span><span class="dt">&gt;</span></span>
+<span id="cb5-561"><a href="#cb5-561" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"fb-comments"</span><span class="ot"> data-href</span><span class="op">=</span><span class="st">"https://mrislambd.github.io/statandprob/posts/optionprice/"</span><span class="ot"> data-width</span><span class="op">=</span><span class="st">"750"</span><span class="ot"> data-numposts</span><span class="op">=</span><span class="st">"5"</span><span class="dt">&gt;&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb5-562"><a href="#cb5-562" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-563"><a href="#cb5-563" aria-hidden="true" tabindex="-1"></a>**You may also like**  </span>
 </code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
@@ -2118,11 +2169,26 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
- Copyright 2025 @ Rafiq Islam
+ Copyright 2026 @ Rafiq Islam
   </li>  
     <li class="nav-item">
     <a class="nav-link" href="../../license.txt">
 <p>License</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../../research.qmd">
+<p>Research</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../../teaching.qmd">
+<p>Teaching</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../../cv.qmd">
+<p>CV</p>
 </a>
   </li>  
 </ul>
@@ -2147,10 +2213,54 @@ document.addEventListener("DOMContentLoaded", function () {
 </i> 
     </a>
   </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/mohammad-rafiqul-islam/" target="_blank">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/rispace" target="_blank">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
 </ul>
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
