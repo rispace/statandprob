@@ -112,8 +112,6 @@ plt.show()
 From the top-left figure, when the sample size is 50, the sample mean varies from 130 to 150 where the true population mean is `{python} np.round(mean_height,2)`, similarly in the 4th figure (bottom-left), when the sample size is 5000, the mean varies from 138 to 141. Thus, if we increase the sample size, sufficiently large, then the sample mean is approximately equal to the population mean. This is what LLN is! </p>
 
 
-
-
 ### Types of LLN
 There are two forms of the Law of Large Numbers:
 
@@ -242,54 +240,5 @@ Understanding these concepts is essential for data science, as they form the bas
 - "The Elements of Statistical Learning" by Hastie, Tibshirani, and Friedman
 - Any introductory statistics textbook covering probability theory
 
-
-**Share on**  
-
-::::{.columns}
-:::{.column width="33%"}
-<a href="https://www.facebook.com/sharer.php?u=https://mrislambd.github.io/statandprob/posts/lln/" target="_blank" style="color:#1877F2; text-decoration: none;">
- 
-{{< fa brands facebook size=3x >}}
-</a>
- 
-:::
- 
-:::{.column width="33%"}
-<a href="https://www.linkedin.com/sharing/share-offsite/?url=https://mrislambd.github.io/statandprob/posts/lln/" target="_blank" style="color:#0077B5; text-decoration: none;">
- 
-{{< fa brands linkedin size=3x >}}
-</a>
- 
-:::
- 
-:::{.column width="33%"}
-<a href="https://www.twitter.com/intent/tweet?url=https://mrislambd.github.io/statandprob/posts/lln/" target="_blank" style="color:#1DA1F2; text-decoration: none;">
- 
-{{< fa brands twitter size=3x >}}
-</a>
- 
-:::
-::::
- 
-<script src="https://giscus.app/client.js"
-        data-repo="mrislambd/mrislambd.github.io" 
-        data-repo-id="R_kgDOMV8crA"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOMV8crM4CjbQW"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="light"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script>
- 
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous"
- src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0"></script>
-<div class="fb-comments" data-href="https://mrislambd.github.io/statandprob/posts/lln/" data-width="750" data-numposts="5"></div>
 
 **You may also like**  

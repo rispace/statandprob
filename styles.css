@@ -19,7 +19,7 @@ body.quarto-light {
   --muted: #545c6b;           /* secondary text */
   --faint: #7c8190;           /* captions, dates */
   --line: #ddd2b8;            /* borders, rules */
-  --link: #1f3a68;            /* links (navy) */
+  --link: #8c1d2c;            /* links (cardinal, matches the accent) */
   --accent: #8c1d2c;          /* solid buttons, active states (cardinal) */
   --accent-ink: #fcfaf3;      /* text on solid buttons */
   --accent-soft: rgba(140, 29, 44, .08);
@@ -678,3 +678,18 @@ main.content ul li::marker, main.content ol li::marker { color: var(--ribbon); }
 .cell-output-display, .quarto-layout-cell, main.content .table-responsive { max-width: 100%; overflow-x: auto; }
 main.content table { max-width: 100%; }
 @media (max-width: 640px) { main.content table { display: block; overflow-x: auto; white-space: nowrap; } }
+
+/* ---------- Share buttons + comments (same on all four sites) ---------- */
+.share-block { margin: 3rem 0 0; padding-top: 1.4rem; border-top: 1px solid var(--line); }
+.share-bar { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .55rem; }
+.share-label { font-variant: small-caps; letter-spacing: .06em; color: var(--muted); margin-right: .35rem; font-size: 1rem; }
+.share-btn {
+  display: inline-flex; align-items: center; gap: .42rem;
+  padding: .34rem .85rem; border: 1px solid var(--line); border-radius: 999px;
+  background: var(--surface); color: var(--ink) !important; font: inherit; font-size: .88rem; line-height: 1.2;
+  text-decoration: none !important; cursor: pointer; transition: border-color .15s, color .15s;
+}
+.share-btn:hover, .share-btn:focus-visible { border-color: var(--accent); color: var(--accent) !important; }
+.share-btn .bi { font-size: 1rem; }
+.comments-title { margin: 2.2rem 0 .2rem; font-size: 1.35rem; font-weight: 700; color: var(--ink-strong); text-align: left !important; }
+.giscus { margin: .4rem 0 2.5rem; }
