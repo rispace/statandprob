@@ -1,1 +1,1 @@
-Sitemap: https://rispace.github.io/sitemap.xml
+Sitemap: https://rispace.github.io/statandprob/sitemap.xml
