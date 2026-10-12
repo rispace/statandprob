@@ -32,9 +32,11 @@ listing:
     The basic principle behind the Monte Carlo method is to simulate the behavior of a system by generating random samples and using them to estimate the desired quantities. Let’s consider a mathematical problem where we need to compute an integral that does not have a straightforward analytical solution:
 </p>
 
+
 \begin{align*}
 I &= \int_{a}^{b} f(x) \, dx
 \end{align*}
+
 
 <p style="text-align:justify">
     The Monte Carlo method approximates this integral by sampling random points $x_i$ uniformly from the interval $[a, b]$ and evaluating the function $f(x)$ at these points. The integral can then be approximated as:
@@ -110,6 +112,7 @@ which shows that the $(n+k)th$ term can be computed directly from the $nth$ term
 
 #### Solution:  
 We know from D. H. Lehmer's linear congruential generator that  
+ 
 \begin{equation}
 x_n \equiv ax_{n-1}+c \mod m
 \end{equation}  
